@@ -1,29 +1,62 @@
 import React from "react"
 import baltasar from "../img/Baltasar.jpeg"
 
+// Style
+import styled from 'styled-components'
+
 const About = () => {
   return (
-    <div>
-      <div className='description'>
+    <StyledAbout>
+      <StyledDescription>
         <div className='title'>
-          <div className='hide'>
+          <Hide>
             <h2>Baltasar</h2>
-          </div>
-          <div className='hide'>
+          </Hide>
+          <Hide>
             <h2>Romero</h2>
-          </div>
-          <div className='hide'>
+          </Hide>
+          <Hide>
             <h2>Web Developer</h2>
-          </div>
+          </Hide>
         </div>
         <p>Get in touch to know more</p>
         <button>Contact us</button>
-        <div className='image'>
+        
+      </StyledDescription>
+      <StyledImg>
           <img src={baltasar} alt='' />
-        </div>
-      </div>
-    </div>
+        </StyledImg>
+    </StyledAbout>
   )
 }
 
+const StyledAbout = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+`
+const StyledDescription = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+  h2 {
+    font-weight: lighter;
+  }
+`
+
+const StyledImg = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height:80vh;
+    object-fit: cover;
+  }
+`
+
+const Hide = styled.div`
+  overflow:hidden;
+`
 export default About
