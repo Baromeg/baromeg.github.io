@@ -10,11 +10,26 @@ import greenworld from "../img/greenworld.png"
 
 // Animations
 import { motion } from "framer-motion"
-import { pageAnimation, fade, photoAnimation, lineAnimation, slider, sliderContainer } from "../Animation";
+import {
+  pageAnimation,
+  fade,
+  photoAnimation,
+  lineAnimation,
+  slider,
+  newSlider,
+  sliderContainer,
+  scrollReveal,
+} from "../Animation"
+import { UseScroll } from "../components/UseScroll"
 
 const MyProjects = () => {
+  const [element, controls] = UseScroll()
+  const [element2, controls2] = UseScroll()
+  const [element3, controls3] = UseScroll()
+  const [element4, controls4] = UseScroll()
+
   return (
-    <Projets
+    <Projects
       variants={pageAnimation}
       initial='hidden'
       animate='show'
@@ -37,32 +52,57 @@ const MyProjects = () => {
           </Hide>
         </Link>
       </Project>
-      <Project>
+      <Hide>
+
+      <Project
+        ref={element}
+        variants={scrollReveal}
+        animate={controls}
+        initial='hidden'
+      >
         <h2>Green World</h2>
-        <div className='line'></div>
+        <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/myprojects/greenworld'>
           <img src={greenworld} alt='' />
         </Link>
       </Project>
-      <Project>
+      </Hide>
+      <Hide>
+
+      <Project
+        ref={element2}
+        variants={scrollReveal}
+        animate={controls2}
+        initial='hidden'
+      >
         <h2>Heroes</h2>
-        <div className='line'></div>
+        <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/myprojects/heroes'>
           <img src={heroes} alt='' />
         </Link>
-      </Project>
-      <Project>
+        </Project>
+        </Hide>
+        <Hide>
+
+      <Project
+        ref={element3}
+        variants={scrollReveal}
+        animate={controls3}
+        initial='hidden'
+      >
         <h2>The Frogger</h2>
-        <div className='line'></div>
+        <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/myprojects/the-frogger'>
           <img src={frogger} alt='' />
         </Link>
-      </Project>
-    </Projets>
+        </Project>
+        </Hide>
+
+    </Projects>
   )
 }
 
-const Projets = styled(motion.div)`
+const Projects = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -71,7 +111,7 @@ const Projets = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `
-const Project = styled.div`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;

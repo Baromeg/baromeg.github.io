@@ -9,9 +9,15 @@ import {
   StyledHide,
 } from "../styles"
 
+// Animation
+import { scrollReveal } from "../Animation";
+import { UseScroll } from "./UseScroll";
+
 const Skills = () => {
+  const [element, controls] = UseScroll()
+  
   return (
-    <StyledSkills>
+    <StyledSkills variants={scrollReveal} initial="hidden" animate={controls} ref={element}>
       <StyledDescription>
         <h2>
           Hello <span>Skills</span>
@@ -23,7 +29,6 @@ const Skills = () => {
               <h3>JavaScript</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-
           </Card>
           <Card>
             <div className='icon'>
@@ -31,7 +36,6 @@ const Skills = () => {
               <h3>JavaScript</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-
           </Card>
           <Card>
             <div className='icon'>
@@ -39,7 +43,6 @@ const Skills = () => {
               <h3>JavaScript</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-
           </Card>
           <Card>
             <div className='icon'>
@@ -47,7 +50,6 @@ const Skills = () => {
               <h3>JavaScript</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-
           </Card>
         </Cards>
       </StyledDescription>

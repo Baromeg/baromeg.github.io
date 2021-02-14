@@ -5,6 +5,8 @@ import Toggle from "./Toggle"
 
 // Animation
 import { AnimateSharedLayout } from "framer-motion";
+import { UseScroll } from "./UseScroll"
+import { scrollReveal } from "../Animation"
 
 import styled from "styled-components"
 import {
@@ -15,14 +17,18 @@ import {
 } from "../styles"
 
 const Learning = () => {
-  return (
-    <StyledLearning>
-      <h2>What I am currently learning</h2>
-      <AnimateSharedLayout >
+  const [element, controls] = UseScroll()
 
-        <Toggle
-        title= "First Question"
-        >
+  return (
+    <StyledLearning
+      variants={scrollReveal}
+      initial='hidden'
+      animate={controls}
+      ref={element}
+    >
+      <h2>What I am currently learning</h2>
+      <AnimateSharedLayout>
+        <Toggle title='First Question'>
           <div className='explanation'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -31,41 +37,36 @@ const Learning = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle         title= "Second question">
-        <div className='explanation'>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, nostrum.
-          </p>
-        </div>
-        </Toggle>
-        
-   
-        
-        <Toggle title= "Third question">
+        <Toggle title='Second question'>
           <div className='explanation'>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, nostrum.
-          </p>
-        </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, nostrum.
+            </p>
+          </div>
         </Toggle>
-        
- 
-        <Toggle title= "Forth question">
-          <div className='explanation'>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, nostrum.
-          </p>
-        </div>
-      </Toggle>
-      </AnimateSharedLayout>
 
- 
+        <Toggle title='Third question'>
+          <div className='explanation'>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, nostrum.
+            </p>
+          </div>
+        </Toggle>
+
+        <Toggle title='Forth question'>
+          <div className='explanation'>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, nostrum.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </StyledLearning>
   )
 }
