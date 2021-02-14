@@ -1,35 +1,67 @@
 import React from "react"
 import baltasar from "../img/Baltasar.jpeg"
 
+// Framer Motion
+import { motion } from "framer-motion";
+import { titleAnimation, fade, photoAnimation } from "../Animation";
+import  Wave from "./Wave";
+
 // Style
-import styled from 'styled-components'
 import {StyledGlobal, StyledDescription, StyledImg,StyledHide} from '../styles'
 
 const About = () => {
+
   return (
     <StyledGlobal>
       <StyledDescription>
-        <div className='title'>
+        <motion.div
+          // variants={titleAnimation}
+          // initial="hidden"
+          // animate="show"
+          // className='title'
+        >
           <StyledHide>
-            <h2>Baltasar</h2>
+            <motion.h2
+              variants={titleAnimation}
+              // initial="hidden"
+              // animate="show"
+            >
+              Baltasar</motion.h2
+            >
           </StyledHide>
           <StyledHide>
-            <h2>Romero</h2>
+            <motion.h2
+              variants={titleAnimation}
+            >Romero</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>Web Developer</h2>
+            <motion.h2
+            variants={titleAnimation}
+            >Full-Stack <span>Software Engineer</span></motion.h2>
           </StyledHide>
-        </div>
-        <p>Get in touch to know more</p>
-        <button>Contact us</button>
+        </motion.div>
+        <motion.p
+                    variants={fade}
+
+        >Get in touch to know more</motion.p>
+        <motion.button
+                    variants={fade}
+
+        >Contact us</motion.button>
         
       </StyledDescription>
       <StyledImg>
-          <img src={baltasar} alt='' />
-        </StyledImg>
+        <motion.img
+          variants={photoAnimation}
+          // initial="hidden"
+          // animate="show"
+          src={baltasar} alt='' />
+      </StyledImg>
+      <Wave />
     </StyledGlobal>
   )
 }
+
 
 
 export default About

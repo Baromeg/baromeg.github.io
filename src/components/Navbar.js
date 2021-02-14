@@ -1,24 +1,83 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
     <StyledNavbar>
       <h1>
-        <Link id='logo' to='/'>
+        <NavLink
+          id='logo'
+          to='/'
+          // activeClassName="selected"
+          // activeStyle={{
+          //   fontWeight: "bold",
+          //   color: "red"
+          // }}
+        >
           Baltasar Romero
-        </Link>
+        </NavLink>
       </h1>
       <ul>
         <li>
-          <Link to='/'>About Me</Link>
+          <NavLink
+            to='/'
+                    // activeClassName="selected"
+                    // activeStyle={{
+                    //   fontWeight: "bold",
+                    //   color: "red"
+                    // }}
+          >
+            
+            
+            
+            
+            About Me
+          
+          
+          
+          
+          </NavLink>
         </li>
         <li>
-          <Link to='/myprojects'>my projects</Link>
+          <NavLink
+            to='/myprojects'
+            // activeClassName="selected"
+            // activeStyle={{
+            //   fontWeight: "bold",
+            //   color: "red"
+            // }}
+          >
+            
+            
+            
+            
+            my projects
+          
+          
+          
+          
+          </NavLink>
         </li>
         <li>
-          <Link to='/contact'>get in touch</Link>
+          <NavLink
+            to='/contact'
+            // activeClassName="selected"
+            // activeStyle={{
+            //   fontWeight: "bold",
+            //   color: "red"
+            // }}
+          >
+            
+            
+            
+            
+            get in touch
+          
+          
+          
+          
+          </NavLink>
         </li>
       </ul>
     </StyledNavbar>
