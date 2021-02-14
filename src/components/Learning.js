@@ -1,6 +1,10 @@
 import React from "react"
 import innovation from "../img/innovation.png"
 import baltasar from "../img/Baltasar.jpeg"
+import Toggle from "./Toggle"
+
+// Animation
+import { AnimateSharedLayout } from "framer-motion";
 
 import styled from "styled-components"
 import {
@@ -14,8 +18,20 @@ const Learning = () => {
   return (
     <StyledLearning>
       <h2>What I am currently learning</h2>
-      <div className='Subject'>
-        <h4>First question</h4>
+      <AnimateSharedLayout >
+
+        <Toggle
+        title= "First Question"
+        >
+          <div className='explanation'>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, nostrum.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle         title= "Second question">
         <div className='explanation'>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
@@ -23,47 +39,33 @@ const Learning = () => {
             Consectetur, nostrum.
           </p>
         </div>
-      </div>
-      <div className="learning-line"></div>
-      <div className='Subject'>
-        <h4>Second question</h4>
-
-        <div className='explanation'>
+        </Toggle>
+        
+   
+        
+        <Toggle title= "Third question">
+          <div className='explanation'>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, nostrum.
           </p>
         </div>
-      </div>
-      <div className="learning-line"></div>
-
-      <div className='Subject'>
-        <h4>Third question</h4>
-
-        <div className='explanation'>
+        </Toggle>
+        
+ 
+        <Toggle title= "Forth question">
+          <div className='explanation'>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, nostrum.
           </p>
         </div>
-      </div>
-      <div className="learning-line"></div>
+      </Toggle>
+      </AnimateSharedLayout>
 
-      <div className='Subject'>
-        <h4>Forth question</h4>
-
-        <div className='explanation'>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, nostrum.
-          </p>
-        </div>
-      </div>
-      <div className="learning-line"></div>
-
+ 
     </StyledLearning>
   )
 }
