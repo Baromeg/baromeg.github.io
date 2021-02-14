@@ -21,6 +21,7 @@ import {
   scrollReveal,
 } from "../Animation"
 import { UseScroll } from "../components/UseScroll"
+import ScrollTop from "../components/ScrollTop"
 
 const MyProjects = () => {
   const [element, controls] = UseScroll()
@@ -36,6 +37,8 @@ const MyProjects = () => {
       exit='exit'
       style={{ background: "#fff" }}
     >
+            <ScrollTop />
+
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
@@ -53,51 +56,47 @@ const MyProjects = () => {
         </Link>
       </Project>
       <Hide>
-
-      <Project
-        ref={element}
-        variants={scrollReveal}
-        animate={controls}
-        initial='hidden'
-      >
-        <h2>Green World</h2>
-        <motion.div variants={lineAnimation} className='line'></motion.div>
-        <Link to='/myprojects/greenworld'>
-          <img src={greenworld} alt='' />
-        </Link>
-      </Project>
+        <Project
+          ref={element}
+          variants={scrollReveal}
+          animate={controls}
+          initial='hidden'
+        >
+          <h2>Green World</h2>
+          <motion.div variants={lineAnimation} className='line'></motion.div>
+          <Link to='/myprojects/greenworld'>
+            <img src={greenworld} alt='' />
+          </Link>
+        </Project>
       </Hide>
       <Hide>
-
-      <Project
-        ref={element2}
-        variants={scrollReveal}
-        animate={controls2}
-        initial='hidden'
-      >
-        <h2>Heroes</h2>
-        <motion.div variants={lineAnimation} className='line'></motion.div>
-        <Link to='/myprojects/heroes'>
-          <img src={heroes} alt='' />
-        </Link>
+        <Project
+          ref={element2}
+          variants={scrollReveal}
+          animate={controls2}
+          initial='hidden'
+        >
+          <h2>Heroes</h2>
+          <motion.div variants={lineAnimation} className='line'></motion.div>
+          <Link to='/myprojects/heroes'>
+            <img src={heroes} alt='' />
+          </Link>
         </Project>
-        </Hide>
-        <Hide>
-
-      <Project
-        ref={element3}
-        variants={scrollReveal}
-        animate={controls3}
-        initial='hidden'
-      >
-        <h2>The Frogger</h2>
-        <motion.div variants={lineAnimation} className='line'></motion.div>
-        <Link to='/myprojects/the-frogger'>
-          <img src={frogger} alt='' />
-        </Link>
+      </Hide>
+      <Hide>
+        <Project
+          ref={element3}
+          variants={scrollReveal}
+          animate={controls3}
+          initial='hidden'
+        >
+          <h2>The Frogger</h2>
+          <motion.div variants={lineAnimation} className='line'></motion.div>
+          <Link to='/myprojects/the-frogger'>
+            <img src={frogger} alt='' />
+          </Link>
         </Project>
-        </Hide>
-
+      </Hide>
     </Projects>
   )
 }

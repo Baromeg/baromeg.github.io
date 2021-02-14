@@ -10,15 +10,17 @@ import Navbar from "../components/Navbar"
 // Animations
 import { motion } from "framer-motion"
 import { pageAnimation } from "../Animation";
+import ScrollTop from "../components/ScrollTop"
 
 const AboutMe = () => {
   return (
     <motion.div
       variants={pageAnimation}
-      initial="hidden"
-      animate="show"
+      initial='hidden'
+      animate='show'
       exit='exit'
     >
+      <ScrollTop />
       <About />
       <Skills />
       <Learning />

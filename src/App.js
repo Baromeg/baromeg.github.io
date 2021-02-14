@@ -22,18 +22,16 @@ const App = () => {
       <GlobalStyle />
       <Navbar />
       <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path='/' component={AboutMe} exact />
 
-      <Switch location={location} key={location.pathname}>
-        <Route path='/' component={AboutMe} exact />
+          <Route path='/myprojects' component={MyProjects} exact />
 
-        <Route path='/myprojects' component={MyProjects} exact />
+          <Route path='/myprojects/:id' component={ProjectDetail} />
 
-        <Route path='/myprojects/:id' component={ProjectDetail} />
-
-        <Route path='/contact' component={Contact} />
+          <Route path='/contact' component={Contact} />
         </Switch>
-        </AnimatePresence>
-
+      </AnimatePresence>
     </div>
   )
 }
