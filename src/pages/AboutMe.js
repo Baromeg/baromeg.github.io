@@ -1,6 +1,7 @@
 import React from "react"
 
 // Page Components
+import Home from "../components/Home"
 import About from "../components/About"
 import Skills from "../components/Skills"
 import Learning from "../components/Learning"
@@ -21,10 +22,11 @@ const AboutMe = () => {
       exit='exit'
     >
       <ScrollTop />
+      <Home />
       <About />
       <Skills />
       <Learning />
-      <Interests />
+      {/* <Interests /> */}
     </motion.div>
   )
 }

@@ -98,6 +98,10 @@ const StyledTools = styled.div`
   img {
     height: 50px;
   }
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `
 
 const StyledTool = styled.div`

@@ -1,11 +1,16 @@
 import React from "react"
 import styled from "styled-components"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
+import { motion } from "framer-motion"
+import  Wave2 from "./Wave2";
 
 const Navbar = () => {
+  const{pathname}= useLocation()
   return (
     <StyledNavbar>
-      <h1>
+      <div>
+      <Wave2 />
+        <h1>
         <NavLink
           id='logo'
           to='/'
@@ -16,8 +21,12 @@ const Navbar = () => {
           // }}
         >
           Baltasar Romero
+          
+
         </NavLink>
       </h1>
+      </div>
+      
       <ul>
         <li>
           <NavLink
@@ -28,16 +37,13 @@ const Navbar = () => {
                     //   color: "red"
                     // }}
           >
-            
-            
-            
-            
             About Me
-          
-          
-          
-          
           </NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/" ? "60%" : "0%" }}
+          />
         </li>
         <li>
           <NavLink
@@ -48,16 +54,13 @@ const Navbar = () => {
             //   color: "red"
             // }}
           >
-            
-            
-            
-            
             my projects
-          
-          
-          
-          
           </NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/myprojects" ? "60%" : "0%" }}
+          />
         </li>
         <li>
           <NavLink
@@ -68,16 +71,13 @@ const Navbar = () => {
             //   color: "red"
             // }}
           >
-            
-            
-            
-            
-            get in touch
-          
-          
-          
-          
+            get in touch     
           </NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/contact" ? "60%" : "0%" }}
+          />
         </li>
       </ul>
     </StyledNavbar>
@@ -98,6 +98,9 @@ const StyledNavbar = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    @media (max-width: 667px){
+    font-size: 120%;
+  }
   }
   ul {
     display: flex;
@@ -111,6 +114,36 @@ const StyledNavbar = styled.nav`
   li {
     padding-left: 10rem;
     position: relative;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      padding: 5rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+  }
+  @media (max-width: 667px) {
+    padding: 1rem 0 0 0;
+  }
+`
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 50%;
+  @media (max-width: 1300px){
+    left: 0%;
   }
 `
 export default Navbar

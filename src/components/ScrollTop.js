@@ -6,6 +6,8 @@ const ScrollTop = () => {
   const { pathname } = useLocation()
   useEffect(() => {
     window.scroll({
+      // x: -160,
+      // y: 0,
       top: 0,
       left: 0,
     })

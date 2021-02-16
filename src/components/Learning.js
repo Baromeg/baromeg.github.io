@@ -26,9 +26,13 @@ const Learning = () => {
       animate={controls}
       ref={element}
     >
+      <Hide>
       <h2>What I am currently learning</h2>
+
+      </Hide>
       <AnimateSharedLayout>
-        <Toggle title='First Question'>
+        <Hide>
+          <Toggle title='First Question'>
           <div className='explanation'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -37,7 +41,9 @@ const Learning = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title='Second question'>
+      </Hide>
+        <Hide>
+          <Toggle title='Second question'>
           <div className='explanation'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -46,8 +52,23 @@ const Learning = () => {
             </p>
           </div>
         </Toggle>
+        </Hide>
+        
+        <Hide>
+          <Toggle title='Third question'>
+          <div className='explanation'>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, nostrum.
+            </p>
+          </div>
+        </Toggle>
+        </Hide>
 
-        <Toggle title='Third question'>
+        
+        <Hide>
+          <Toggle title='Forth question'>
           <div className='explanation'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -56,16 +77,9 @@ const Learning = () => {
             </p>
           </div>
         </Toggle>
+        </Hide>
 
-        <Toggle title='Forth question'>
-          <div className='explanation'>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur, nostrum.
-            </p>
-          </div>
-        </Toggle>
+        
       </AnimateSharedLayout>
     </StyledLearning>
   )
@@ -104,5 +118,8 @@ const StyledLearning = styled(StyledGlobal)`
     margin: 2rem 0;
     width: 100%;
 } */
+`
+const Hide = styled.div`
+  overflow: hidden;
 `
 export default Learning

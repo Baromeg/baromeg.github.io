@@ -40,9 +40,9 @@ const Interests = () => {
           </div>
         </div>
       </div>
-      <div className='image'>
+      {/* <div className='image'>
         <img src={baltasar} alt='baltasar' />
-      </div>
+      </div> */}
     </div>
   )
 }

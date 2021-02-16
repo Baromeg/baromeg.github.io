@@ -53,9 +53,11 @@ const Skills = () => {
           </Card>
         </Cards>
       </StyledDescription>
-      <StyledImg>
+      <Hide>
+      {/* <StyledImg>
         <img src={baltasar} alt='baltasar' />
-      </StyledImg>
+        </StyledImg> */}
+        </Hide>
     </StyledSkills>
   )
 }
@@ -72,6 +74,13 @@ const StyledSkills = styled(StyledGlobal)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+    padding: 0;
+    button {
+      margin: 2rem 0rem 5rem 0rem;
+    }
+  }
 `
 
 const Card = styled.div`
@@ -89,5 +98,8 @@ const Card = styled.div`
       height: 50px;
     }
   }
+`
+const Hide = styled.div`
+  overflow: hidden;
 `
 export default Skills

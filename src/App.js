@@ -17,6 +17,14 @@ import GlobalStyle from "../src/components/GlobalStyle"
 
 const App = () => {
   const location = useLocation()
+
+  //adjust scroll behaviour
+  window.onload = function () {
+    setTimeout(function () {
+      window.scrollTo(0, 0)
+    }, 1)
+  }
+
   return (
     <div className='App'>
       <GlobalStyle />
