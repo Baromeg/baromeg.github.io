@@ -29,7 +29,7 @@ export const StyledDescription = styled.div`
   }
 `
 
-export const StyledImg = styled.div`
+export const StyledImg = styled(motion.div)`
   flex: 1;
   overflow: hidden;
   z-index: 2;

@@ -31,25 +31,23 @@ const About = () => {
         // className='title'
         >
           <StyledHide>
-            <motion.p
-              variants={titleAnimation}
-              // initial="hidden"
-              // animate="show"
-            >
+            <motion.p>
               I am Baltasar, a graduated software engineer at General Assembly, seeking my first junior full-stack developer role to share my ideas, collaborate and continue developing my skills.
             </motion.p>
           </StyledHide>
           <StyledHide>
-            <motion.p variants={titleAnimation}>After more than 12 years of hospitality experience, I decided to blend my passion for software engineering and my creative and analytical side to pursue a career change and become part of the solution for today’s world challenges.</motion.p>
+            <motion.p >
+              After more than 12 years of hospitality experience, I decided to blend my passion for software engineering and my creative and analytical side to pursue a career change and become part of the solution for today’s world challenges.    
+            </motion.p>
           </StyledHide>
           <StyledHide>
-            <motion.p variants={titleAnimation}>
+            <motion.p >
               I am eager to contribute to projects that develop a better and more sustainable tomorrow. <span>Software Engineer</span>
             </motion.p>
           </StyledHide>
         </motion.div>
-        <motion.p variants={fade}>Get in touch to know more</motion.p>
-        <motion.button variants={fade}>Contact us</motion.button>
+        {/* <motion.p variants={fade}>Get in touch to know more</motion.p> */}
+        <motion.button variants={fade}>Get in touch</motion.button>
       </StyledDescription>
       <StyledImg>
         <motion.img

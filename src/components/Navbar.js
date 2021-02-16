@@ -9,33 +9,31 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <div>
-      <Wave2 />
+        <Wave2 />
         <h1>
-        <NavLink
-          id='logo'
-          to='/'
-          // activeClassName="selected"
-          // activeStyle={{
-          //   fontWeight: "bold",
-          //   color: "red"
-          // }}
-        >
-          Baltasar Romero
-          
-
-        </NavLink>
-      </h1>
+          <NavLink
+            id='logo'
+            to='/'
+            // activeClassName="selected"
+            // activeStyle={{
+            //   fontWeight: "bold",
+            //   color: "red"
+            // }}
+          >
+            {/* Baltasar Romero */}
+          </NavLink>
+        </h1>
       </div>
-      
+
       <ul>
         <li>
           <NavLink
             to='/'
-                    // activeClassName="selected"
-                    // activeStyle={{
-                    //   fontWeight: "bold",
-                    //   color: "red"
-                    // }}
+            // activeClassName="selected"
+            // activeStyle={{
+            //   fontWeight: "bold",
+            //   color: "red"
+            // }}
           >
             About Me
           </NavLink>
@@ -71,7 +69,7 @@ const Navbar = () => {
             //   color: "red"
             // }}
           >
-            get in touch     
+            get in touch
           </NavLink>
           <Line
             transition={{ duration: 0.75 }}
