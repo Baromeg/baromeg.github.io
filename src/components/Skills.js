@@ -23,11 +23,11 @@ const Skills = () => {
 
   return (
     <StyledSkills
-    // variants={scrollReveal} initial="hidden" animate={controls} ref={element}
+    variants={scrollReveal} initial="hidden" animate={controls} ref={element}
     >
       <StyledDescription>
         <h2>
-          Hello <span>Skills</span>
+          Skills
         </h2>
         <Cards>
           <Card
@@ -293,12 +293,19 @@ const StyledSkills = styled(StyledGlobal)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-    padding: 0;
-    button {
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 6rem;
+
+  @media (max-width: 667px) {
+    /* font-size: 4rem; */
+    
+
+    /* justify-content: center;
+    padding: 0; */
+    /* button {
       margin: 2rem 0rem 5rem 0rem;
-    }
+    } */
   }
 `
 
@@ -312,22 +319,22 @@ const Card = styled(motion.div)`
     position: relative;
     padding: 3rem;
     svg {
-      font-size: 6rem;
-      color: red;
+      color: #fc8621;
     }
   }
   h3 {
     opacity: 0;
     position: absolute;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     background: white;
     color: black;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.2rem;
     position: absolute;
     /* font-weight: 400;
         font-size: 20px;
         opacity: 0; */
-        margin: 0 5px;
+    /* margin: 0 5px; */
     max-width: 100%;
     text-align: center;
   }
@@ -338,13 +345,24 @@ const Card = styled(motion.div)`
     }
     svg {
       opacity: 0.6;
-      scale:0.8;
+      scale: 0.8;
     }
   }
-  @media (max-width: 667px) {
-    .icon{
-      padding: 1rem
+  @media (max-width: 1300px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
     }
+    flex-basis: 15rem;
+
+  }
+  @media (max-width: 667px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
+    }
+    flex-basis: 5rem;
+
   }
 `
 const Hide = styled.div`

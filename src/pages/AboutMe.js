@@ -25,8 +25,8 @@ const AboutMe = () => {
       <Home />
       <About />
       <Skills />
-      <Learning />
-      {/* <Interests /> */}
+      {/* <Learning /> */}
+      <Interests />
     </motion.div>
   )
 }

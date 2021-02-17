@@ -22,6 +22,8 @@ const About = () => {
   const [element, controls] = UseScroll()
 
   return (
+    <StyledHide>
+
     <StyledGlobal variants={scrollReveal} initial="hidden" animate={controls} ref={element}>
       <StyledDescription>
         <motion.div
@@ -32,17 +34,17 @@ const About = () => {
         >
           <StyledHide>
             <motion.p>
-              I am Baltasar, a graduated software engineer at General Assembly, seeking my first junior full-stack developer role to share my ideas, collaborate and continue developing my skills.
+              <span> I am Baltasar</span>, a graduated software engineer at General Assembly, seeking my first <span> full-stack developer </span>role to share my ideas, collaborate and continue expanding my skills.
             </motion.p>
           </StyledHide>
           <StyledHide>
             <motion.p >
-              After more than 12 years of hospitality experience, I decided to blend my passion for software engineering and my creative and analytical side to pursue a career change and become part of the solution for today’s world challenges.    
+              After more than <span>12 years of hospitality experience</span>, I decided to blend <span> my passion</span> for software engineering and <span>my creative and analytical side</span> to pursue a career change <span>and become part of the solution</span> for today’s world challenges.    
             </motion.p>
           </StyledHide>
           <StyledHide>
             <motion.p >
-              I am eager to contribute to projects that develop a better and more sustainable tomorrow. <span>Software Engineer</span>
+              I am eager to contribute to projects that develop a better and more sustainable tomorrow.
             </motion.p>
           </StyledHide>
         </motion.div>
@@ -58,7 +60,9 @@ const About = () => {
           alt=''
         />
       </StyledImg>
-    </StyledGlobal>
+      </StyledGlobal>
+      </StyledHide>
+
   )
 }
 

@@ -8,6 +8,10 @@ import heroes from "../img/heroes.png"
 import frogger from "../img/frogger.png"
 import greenworld from "../img/greenworld.png"
 
+// Style
+import {
+  StyledHide,
+} from "../styles"
 // Animations
 import { motion } from "framer-motion"
 import {
@@ -50,12 +54,12 @@ const MyProjects = () => {
         <motion.h2 variants={fade}>Know your Heritage</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/myprojects/know-your-heritage'>
-          <Hide>
+          <StyledHide>
             <motion.img variants={photoAnimation} src={kyh} alt='' />
-          </Hide>
+          </StyledHide>
         </Link>
       </Project>
-      <Hide>
+      <StyledHide>
         <Project
           ref={element}
           variants={scrollReveal}
@@ -68,8 +72,8 @@ const MyProjects = () => {
             <img src={greenworld} alt='' />
           </Link>
         </Project>
-      </Hide>
-      <Hide>
+      </StyledHide>
+      <StyledHide>
         <Project
           ref={element2}
           variants={scrollReveal}
@@ -82,8 +86,8 @@ const MyProjects = () => {
             <img src={heroes} alt='' />
           </Link>
         </Project>
-      </Hide>
-      <Hide>
+      </StyledHide>
+      <StyledHide>
         <Project
           ref={element3}
           variants={scrollReveal}
@@ -96,7 +100,7 @@ const MyProjects = () => {
             <img src={frogger} alt='' />
           </Link>
         </Project>
-      </Hide>
+      </StyledHide>
     </Projects>
   )
 }
@@ -126,9 +130,9 @@ const Project = styled(motion.div)`
     object-fit: cover;
   }
 `
-const Hide = styled.div`
-  overflow: hidden;
-`
+// const Hide = styled.div`
+//   overflow: hidden;
+// `
 
 // Frame Animation
 const Frame1 = styled(motion.div)`

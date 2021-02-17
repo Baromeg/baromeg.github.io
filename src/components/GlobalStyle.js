@@ -25,14 +25,14 @@ button {
   font-size: 1.1.rem;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 3px solid #23d997;
+  border: 3px solid #fc8621;
   background: transparent;
   color: white;
   transition: all 0.5s ease;
   font-family: 'Inter', sans-serif;
 
   &:hover{
-    background-color: #23d997;
+    background-color: #fc8621;
     color: white;
   }
 }
@@ -57,7 +57,7 @@ a{
 
 span {
   font-weight:bold;
-  color:#23d997
+  color:#fc8621
 }
 
 p {
