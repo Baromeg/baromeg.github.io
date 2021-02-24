@@ -22,24 +22,25 @@ const Interests = () => {
   const [element, controls] = UseScroll()
 
   return (
+    <Hide>
     <StyledSkills
-    variants={scrollReveal} initial="hidden" animate={controls} ref={element}
+      variants={scrollReveal}
+      initial='hidden'
+      animate={controls}
+      ref={element}
     >
       <StyledDescription>
-        <h2>
-          Skills
-        </h2>
+        <h2>What gets my attention</h2>
         <Cards>
+
           <Card
             whileHover={{
               scale: 1.2,
             }}
           >
             <motion.div className='icon'>
-              <DiHtml5/>
-              <motion.h3>
-                HTML5
-                </motion.h3>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -48,10 +49,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiCss3/>
-              <motion.h3>
-                CSS3
-                </motion.h3>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -60,10 +59,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiSass/>
-              <motion.h3>
-                SASS
-                </motion.h3>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -72,10 +69,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <BiDevices/>
-              <motion.h3>
-                Responsive Design
-                </motion.h3>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -84,10 +79,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiJsBadge/>
-              <motion.h3>
-                JavaScript
-                </motion.h3>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -96,10 +89,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiReact/>
-              <motion.h3>
-                React.js
-                </motion.h3>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -108,10 +99,8 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiMongodb/>
-              <motion.h3>
-                Mongodb
-                </motion.h3>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -120,164 +109,20 @@ const Interests = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiJsonwebtokens/>
-              <motion.h3>
-                JWT
-                </motion.h3>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
             </motion.div>
           </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiPython/>
-              <motion.h3>
-                Python
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiFlask/>
-              <motion.h3>
-                Flask
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql/>
-              <motion.h3>
-                PostgreSQL
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <GiMarshmallows/>
-              <motion.h3>
-                Marshmallow
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiNodejsSmall/>
-              <motion.h3>
-                Node.js
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiBabel/>
-              <motion.h3>
-                Babel
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiNpm/>
-              <motion.h3>
-                NPM
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiWebpack/>
-              <motion.h3>
-                Webpack
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiVisualstudio/>
-              <motion.h3>
-                VS Code
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiGit/>
-              <motion.h3>
-                Git
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiGithubBadge/>
-              <motion.h3>
-                GitHub
-                </motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiHeroku/>
-              <motion.h3>
-                Heroku
-                </motion.h3>
-            </motion.div>
-          </Card>
+          
+
         </Cards>
       </StyledDescription>
-      <Hide>
+      
         {/* <StyledImg>
         <img src={baltasar} alt='baltasar' />
         </StyledImg> */}
-      </Hide>
     </StyledSkills>
+    </Hide>
   )
 }
 

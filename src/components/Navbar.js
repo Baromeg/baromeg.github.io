@@ -2,15 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { NavLink, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
+import {  fade } from "../Animation"
 import  Wave2 from "./Wave2";
 
 const Navbar = () => {
   const{pathname}= useLocation()
   return (
     <StyledNavbar>
-      <div>
-        <Wave2 />
-        <h1>
+      <motion.div variants={fade}>
+        {/* <Wave2 /> */}
+        {/* <h1> */}
           <NavLink
             id='logo'
             to='/'
@@ -20,10 +21,10 @@ const Navbar = () => {
             //   color: "red"
             // }}
           >
-            {/* Baltasar Romero */}
+            Baltasar Romero
           </NavLink>
-        </h1>
-      </div>
+        {/* </h1> */}
+      </motion.div>
 
       <ul>
         <li>
@@ -96,9 +97,9 @@ const StyledNavbar = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    @media (max-width: 667px){
-    font-size: 120%;
-  }
+    @media (max-width: 667px) {
+      font-size: 120%;
+    }
   }
   ul {
     display: flex;
@@ -108,6 +109,8 @@ const StyledNavbar = styled.nav`
     font-size: 2rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    padding: 1rem 2rem;
+    /* border: 3px solid #fc8621; */
   }
   li {
     padding-left: 10rem;
@@ -117,7 +120,8 @@ const StyledNavbar = styled.nav`
     flex-direction: column;
     padding: 2rem 1rem;
     #logo {
-      padding: 5rem;
+      font-size: 2.5rem;
+      padding: 0rem 2rem;
     }
     ul {
       padding: 2rem;
@@ -135,12 +139,12 @@ const StyledNavbar = styled.nav`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #23d997;
+  background: #fc8621;
   width: 0%;
   position: absolute;
   bottom: -80%;
   left: 50%;
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     left: 0%;
   }
 `

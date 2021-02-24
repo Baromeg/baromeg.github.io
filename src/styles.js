@@ -15,11 +15,14 @@ export const StyledGlobal = styled(motion.div)`
   }
 `
 export const StyledDescription = styled.div`
-  flex: 1;
+  flex: 1.3;
   padding-right: 5rem;
   z-index: 2;
   h2 {
     font-weight: lighter;
+  }
+  p {
+    font-size: 1.5rem;
   }
   @media (max-width: 1300px) {
     padding: 0;

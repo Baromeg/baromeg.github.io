@@ -63,6 +63,30 @@ const Hide = styled.div`
   overflow: hidden;
 `
 
+function assertEquals(expected, actual) {
+  // Parameters are equal
+  if (JSON.stringify(expected) === JSON.stringify(actual)) {
+    return "Function does not throw error"
+    // 'expected' is an array?
+  } else if (Array.isArray(expected)) {
+    // 'actual' is not an array
+    if (!Array.isArray(actual)) {
+      return `Expected type of array but found type ${typeof actual}`
+      // Arrays of different length
+    } else {
+      return `Expected array length ${expected.length} but found ${actual.length}`
+    }
+    // 'expected' is a string
+  } else {
+    return `Expected "${expected}" but found "${actual}"`
+  }
+}
+console.log(assertEquals("abc", "abc"))
+console.log(assertEquals("abcef", "abc"))
+console.log(assertEquals(["a"], { 0: "a" }))
+console.log(assertEquals(["a", "b", "c"], ["a", "b", "c"]))
+console.log(assertEquals(["a", "b"], ["a", "b", "c"]))
+
 const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;

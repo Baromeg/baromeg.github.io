@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { useHistory } from "react-router-dom"
 import { ProjectsContent } from "../ProjectsContent"
+import Mockup from "../components/Mockup"
 
 // Images
 import kyh from "../img/kyhfrontpage.png"
@@ -33,6 +34,7 @@ const ProjectDetail = () => {
   return (
     <>
       {/* {project && ( */}
+      <Mockup src={kyh}></Mockup>
       <StyledDetails
         variants={pageAnimation}
         initial='hidden'

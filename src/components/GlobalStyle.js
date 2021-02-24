@@ -22,7 +22,7 @@ body {
 
 button {
   font-weight: bold;
-  font-size: 1.1.rem;
+  font-size: 2rem;
   cursor: pointer;
   padding: 1rem 2rem;
   border: 3px solid #fc8621;
@@ -30,13 +30,16 @@ button {
   color: white;
   transition: all 0.5s ease;
   font-family: 'Inter', sans-serif;
-
+  margin-top: 1.5rem;
   &:hover{
     background-color: #fc8621;
     color: white;
   }
 }
-
+h1 {
+  font-weight: lighter;
+  font-size:6rem;
+}
 h2 {
   font-weight: lighter;
   font-size:4rem;
@@ -61,7 +64,7 @@ span {
 }
 
 p {
-  padding: 3rem 0rem;
+  padding: 1.5rem 0rem;
   color: #ccc;
   font-size: 1.4rem;
   line-height: 150%;
