@@ -19,13 +19,13 @@ import {
 
 const Home = () => {
   return (
-    <StyledGlobal>
-       <motion.div variants={sliderContainer}>
+    <StyledHome>
+       {/* <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
-      </motion.div>
+      </motion.div> */}
       <StyledDescription>
         <motion.div
         // variants={titleAnimation}
@@ -46,8 +46,8 @@ const Home = () => {
             <motion.h1 variants={titleAnimation}>Romero</motion.h1>
           </StyledHide>
           <StyledHide>
-            <motion.h1 variants={titleAnimation}>
-              Full-Stack <span>Software Engineer</span>
+            <motion.h1 variants={fade}>
+              Full-Stack <motion.span >Software Engineer</motion.span>
             </motion.h1>
           </StyledHide>
         </motion.div>
@@ -62,9 +62,15 @@ const Home = () => {
           src={baltasar} alt='' />
       </StyledImg> */}
       {/* <Wave /> */}
-    </StyledGlobal>
+    </StyledHome>
   )
 }
+const StyledHome = styled(StyledGlobal)`
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-218863.jpg&fm=jpg");
+  overflow:visible;
+`
 
 const StyledButton = styled(motion.button)`
   margin-top: 4rem;

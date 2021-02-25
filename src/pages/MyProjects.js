@@ -259,6 +259,7 @@ const Project = styled(motion.div)`
 
 const StyledProjects = styled(StyledGlobal)`
   padding: 0rem 0rem;
+  min-height: 60vh;
 `
 const StyledMockup = styled(StyledImg)`
   flex: 1.6;
