@@ -5,10 +5,39 @@ import { Link } from "react-router-dom"
 // Images
 import kyh from "../img/kyhfrontpage.png"
 import heroes from "../img/heroes.png"
-import frogger from "../img/frogger.png"
+import frogger from "../img/thefrogger.gif"
 import greenworld from "../img/greenworld.png"
 import Mockup from "../components/Mockup"
-
+import {
+  DiJsBadge,
+  DiHtml5,
+  DiCss3,
+  DiSass,
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiGithubBadge,
+  DiTerminal,
+  DiNpm,
+  DiVisualstudio,
+} from "react-icons/di"
+import {
+  SiJsonwebtokens,
+  SiFlask,
+  SiPostgresql,
+  SiHeroku,
+  SiSlack,
+  SiZoom,
+  SiBabel,
+  SiBulma,
+  SiAuth0,
+  SiWebpack,
+} from "react-icons/si"
+import { GiMarshmallows } from "react-icons/gi"
+import { BiDevices } from "react-icons/bi"
+import { FaChrome, FaGithub } from "react-icons/fa"
 // Style
 import {
   StyledHide,
@@ -57,6 +86,42 @@ const MyProjects = () => {
               <Mockup src={kyh}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
+              <Cards>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://knowyourheritage.herokuapp.com/'
+                    >
+                      <FaChrome />
+                    </a>
+                    {/* <motion.h3>weblink</motion.h3> */}
+                  </motion.div>
+                </Card>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://github.com/Baromeg/project-4'
+                    >
+                      <FaGithub />
+                    </a>
+                    {/* <motion.h3>githubpage</motion.h3> */}
+                  </motion.div>
+                </Card>
+              </Cards>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -88,15 +153,138 @@ const MyProjects = () => {
             </StyledProjectDescription>
           </StyledProjects>
         </StyledHide>
+        <Cards>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <GiMarshmallows />
+              <motion.h3>Marshmallow</motion.h3>
+            </motion.div>
+          </Card>
+        </Cards>
       </Project>
 
-      <StyledHide>
-        <Project
-          ref={element}
-          variants={scrollReveal}
-          animate={controls}
-          initial='hidden'
-        >
+      <Project
+        ref={element}
+        variants={scrollReveal}
+        animate={controls}
+        initial='hidden'
+      >
+        {" "}
+        <StyledHide>
           <h2>Green World</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
 
@@ -104,7 +292,44 @@ const MyProjects = () => {
             <StyledMockup>
               <Mockup src={greenworld}></Mockup>
             </StyledMockup>
+
             <StyledProjectDescription>
+              <Cards>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://knowyourheritage.herokuapp.com/'
+                    >
+                      <FaChrome />
+                    </a>
+                    {/* <motion.h3>weblink</motion.h3> */}
+                  </motion.div>
+                </Card>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://github.com/Baromeg/project-4'
+                    >
+                      <FaGithub />
+                    </a>
+                    {/* <motion.h3>githubpage</motion.h3> */}
+                  </motion.div>
+                </Card>
+              </Cards>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -135,15 +360,138 @@ const MyProjects = () => {
               <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
-        </Project>
-      </StyledHide>
-      <StyledHide>
-        <Project
-          ref={element2}
-          variants={scrollReveal}
-          animate={controls2}
-          initial='hidden'
-        >
+        </StyledHide>
+        <Cards>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <GiMarshmallows />
+              <motion.h3>Marshmallow</motion.h3>
+            </motion.div>
+          </Card>
+        </Cards>
+      </Project>
+      <Project
+        ref={element2}
+        variants={scrollReveal}
+        animate={controls2}
+        initial='hidden'
+      >
+        {" "}
+        <StyledHide>
           <h2>Heroes</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
           <StyledProjects>
@@ -151,6 +499,42 @@ const MyProjects = () => {
               <Mockup src={heroes}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
+              <Cards>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://knowyourheritage.herokuapp.com/'
+                    >
+                      <FaChrome />
+                    </a>
+                    {/* <motion.h3>weblink</motion.h3> */}
+                  </motion.div>
+                </Card>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://github.com/Baromeg/project-4'
+                    >
+                      <FaGithub />
+                    </a>
+                    {/* <motion.h3>githubpage</motion.h3> */}
+                  </motion.div>
+                </Card>
+              </Cards>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -180,15 +564,138 @@ const MyProjects = () => {
               <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
-        </Project>
-      </StyledHide>
-      <StyledHide>
-        <Project
-          ref={element3}
-          variants={scrollReveal}
-          animate={controls3}
-          initial='hidden'
-        >
+        </StyledHide>
+        <Cards>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <GiMarshmallows />
+              <motion.h3>Marshmallow</motion.h3>
+            </motion.div>
+          </Card>
+        </Cards>
+      </Project>
+      <Project
+        ref={element3}
+        variants={scrollReveal}
+        animate={controls3}
+        initial='hidden'
+      >
+        {" "}
+        <StyledHide>
           <h2>The Frogger</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
           <StyledProjects>
@@ -196,34 +703,190 @@ const MyProjects = () => {
               <Mockup src={frogger}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
+              <Cards>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://knowyourheritage.herokuapp.com/'
+                    >
+                      <FaChrome />
+                    </a>
+                    {/* <motion.h3>weblink</motion.h3> */}
+                  </motion.div>
+                </Card>
+                <Card
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://github.com/Baromeg/project-4'
+                    >
+                      <FaGithub />
+                    </a>
+                    {/* <motion.h3>githubpage</motion.h3> */}
+                  </motion.div>
+                </Card>
+              </Cards>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
                 animate='show'
                 className='title'
               >
-                
                 <StyledHide>
                   <motion.p>
-                  It was my first independently made application. It is a grid-based game where I implemented the concepts learned on CSS, JavaScript, logical thinking and problem-solving.
-
-
+                    It was my first independently made application. It is a
+                    grid-based game where I implemented the concepts learned on
+                    CSS, JavaScript, logical thinking and problem-solving.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                  The game handles moving obstacles and tracks the player's scoring.
-
-
+                    The game handles moving obstacles and tracks the player's
+                    scoring.
                   </motion.p>
                 </StyledHide>
               </motion.div>
               {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
               <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
-          </StyledProjects>
-        </Project>
-      </StyledHide>
+          </StyledProjects>{" "}
+        </StyledHide>
+        <Cards>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <GiMarshmallows />
+              <motion.h3>Marshmallow</motion.h3>
+            </motion.div>
+          </Card>
+        </Cards>
+      </Project>
     </Projects>
     // {/* </StyledGlobal> */}
     // {/* // </StyledHide> */}
@@ -231,9 +894,9 @@ const MyProjects = () => {
 }
 
 const Projects = styled(motion.div)`
-  min-height: 100vh;
+  min-height: 95vh;
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 1rem 10rem;
   /* background: white; */
   @media (max-width: 1300px) {
     padding: 2rem 2rem;
@@ -259,11 +922,18 @@ const Project = styled(motion.div)`
 
 const StyledProjects = styled(StyledGlobal)`
   padding: 0rem 0rem;
-  min-height: 60vh;
+  min-height: 50vh;
 `
 const StyledMockup = styled(StyledImg)`
   flex: 1.6;
   padding: 0rem 1rem;
+  z-index: 2;
+
+  img {
+    width: 100%;
+    /* height: none; */
+    object-fit: contain;
+  }
 `
 const StyledProjectDescription = styled(StyledDescription)`
   flex: 1;
@@ -292,5 +962,83 @@ const Frame3 = styled(Frame1)`
 `
 const Frame4 = styled(Frame1)`
   background: #8effa0;
+`
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 6rem;
+
+  @media (max-width: 667px) {
+    /* font-size: 4rem; */
+
+    /* justify-content: center;
+    padding: 0; */
+    /* button {
+      margin: 2rem 0rem 5rem 0rem;
+    } */
+  }
+`
+
+const Card = styled(motion.div)`
+  flex-basis: 5rem;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    svg {
+      color: #fc8621;
+    }
+  }
+  h3 {
+    opacity: 0;
+    position: absolute;
+    /* margin-left: 1rem; */
+    background: white;
+    color: black;
+    font-size: 1rem;
+    padding: 0.2rem;
+    position: absolute;
+    /* font-weight: 400;
+        font-size: 20px;
+        opacity: 0; */
+    /* margin: 0 5px; */
+    max-width: 100%;
+    text-align: center;
+  }
+  #portfoliolink {
+    font-size: 40px;
+    svg {
+      color: white;
+    }
+  }
+  :hover {
+    h3 {
+      opacity: 0.6;
+      scale: 1.2;
+    }
+    svg {
+      opacity: 0.6;
+      scale: 0.8;
+    }
+  }
+  @media (max-width: 1300px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
+    }
+    flex-basis: 15rem;
+  }
+  @media (max-width: 667px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
+    }
+    flex-basis: 5rem;
+  }
 `
 export default MyProjects

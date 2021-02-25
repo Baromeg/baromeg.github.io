@@ -39,7 +39,7 @@ export const StyledImg = styled(motion.div)`
 
   img {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     object-fit: cover;
   }
 `
