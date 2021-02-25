@@ -83,8 +83,8 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button>
+              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
+              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </StyledHide>
@@ -131,8 +131,8 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button>
+              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
+              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </Project>
@@ -176,8 +176,8 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button>
+              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
+              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </Project>
@@ -218,8 +218,8 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button>
+              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
+              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </Project>
@@ -240,6 +240,7 @@ const Projects = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0rem;
+    color: white;
   }
 `
 const Project = styled(motion.div)`
