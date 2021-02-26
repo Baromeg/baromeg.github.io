@@ -15,6 +15,7 @@ import {
   DiSass,
   DiReact,
   DiNodejsSmall,
+  DiResponsive,
   DiMongodb,
   DiPython,
   DiGit,
@@ -27,6 +28,8 @@ import {
   SiJsonwebtokens,
   SiFlask,
   SiPostgresql,
+  SiNodeDotJs,
+  SiReact,
   SiHeroku,
   SiSlack,
   SiZoom,
@@ -37,7 +40,8 @@ import {
 } from "react-icons/si"
 import { GiMarshmallows } from "react-icons/gi"
 import { BiDevices } from "react-icons/bi"
-import { FaChrome, FaGithub } from "react-icons/fa"
+import { BsGrid1X2Fill } from "react-icons/bs"
+import { FaChrome, FaGithub, FaCloudDownloadAlt } from "react-icons/fa"
 // Style
 import {
   StyledHide,
@@ -76,7 +80,7 @@ const MyProjects = () => {
       // style={{ background: "#fff" }}
     >
       <ScrollTop />
-      <Project>
+      <ProjectFirstPage>
         <motion.h2 variants={fade}>Know your Heritage</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
 
@@ -160,36 +164,6 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiHtml5 />
-              <motion.h3>HTML5</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiCss3 />
-              <motion.h3>CSS3</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiSass />
-              <motion.h3>SASS</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
               <BiDevices />
               <motion.h3>Responsive Design</motion.h3>
             </motion.div>
@@ -212,26 +186,6 @@ const MyProjects = () => {
             <motion.div className='icon'>
               <DiReact />
               <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiMongodb />
-              <motion.h3>Mongodb</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiJsonwebtokens />
-              <motion.h3>JWT</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -274,8 +228,58 @@ const MyProjects = () => {
               <motion.h3>Marshmallow</motion.h3>
             </motion.div>
           </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiNodeDotJs />
+              <motion.h3>Node.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiBabel />
+              <motion.h3>Babel</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiWebpack />
+              <motion.h3>Webpack</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiHeroku />
+              <motion.h3>Heroku</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <FaCloudDownloadAlt />
+              <motion.h3>Rest API</motion.h3>
+            </motion.div>
+          </Card>
         </Cards>
-      </Project>
+      </ProjectFirstPage>
 
       <Project
         ref={element}
@@ -305,7 +309,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://knowyourheritage.herokuapp.com/'
+                      href='https://greenworld-p3.herokuapp.com/'
                     >
                       <FaChrome />
                     </a>
@@ -322,7 +326,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://github.com/Baromeg/project-4'
+                      href='https://github.com/Baromeg/project-3'
                     >
                       <FaGithub />
                     </a>
@@ -368,36 +372,6 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiHtml5 />
-              <motion.h3>HTML5</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiCss3 />
-              <motion.h3>CSS3</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiSass />
-              <motion.h3>SASS</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
               <BiDevices />
               <motion.h3>Responsive Design</motion.h3>
             </motion.div>
@@ -429,7 +403,37 @@ const MyProjects = () => {
           >
             <motion.div className='icon'>
               <DiMongodb />
-              <motion.h3>Mongodb</motion.h3>
+              <motion.h3>MongoDB</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiNodeDotJs />
+              <motion.h3>Node.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiBabel />
+              <motion.h3>Babel</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
+              <SiWebpack />
+              <motion.h3>Webpack</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -448,8 +452,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiPython />
-              <motion.h3>Python</motion.h3>
+              <SiHeroku />
+              <motion.h3>Heroku</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -458,28 +462,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiFlask />
-              <motion.h3>Flask</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql />
-              <motion.h3>PostgreSQL</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <GiMarshmallows />
-              <motion.h3>Marshmallow</motion.h3>
+              <FaCloudDownloadAlt />
+              <motion.h3>Rest API</motion.h3>
             </motion.div>
           </Card>
         </Cards>
@@ -510,7 +494,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://knowyourheritage.herokuapp.com/'
+                      href='https://baromeg.github.io/project-2'
                     >
                       <FaChrome />
                     </a>
@@ -527,7 +511,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://github.com/Baromeg/project-4'
+                      href='https://github.com/Baromeg/project-2'
                     >
                       <FaGithub />
                     </a>
@@ -572,36 +556,6 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiHtml5 />
-              <motion.h3>HTML5</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiCss3 />
-              <motion.h3>CSS3</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiSass />
-              <motion.h3>SASS</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
               <BiDevices />
               <motion.h3>Responsive Design</motion.h3>
             </motion.div>
@@ -632,8 +586,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiMongodb />
-              <motion.h3>Mongodb</motion.h3>
+              <SiNodeDotJs />
+              <motion.h3>Node.js</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -642,8 +596,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiJsonwebtokens />
-              <motion.h3>JWT</motion.h3>
+              <SiBabel />
+              <motion.h3>Babel</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -652,8 +606,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiPython />
-              <motion.h3>Python</motion.h3>
+              <SiWebpack />
+              <motion.h3>Webpack</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -662,28 +616,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiFlask />
-              <motion.h3>Flask</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql />
-              <motion.h3>PostgreSQL</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <GiMarshmallows />
-              <motion.h3>Marshmallow</motion.h3>
+              <FaCloudDownloadAlt />
+              <motion.h3>Rest API</motion.h3>
             </motion.div>
           </Card>
         </Cards>
@@ -714,7 +648,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://knowyourheritage.herokuapp.com/'
+                      href='https://baromeg.github.io/project-1'
                     >
                       <FaChrome />
                     </a>
@@ -731,7 +665,7 @@ const MyProjects = () => {
                       id='portfoliolink'
                       target='_blank'
                       rel='noreferrer'
-                      href='https://github.com/Baromeg/project-4'
+                      href='https://github.com/Baromeg/project-1'
                     >
                       <FaGithub />
                     </a>
@@ -771,6 +705,16 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <motion.div className='icon'>
               <DiHtml5 />
               <motion.h3>HTML5</motion.h3>
             </motion.div>
@@ -791,8 +735,8 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiSass />
-              <motion.h3>SASS</motion.h3>
+              <BsGrid1X2Fill />
+              <motion.h3>Flexbox</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -801,90 +745,11 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
+              <SiNodeDotJs />
+              <motion.h3>Node.js</motion.h3>
             </motion.div>
           </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiMongodb />
-              <motion.h3>Mongodb</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiJsonwebtokens />
-              <motion.h3>JWT</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiPython />
-              <motion.h3>Python</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiFlask />
-              <motion.h3>Flask</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql />
-              <motion.h3>PostgreSQL</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <GiMarshmallows />
-              <motion.h3>Marshmallow</motion.h3>
-            </motion.div>
-          </Card>
+          
         </Cards>
       </Project>
     </Projects>
@@ -907,7 +772,9 @@ const Projects = styled(motion.div)`
   }
 `
 const Project = styled(motion.div)`
-  padding-bottom: 10rem;
+  
+
+  padding-bottom: 3rem;
   .line {
     height: 0.5rem;
     background: #fc8621;
@@ -919,7 +786,7 @@ const Project = styled(motion.div)`
     /* object-fit: cover; */
   }
 `
-
+const ProjectFirstPage = styled(Project)`padding-top:10vh`
 const StyledProjects = styled(StyledGlobal)`
   padding: 0rem 0rem;
   min-height: 50vh;
@@ -990,6 +857,7 @@ const Card = styled(motion.div)`
     align-items: center;
     position: relative;
     padding: 1rem;
+    font-size: 3rem;
     svg {
       color: #fc8621;
     }
@@ -1000,7 +868,7 @@ const Card = styled(motion.div)`
     /* margin-left: 1rem; */
     background: white;
     color: black;
-    font-size: 1rem;
+    font-size: 0.5rem;
     padding: 0.2rem;
     position: absolute;
     /* font-weight: 400;

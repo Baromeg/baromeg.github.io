@@ -12,17 +12,17 @@ const Navbar = () => {
       <motion.div variants={fade}>
         {/* <Wave2 /> */}
         {/* <h1> */}
-          <NavLink
-            id='logo'
-            to='/'
-            // activeClassName="selected"
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red"
-            // }}
-          >
-            Baltasar Romero
-          </NavLink>
+        <NavLink
+          id='logo'
+          to='/'
+          // activeClassName="selected"
+          // activeStyle={{
+          //   fontWeight: "bold",
+          //   color: "red"
+          // }}
+        >
+          Baltasar Romero
+        </NavLink>
         {/* </h1> */}
       </motion.div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/" ? "80%" : "0%" }}
           />
         </li>
         <li>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/myprojects" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/myprojects" ? "80%" : "0%" }}
           />
         </li>
         <li>
@@ -75,7 +75,7 @@ const Navbar = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "60%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "80%" : "0%" }}
           />
         </li>
       </ul>
@@ -84,14 +84,16 @@ const Navbar = () => {
 }
 
 const StyledNavbar = styled.nav`
-  min-height: 10vh;
+  min-height: 7vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #282828;
-  position: sticky;
+  /* background: #282828; */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width:  100%;
   top: 0;
   z-index: 10;
   a {
@@ -142,9 +144,10 @@ const Line = styled(motion.div)`
   background: #fc8621;
   width: 0%;
   position: absolute;
-  bottom: -80%;
+  bottom: -30%;
   left: 50%;
   @media (max-width: 1300px) {
+    width: 80%;
     left: 0%;
   }
 `

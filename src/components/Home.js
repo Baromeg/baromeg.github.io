@@ -69,7 +69,10 @@ const StyledHome = styled(StyledGlobal)`
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-218863.jpg&fm=jpg");
-  overflow:visible;
+  @media (max-width: 1300px) {
+    padding-top: 13vh;
+  }
+  /* overflow:visible; */
 `
 
 const StyledButton = styled(motion.button)`
