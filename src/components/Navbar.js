@@ -36,7 +36,7 @@ const Navbar = () => {
             //   color: "red"
             // }}
           >
-            About Me
+            about me
           </NavLink>
           <Line
             transition={{ duration: 0.75 }}

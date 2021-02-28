@@ -7,6 +7,7 @@ import kyh from "../img/kyhfrontpage.png"
 import heroes from "../img/heroes.png"
 import frogger from "../img/thefrogger.gif"
 import greenworld from "../img/greenworld.png"
+import marshmallow from "../img/marshmalloworange.png"
 import Mockup from "../components/Mockup"
 import {
   DiJsBadge,
@@ -224,7 +225,7 @@ const MyProjects = () => {
             }}
           >
             <motion.div className='icon'>
-              <GiMarshmallows />
+              <img src={marshmallow} alt='Marshmallow' />
               <motion.h3>Marshmallow</motion.h3>
             </motion.div>
           </Card>
@@ -749,7 +750,6 @@ const MyProjects = () => {
               <motion.h3>Node.js</motion.h3>
             </motion.div>
           </Card>
-          
         </Cards>
       </Project>
     </Projects>
@@ -759,7 +759,7 @@ const MyProjects = () => {
 }
 
 const Projects = styled(motion.div)`
-  min-height: 95vh;
+  min-height: 100vh;
   overflow: hidden;
   padding: 1rem 10rem;
   /* background: white; */
@@ -772,7 +772,7 @@ const Projects = styled(motion.div)`
   }
 `
 const Project = styled(motion.div)`
-  
+  min-height: 90vh;
 
   padding-bottom: 3rem;
   .line {
@@ -836,7 +836,7 @@ const Cards = styled.div`
   align-items: center;
   justify-content: space-evenly;
   font-size: 6rem;
-
+  margin-top: 2rem;
   @media (max-width: 667px) {
     /* font-size: 4rem; */
 
@@ -856,10 +856,13 @@ const Card = styled(motion.div)`
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 3rem;
     svg {
       color: #fc8621;
+    }
+    img {
+      max-height: 4rem;
     }
   }
   h3 {

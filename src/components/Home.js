@@ -1,6 +1,7 @@
 import React from "react"
 import baltasar from "../img/Baltasar.jpeg"
-
+import macbook from "../img/macbook.jpg"
+import { Link } from "react-router-dom";
 // Framer Motion
 import { motion } from "framer-motion"
 import { titleAnimation, fade, photoAnimation,sliderContainer,
@@ -52,7 +53,17 @@ const Home = () => {
           </StyledHide>
         </motion.div>
         {/* <motion.p variants={fade}>Get in touch to know more</motion.p> */}
+        <Link
+            to='/contact'
+            // activeClassName="selected"
+            // activeStyle={{
+            //   fontWeight: "bold",
+            //   color: "red"
+            // }}
+          >
         <StyledButton variants={fade}>Get in touch</StyledButton>
+        </Link>
+
       </StyledDescription>
       {/* <StyledImg>
         <motion.img
@@ -68,7 +79,7 @@ const Home = () => {
 const StyledHome = styled(StyledGlobal)`
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-218863.jpg&fm=jpg");
+  background-image: url(${macbook});
   @media (max-width: 1300px) {
     padding-top: 13vh;
   }

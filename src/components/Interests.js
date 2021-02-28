@@ -1,10 +1,41 @@
 import React from "react"
-import innovation from "../img/innovation.png"
+import innovation from "../img/innovationorange.png"
+import climate from "../img/climateorange.png"
+import bcorp from "../img/b-corporange.png"
+import mindfulness from "../img/mindfulnessorange.png"
+import running from "../img/Runningorange.svg.png"
+import roller from "../img/roller_bladingorange.png"
+
 import baltasar from "../img/Baltasar.jpeg"
-import { DiJsBadge, DiHtml5, DiCss3, DiSass, DiReact, DiNodejsSmall, DiMongodb, DiPython, DiGit, DiGithubBadge, DiTerminal, DiNpm, DiVisualstudio } from "react-icons/di"
-import { SiJsonwebtokens, SiFlask, SiPostgresql, SiHeroku, SiSlack, SiZoom, SiBabel, SiBulma, SiAuth0,SiWebpack } from "react-icons/si"
-import { GiMarshmallows } from "react-icons/gi"
-import {BiDevices } from "react-icons/bi"
+import {
+  DiJsBadge,
+  DiHtml5,
+  DiCss3,
+  DiSass,
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiGithubBadge,
+  DiTerminal,
+  DiNpm,
+  DiVisualstudio,
+} from "react-icons/di"
+import {
+  SiJsonwebtokens,
+  SiFlask,
+  SiPostgresql,
+  SiHeroku,
+  SiSlack,
+  SiZoom,
+  SiBabel,
+  SiBulma,
+  SiAuth0,
+  SiWebpack,
+} from "react-icons/si"
+import { FaRecycle } from "react-icons/fa"
+import { GiWorld } from "react-icons/gi"
 import styled from "styled-components"
 import {
   StyledGlobal,
@@ -23,110 +54,117 @@ const Interests = () => {
 
   return (
     <Hide>
-    <StyledSkills
-      variants={scrollReveal}
-      initial='hidden'
-      animate={controls}
-      ref={element}
-    >
-      <StyledDescription>
-        <h2>What gets my attention</h2>
-        <Cards>
+      <StyledSkills
+        variants={scrollReveal}
+        initial='hidden'
+        animate={controls}
+        ref={element}
+      >
+        <StyledDescription>
+          <h2>What gets my attention</h2>
+          <Cards>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={innovation} alt='innovation' />
+                <motion.h3>Innovation</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={climate} alt='Climate Change' />
+                <motion.h3>Climate Change</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <FaRecycle />
+                <motion.h3>Circular Economy</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <a
+                id='portfoliolink'
+                target='_blank'
+                rel='noreferrer'
+                href='https://bcorporation.net/'
+              >
+                
+                <motion.div className='icon'>
+                  <img src={bcorp} alt='B-Corp Certification' />
+                  <motion.h3>B-Corp Certification</motion.h3>
+                </motion.div>
+              </a>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={roller} alt='Rolleblading' />
+                <motion.h3>Rollerblading</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={mindfulness} alt='Mindfulness' />
+                <motion.h3>Mindfulness</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={running} alt='Running' />
+                <motion.h3>Running</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2,
+              }}
+            >
+              <motion.div className='icon'>
+                <GiWorld />
+                <motion.h3>Travelling</motion.h3>
+              </motion.div>
+            </Card>
+          </Cards>
+        </StyledDescription>
 
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiHtml5 />
-              <motion.h3>HTML5</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiCss3 />
-              <motion.h3>CSS3</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiSass />
-              <motion.h3>SASS</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiMongodb />
-              <motion.h3>Mongodb</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiJsonwebtokens />
-              <motion.h3>JWT</motion.h3>
-            </motion.div>
-          </Card>
-          
-
-        </Cards>
-      </StyledDescription>
-      
         {/* <StyledImg>
         <img src={baltasar} alt='baltasar' />
         </StyledImg> */}
-    </StyledSkills>
+      </StyledSkills>
     </Hide>
   )
 }
 
 const StyledSkills = styled(StyledGlobal)`
+  min-height: 90vh;
+  padding: 1rem 10rem;
   h2 {
     padding-bottom: 5rem;
   }
@@ -144,7 +182,6 @@ const Cards = styled.div`
 
   @media (max-width: 667px) {
     /* font-size: 4rem; */
-    
 
     /* justify-content: center;
     padding: 0; */
@@ -155,7 +192,7 @@ const Cards = styled.div`
 `
 
 const Card = styled(motion.div)`
-  flex-basis: 25rem;
+  flex-basis: 20rem;
 
   .icon {
     display: flex;
@@ -165,6 +202,9 @@ const Card = styled(motion.div)`
     padding: 3rem;
     svg {
       color: #fc8621;
+    }
+    img {
+      max-height: 5rem;
     }
   }
   h3 {
@@ -199,7 +239,6 @@ const Card = styled(motion.div)`
       /* width: 1rem; */
     }
     flex-basis: 15rem;
-
   }
   @media (max-width: 667px) {
     .icon {
@@ -207,7 +246,6 @@ const Card = styled(motion.div)`
       /* width: 1rem; */
     }
     flex-basis: 5rem;
-
   }
 `
 const Hide = styled.div`

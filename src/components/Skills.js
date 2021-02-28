@@ -1,6 +1,6 @@
 import React from "react"
 import innovation from "../img/innovation.png"
-import baltasar from "../img/Baltasar.jpeg"
+import marshmallow from "../img/marshmalloworange.png"
 import {
   DiJsBadge,
   DiHtml5,
@@ -48,17 +48,15 @@ const Skills = () => {
 
   return (
     <Hide>
-
-    <StyledSkills
-      variants={scrollReveal}
-      initial='hidden'
-      animate={controls}
-      ref={element}
-    >
+      <StyledSkills
+        variants={scrollReveal}
+        initial='hidden'
+        animate={controls}
+        ref={element}
+      >
         <StyledDescription>
-          <h2>Skills</h2>
-        <Cards>
-
+          <h2>What I'm skilled at</h2>
+          <Cards>
             <Card
               whileHover={{
                 scale: 1.2,
@@ -175,7 +173,7 @@ const Skills = () => {
               }}
             >
               <motion.div className='icon'>
-                <GiMarshmallows />
+                          <img src={marshmallow} alt='Marshmallow' />
                 <motion.h3>Marshmallow</motion.h3>
               </motion.div>
             </Card>
@@ -259,19 +257,20 @@ const Skills = () => {
                 <motion.h3>Heroku</motion.h3>
               </motion.div>
             </Card>
-
           </Cards>
         </StyledDescription>
         {/* <StyledImg>
         <img src={baltasar} alt='baltasar' />
         </StyledImg> */}
       </StyledSkills>
-      </Hide>
-
+    </Hide>
   )
 }
 
 const StyledSkills = styled(StyledGlobal)`
+  min-height: 90vh;
+  padding: 1rem 10rem;
+
   h2 {
     padding-bottom: 5rem;
   }
@@ -299,7 +298,7 @@ const Cards = styled.div`
 `
 
 const Card = styled(motion.div)`
-  flex-basis: 25rem;
+  flex-basis: 13rem;
 
   .icon {
     display: flex;
@@ -309,6 +308,9 @@ const Card = styled(motion.div)`
     padding: 3rem;
     svg {
       color: #fc8621;
+    }
+    img {
+      max-height: 5rem;
     }
   }
   h3 {
