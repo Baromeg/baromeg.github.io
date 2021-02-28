@@ -110,8 +110,8 @@ const StyledNavbar = styled.nav`
     list-style: none;
   }
   #logo {
-    svg{
-      padding-top:1rem;
+    svg {
+      padding-top: 1rem;
     }
     font-size: 4rem;
     /* font-family: "Lobster", cursive; */
@@ -131,22 +131,20 @@ const StyledNavbar = styled.nav`
     /* font-family: "Wallpoet", cursive; */
     /* font-family: "ZCOOL KuaiLe", cursive; */
     font-weight: lighter;
-    /* padding: 1rem 2rem; */
     /* border: 3px solid #fc8621; */
   }
   li {
     padding-left: 10rem;
     position: relative;
     font-family: "Megrim", cursive;
-    a    {
+    a {
       font-size: 2rem;
     }
     @media (max-width: 414px) {
-      a    {
-      font-size: 1.8rem;
+      a {
+        font-size: 1.8rem;
+      }
     }
-    
-  }
   }
   @media (max-width: 1300px) {
     flex-direction: column;
