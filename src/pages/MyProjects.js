@@ -91,7 +91,7 @@ const MyProjects = () => {
               <Mockup src={kyh}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
-              <Cards>
+              <CardsLinks>
                 <Card
                   whileHover={{
                     scale: 1.2,
@@ -126,7 +126,7 @@ const MyProjects = () => {
                     {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
-              </Cards>
+              </CardsLinks>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -299,7 +299,7 @@ const MyProjects = () => {
             </StyledMockup>
 
             <StyledProjectDescription>
-              <Cards>
+              <CardsLinks>
                 <Card
                   whileHover={{
                     scale: 1.2,
@@ -334,7 +334,7 @@ const MyProjects = () => {
                     {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
-              </Cards>
+              </CardsLinks>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -484,7 +484,7 @@ const MyProjects = () => {
               <Mockup src={heroes}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
-              <Cards>
+              <CardsLinks>
                 <Card
                   whileHover={{
                     scale: 1.2,
@@ -519,7 +519,7 @@ const MyProjects = () => {
                     {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
-              </Cards>
+              </CardsLinks>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -638,7 +638,7 @@ const MyProjects = () => {
               <Mockup src={frogger}></Mockup>
             </StyledMockup>
             <StyledProjectDescription>
-              <Cards>
+              <CardsLinks>
                 <Card
                   whileHover={{
                     scale: 1.2,
@@ -673,7 +673,7 @@ const MyProjects = () => {
                     {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
-              </Cards>
+              </CardsLinks>
               <motion.div
                 variants={titleAnimation}
                 initial='hidden'
@@ -763,8 +763,8 @@ const Projects = styled(motion.div)`
   overflow: hidden;
   padding: 1rem 10rem;
   /* background: white; */
-  @media (max-width: 1300px) {
-    padding: 2rem 2rem;
+  @media (max-width: 1024px) {
+    padding: 6rem 2rem 2rem 2rem;
   }
   h2 {
     padding: 1rem 0rem;
@@ -774,7 +774,8 @@ const Projects = styled(motion.div)`
 const Project = styled(motion.div)`
   min-height: 90vh;
 
-  padding-bottom: 3rem;
+  padding-top: 6vh;
+
   .line {
     height: 0.5rem;
     background: #fc8621;
@@ -786,10 +787,29 @@ const Project = styled(motion.div)`
     /* object-fit: cover; */
   }
 `
-const ProjectFirstPage = styled(Project)`padding-top:10vh`
+const ProjectFirstPage = styled(Project)`
+  padding-top: 8vh;
+  @media (max-width: 1024px) {
+    padding-top: 4vh;
+  }
+  @media (max-width: 414px) {
+    padding-top: 8vh;
+  }
+`
 const StyledProjects = styled(StyledGlobal)`
   padding: 0rem 0rem;
   min-height: 50vh;
+  @media (max-width: 1300px) {
+    display: block;
+    /* padding: 5rem 4rem; */
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: 414px) {
+    /* padding: 5rem 4rem; */
+    /* padding: 2rem 3rem; */
+  }
 `
 const StyledMockup = styled(StyledImg)`
   flex: 1.6;
@@ -801,10 +821,39 @@ const StyledMockup = styled(StyledImg)`
     /* height: none; */
     object-fit: contain;
   }
+  @media (max-width: 1024px) {
+    width: 60rem;
+    margin: auto;
+  }
+  @media (max-width: 768px) {
+    width: 50rem;
+    margin: auto;
+  }
+  @media (max-width: 414px) {
+    width: 35rem;
+    margin: auto;
+  }
 `
 const StyledProjectDescription = styled(StyledDescription)`
   flex: 1;
   padding: 0rem 1rem;
+  @media (max-width: 1366px) {
+    p {
+      font-size: 1.3rem;
+      padding: 1rem 0.5rem;
+    }
+  }
+  @media (max-width: 1366px) {
+    p {
+      font-size: 2rem;
+      padding: 1rem 0.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    p {
+      font-size: 1.7rem;
+    }
+  }
 `
 // const Hide = styled.div`
 //   overflow: hidden;
@@ -847,6 +896,11 @@ const Cards = styled.div`
     } */
   }
 `
+const CardsLinks = styled(Cards)`
+  @media (max-width: 1024px) {
+    flex-wrap: nowrap;
+  }
+`
 
 const Card = styled(motion.div)`
   flex-basis: 5rem;
@@ -863,6 +917,7 @@ const Card = styled(motion.div)`
     }
     img {
       max-height: 4rem;
+      width: 40%;
     }
   }
   h3 {
@@ -897,7 +952,7 @@ const Card = styled(motion.div)`
       scale: 0.8;
     }
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1024px) {
     .icon {
       padding: 1rem 0;
       /* width: 1rem; */

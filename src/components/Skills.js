@@ -278,6 +278,12 @@ const StyledSkills = styled(StyledGlobal)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 768px) {
+    padding: 1rem 3rem;
+  }
+  @media (max-width: 414px) {
+    padding: 1rem 2rem;
+  }
 `
 const Cards = styled.div`
   display: flex;
@@ -311,6 +317,7 @@ const Card = styled(motion.div)`
     }
     img {
       max-height: 5rem;
+      width: 50%;
     }
   }
   h3 {
@@ -352,6 +359,17 @@ const Card = styled(motion.div)`
       /* width: 1rem; */
     }
     flex-basis: 5rem;
+  }
+  @media (max-width: 414px) {
+    .icon {
+      padding: 1rem 0;
+      max-width:  100%;;
+      img {
+          /* max-height: 40rem; */
+          width: 5rem;
+        }
+    }
+    flex-basis:7rem;
   }
 `
 const Hide = styled.div`

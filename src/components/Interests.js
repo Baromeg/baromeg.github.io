@@ -172,6 +172,12 @@ const StyledSkills = styled(StyledGlobal)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 768px) {
+    padding: 1rem 7rem;
+  }
+  @media (max-width: 414px) {
+    padding: 1rem 4rem;
+  }
 `
 const Cards = styled.div`
   display: flex;
@@ -240,9 +246,16 @@ const Card = styled(motion.div)`
     }
     flex-basis: 15rem;
   }
-  @media (max-width: 667px) {
+  @media (max-width: 768px) {
     .icon {
-      padding: 1rem 0;
+      padding: 3rem 3rem;
+      /* width: 1rem; */
+    }
+    flex-basis: 2rem;
+  }
+  @media (max-width: 414px) {
+    .icon {
+      padding: 1rem 1rem;
       /* width: 1rem; */
     }
     flex-basis: 5rem;

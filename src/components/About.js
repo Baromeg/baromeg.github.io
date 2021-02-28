@@ -2,11 +2,12 @@ import React from "react"
 import baltasar from "../img/Baltasar.jpeg"
 
 // Framer Motion
-import { motion } from "framer-motion";
-import { titleAnimation, fade, photoAnimation } from "../Animation";
-import  Wave from "./Wave";
+import { motion } from "framer-motion"
+import { titleAnimation, fade, photoAnimation } from "../Animation"
+import Wave from "./Wave"
 
 // Style
+import styled from "styled-components"
 import {
   StyledGlobal,
   StyledDescription,
@@ -23,13 +24,13 @@ const About = () => {
 
   return (
     <StyledHide>
-      <StyledGlobal
+      <StyledAbout
         variants={scrollReveal}
         initial='hidden'
         animate={controls}
         ref={element}
       >
-        <StyledDescription>
+        <AboutDescription>
           <h2>About me</h2>
           <motion.div
           // variants={titleAnimation}
@@ -68,7 +69,7 @@ const About = () => {
           </motion.div>
           <motion.p variants={fade}>Are you curious for more?</motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
-        </StyledDescription>
+        </AboutDescription>
         <StyledImg>
           <motion.img
             variants={photoAnimation}
@@ -78,11 +79,41 @@ const About = () => {
             alt=''
           />
         </StyledImg>
-      </StyledGlobal>
+      </StyledAbout>
     </StyledHide>
   )
 }
-
-
+const StyledAbout = styled(StyledGlobal)`
+  @media (max-width: 1300px) {
+    display: block;
+    /* padding: 5rem 4rem; */
+    text-align: center;
+    width: 100%;
+  }
+  @media (max-width: 414px) {
+    /* padding: 5rem 4rem; */
+    padding: 2rem 3rem;
+  }
+`
+const AboutDescription = styled(StyledDescription)`
+  @media (max-width: 1366px) {
+    p {
+      font-size: 1.2rem;
+      padding-right: 2rem;
+    }
+    padding: 0rem;
+    button {
+      margin: 2rem 0rem 5rem 0rem;
+    }
+  }
+  @media (max-width: 414px) {
+    p {
+      padding-top: 0.5rem;
+    }
+    button {
+      margin: 1rem 0rem 5rem 0rem;
+    }
+  }
+`
 
 export default About

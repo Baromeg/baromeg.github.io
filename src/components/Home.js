@@ -47,9 +47,9 @@ const Home = () => {
             <motion.h1 variants={titleAnimation}>Romero</motion.h1>
           </StyledHide>
           <StyledHide>
-            <motion.h1 variants={fade}>
+            <motion.h2 variants={fade}>
               Full-Stack <motion.span >Software Engineer</motion.span>
-            </motion.h1>
+            </motion.h2>
           </StyledHide>
         </motion.div>
         {/* <motion.p variants={fade}>Get in touch to know more</motion.p> */}
@@ -82,6 +82,7 @@ const StyledHome = styled(StyledGlobal)`
   background-image: url(${macbook});
   @media (max-width: 1300px) {
     padding-top: 13vh;
+    padding-left: 5rem;
   }
   /* overflow:visible; */
 `

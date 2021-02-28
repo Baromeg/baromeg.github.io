@@ -8,11 +8,6 @@ export const StyledGlobal = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
-  @media (max-width: 1300px) {
-    display: block;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
 `
 export const StyledDescription = styled.div`
   flex: 1.3;
@@ -24,11 +19,17 @@ export const StyledDescription = styled.div`
   p {
     font-size: 1.5rem;
   }
+  /* @media (max-width: 1024px) {
+    padding-top: 4rem;
+  } */
   @media (max-width: 1300px) {
-    padding: 0;
+    padding: 4rem 0rem 0rem 0rem;
     button {
       margin: 2rem 0rem 5rem 0rem;
     }
+  }
+  @media (max-width: 768px) {
+    padding: 0rem 0rem 0rem 0rem;
   }
 `
 

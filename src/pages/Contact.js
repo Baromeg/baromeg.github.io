@@ -45,7 +45,7 @@ const Contact = () => {
       // style={{ background: "#fff" }}
     >
       <ScrollTop />
-      
+
       {/* <div>
         <Social variants={titleAnimation}>
           <Circle> </Circle>
@@ -71,11 +71,78 @@ const Contact = () => {
                 <img src={me} className='is-rounded' />
               </figure>
             </div> */}
+
+      {/* </div> */}
+      <form action='https://formspree.io/f/mvovdgkl' method='POST'>
+        <StyledHide>
+          <Social variants={titleAnimation}>
+            <label>
+              <i className='icon'>
+                <FaSignature /> <span className='placeholder'>Your Name</span>
+              </i>{" "}
+            </label>
+
+            <input
+              className='input-field'
+              type='text'
+              placeholder=''
+              name='name'
+            />
+          </Social>
+        </StyledHide>
+
+        <StyledHide>
+          <Social variants={titleAnimation}>
+            <label className='label'>
+              <i className='icon'>
+                <FaAt /> <span className='placeholder'>Your email</span>
+              </i>{" "}
+            </label>
+
+            <input
+              className='input-field '
+              type='email'
+              placeholder=''
+              name='_replyto'
+            />
+          </Social>
+        </StyledHide>
+
+        <StyledHide>
+          <Social variants={titleAnimation}>
+            <label>
+              <i className='icon'>
+                <RiMessage2Fill />{" "}
+                <span className='placeholder'>Your message</span>
+              </i>{" "}
+            </label>
+
+            <textarea
+              className='input-field'
+              placeholder=''
+              name='text'
+              rows='8'
+            ></textarea>
+          </Social>
+        </StyledHide>
+
+        <StyledButton
+          variants={fade}
+          type='button'
+          // className='button is-large is-info has-text-weight-semibold has-text-link	'
+          value='Send'
+        >
+          <i className='icon'>
+            <GiPaperPlane />
+          </i>
+          Send
+        </StyledButton>
+      </form>
       <Cards>
         <Card
-          whileHover={{
-            scale: 1.2,
-          }}
+        // whileHover={{
+        //   scale: 1.2,
+        // }}
         >
           <motion.div className='icon'>
             <a
@@ -90,9 +157,9 @@ const Contact = () => {
           </motion.div>
         </Card>
         <Card
-          whileHover={{
-            scale: 1.2,
-          }}
+        // whileHover={{
+        //   scale: 1.2,
+        // }}
         >
           <motion.div className='icon'>
             <a
@@ -107,82 +174,6 @@ const Contact = () => {
           </motion.div>
         </Card>
       </Cards>
-      {/* </div> */}
-      <form action='https://formspree.io/f/mvovdgkl' method='POST'>
-        <div className='field'>
-          <StyledHide>
-            <Social variants={titleAnimation}>
-              <label>
-                <i className='icon'>
-                  <FaSignature /> <span className='placeholder'>Your Name</span>
-                </i>{" "}
-              </label>
-
-              <input
-                className='input-field'
-                type='text'
-                // placeholder='Your Name'
-                name='name'
-              />
-            </Social>
-          </StyledHide>
-        </div>
-
-        <div className='field'>
-          <StyledHide>
-            <Social variants={titleAnimation}>
-              <label className='label'>
-                <i className='icon'>
-                  <FaAt /> <span className='placeholder'>Your email</span>
-                </i>{" "}
-              </label>
-
-              <input
-                className='input-field '
-                type='email'
-                // placeholder='Your email'
-                name='_replyto'
-              />
-            </Social>
-          </StyledHide>
-        </div>
-
-        <div className='field'>
-          <StyledHide>
-            <Social variants={titleAnimation}>
-              <label>
-                <i className='icon'>
-                  <RiMessage2Fill />{" "}
-                  <span className='placeholder'>Your message</span>
-                </i>{" "}
-              </label>
-
-              <textarea
-                className='input-field'
-                // placeholder='Write your message'
-                name='text'
-                rows='6'
-              ></textarea>
-            </Social>
-          </StyledHide>
-        </div>
-
-        <div className='field is-grouped'>
-          <div id='control'>
-            <StyledButton
-              variants={fade}
-              type='button'
-              className='button is-large is-info has-text-weight-semibold has-text-link	'
-              value='Send'
-            >
-              {/* <i className='icon'>
-                          <GiPaperPlane />
-                        </i> */}
-              Send
-            </StyledButton>
-          </div>
-        </div>
-      </form>
       <StyledTitle>
         <motion.h2 variants={fade}>
           Let's work <span>together!</span>{" "}
@@ -201,14 +192,19 @@ const Cards = styled.div`
   justify-content: space-evenly;
   font-size: 6rem;
   width: 29rem;
-  @media (max-width: 667px) {
-    /* font-size: 4rem; */
+  @media (max-width: 1366px) {
+    padding-top: 3rem;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 0rem;
+    width: 45rem;
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 414px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 32rem;
 
-    /* justify-content: center;
-    padding: 0; */
-    /* button {
-      margin: 2rem 0rem 5rem 0rem;
-    } */
   }
 `
 
@@ -216,11 +212,9 @@ const Card = styled(motion.div)`
   flex-basis: 5rem;
 
   .icon {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative; */
-    padding: 1rem;
+    /* padding-top: 1rem; */
     font-size: 3rem;
     svg {
       color: #fc8621;
@@ -244,8 +238,30 @@ const Card = styled(motion.div)`
   }
   #portfoliolink {
     font-size: 40px;
+    box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    &:hover {
+      box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+      background-color: transparent;
+      color: #fc8621;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+      -webkit-tap-highlight-color: transparent;
+    }
+
     svg {
       color: white;
+    }
+    @media (max-width: 375px) {
+      font-size: 30px;
     }
   }
   :hover {
@@ -254,7 +270,7 @@ const Card = styled(motion.div)`
       scale: 1.2;
     }
     svg {
-      opacity: 0.6;
+      /* opacity: 0.6; */
       scale: 0.8;
     }
   }
@@ -265,6 +281,20 @@ const Card = styled(motion.div)`
     }
     flex-basis: 15rem;
   }
+  @media (max-width: 1024px) {
+    .icon {
+      padding: 2rem 0rem;
+      /* width: 1rem; */
+    }
+    /* flex-basis: 15rem; */
+  }
+  @media (max-width: 768px) {
+    .icon {
+      padding: 5rem 0rem;
+      /* width: 1rem; */
+    }
+    /* flex-basis: 5rem; */
+  }
   @media (max-width: 667px) {
     .icon {
       padding: 1rem 0;
@@ -274,11 +304,25 @@ const Card = styled(motion.div)`
   }
 `
 const StyledButton = styled(motion.button)`
-  margin-top: 1rem;
-  box-shadow: inset 2px 2px 3px #cc6e1d, inset -3px -3px 5px #cc6e1d;
+  margin-top: 2rem;
+  box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
   border-radius: 20px;
   border: none;
   width: 100%;
+  &:hover {
+    box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+    background-color: transparent;
+    color: #fc8621;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+    -webkit-tap-highlight-color: transparent;
+  }
 `
 const StyledContact = styled(motion.div)`
   background-size: cover;
@@ -296,14 +340,20 @@ const StyledContact = styled(motion.div)`
     /* display:flex; */
     span {
       color: white;
-      font-size:1rem;
+      font-size: 1rem;
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 414px) {
+        font-size: 1.2rem;
+      }
+      
     }
   }
 
   form {
     padding: 1rem;
     width: 29rem;
-
 
     .input-icons {
       width: 100%;
@@ -321,13 +371,29 @@ const StyledContact = styled(motion.div)`
       padding-left: 30px;
       text-align: left;
       color: white;
-      
-      }
     }
-    #control {
-      /* display: flex; */
-      /* justify-content: center; */
+    @media (max-width: 1024px) {
+      padding-top: 1rem;
+      /* padding-bottom:        1rem; */
+      width: 40rem;
+      font-size: 1.5rem;
+ 
     }
+    @media (max-width: 768px) {
+      padding-top: 8rem;
+      /* padding-bottom:        1rem; */
+      /* width: 40rem;
+      font-size: 1.5rem; */
+ 
+    }
+    @media (max-width: 414px) {
+      padding-top: 3rem;
+      /* padding-bottom:        1rem; */
+      width: 32rem;
+      font-size: 1.2rem;
+ 
+    }
+    
   }
 
   input,
@@ -342,6 +408,17 @@ const StyledContact = styled(motion.div)`
     background-color: transparent;
     /* text-shadow: 1px 1px 0 #fff; */
   }
+  textarea {
+    @media (max-width: 1024px) {
+      height: 12rem;
+    }
+    @media (max-width: 768px) {
+      height: 15rem;
+    }
+    @media (max-width: 375px) {
+      height: 8rem;
+    }
+  }
   label {
     display: block;
     /* margin-bottom: 16px; */
@@ -350,7 +427,7 @@ const StyledContact = styled(motion.div)`
   input,
   textarea {
     margin-right: 16px/2;
-    box-shadow: inset 3px 3px 5px #babecc, inset -3px -3px 5px #cacbd1;
+    box-shadow: inset 5px 5px 5px #312f2f, inset -1px -1px 3px #cacbd1;
     width: 100%;
     box-sizing: border-box;
     transition: all 0.2s ease-in-out;
@@ -363,17 +440,57 @@ const StyledContact = styled(motion.div)`
   }
   button {
     font-size: 1.5rem;
+    @media (max-width: 1024px) {
+      /* padding: 2rem; */
+      font-size: 2rem;
+    }
+    @media (max-width: 375px) {
+        font-size: 1.5rem;
+      }
   }
-  @media(max-width: 1300px) {
-    padding: 2rem;
-    font-size: 1rem;
+  @media (max-width: 1024px) {
+    padding-bottom:        2rem;
+  }
+  @media (max-width: 414px) {
+    padding-left:        4rem;
   }
 `
 const StyledTitle = styled.div`
   margin-top: 3rem;
   color: white;
-  @media (max-width: 1300px) {
-    margin-top: 5rem;
+  @media (max-width: 1366px) {
+    h2 {
+      font-size: 6rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 4rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 5rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+  @media (max-width: 414px) {
+    h2 {
+      font-size: 3rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+  @media (max-width: 375px) {
+    h2 {
+      font-size: 3rem;
+      width: 32rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
   }
 `
 
