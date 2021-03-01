@@ -327,6 +327,7 @@ const StyledContact = styled(motion.div)`
     /* display:flex; */
     span {
       color: white;
+      font-weight: normal;
       font-size: 1rem;
       @media (max-width: 1024px) {
         font-size: 1.5rem;
@@ -334,7 +335,6 @@ const StyledContact = styled(motion.div)`
       @media (max-width: 414px) {
         font-size: 1.2rem;
       }
-      
     }
   }
 
@@ -364,24 +364,21 @@ const StyledContact = styled(motion.div)`
       /* padding-bottom:        1rem; */
       width: 40rem;
       font-size: 1.5rem;
- 
     }
     @media (max-width: 768px) {
       padding-top: 8rem;
       /* padding-bottom:        1rem; */
       /* width: 40rem;
       font-size: 1.5rem; */
- 
     }
     @media (max-width: 414px) {
       padding-top: 3rem;
       /* padding-bottom:        1rem; */
       width: 32rem;
       font-size: 1.2rem;
- 
     }
     @media (max-width: 414px) {
-      padding-left:3rem;
+      padding-left: 3rem;
     }
   }
 
@@ -434,14 +431,14 @@ const StyledContact = styled(motion.div)`
       font-size: 2rem;
     }
     @media (max-width: 375px) {
-        font-size: 1.5rem;
-      }
+      font-size: 1.5rem;
+    }
   }
   @media (max-width: 1024px) {
-    padding-bottom:        2rem;
+    padding-bottom: 2rem;
   }
   @media (max-width: 414px) {
-    padding-left:        4rem;
+    padding-left: 4rem;
   }
 `
 const StyledTitle = styled.div`
