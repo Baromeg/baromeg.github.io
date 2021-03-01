@@ -3,9 +3,9 @@ import styled from "styled-components"
 
 // Images
 import kyh from "../img/heritage.gif"
-import heroes from "../img/heroes.png"
+import heroes from "../img/heroes.gif"
 import frogger from "../img/thefrogger.gif"
-import greenworld from "../img/greenworld.png"
+import greenworld from "../img/greenworld.gif"
 import marshmallow from "../img/marshmalloworange.png"
 import Mockup from "../components/Mockup"
 import {
