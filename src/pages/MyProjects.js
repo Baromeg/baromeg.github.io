@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 // Images
-import kyh from "../img/kyhfrontpage.png"
+import kyh from "../img/heritage.gif"
 import heroes from "../img/heroes.png"
 import frogger from "../img/thefrogger.gif"
 import greenworld from "../img/greenworld.png"

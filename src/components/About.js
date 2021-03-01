@@ -39,16 +39,17 @@ const About = () => {
           >
             <StyledHide>
               <motion.p>
-                Hi!<span> I am Baltasar</span>, a self-taught and graduated
+                Hi!<span> I am Baltasar</span>, self-taught and graduated
                 software engineer at General Assembly.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek a developer role to <span>contribute to both sides of the
-                stack</span>, share my ideas, and grow in a continued-learning and
-                knowledge-sharing environment. I am eager to collaborate on
-                projects that <span>develop a better and more sustainable tomorrow</span>.
+                I seek a developer role to{" "}
+                <span>contribute to both sides of the stack</span>, share my
+                ideas, and grow in a continued-learning and knowledge-sharing
+                environment. I am eager to collaborate on projects that{" "}
+                <span>develop a better and more sustainable tomorrow</span>.
               </motion.p>
             </StyledHide>
             <StyledHide>
@@ -56,10 +57,14 @@ const About = () => {
                 I’ve thrived on leading and motivating people, improving
                 operational processes and ultimately creating memorable customer
                 experiences. After more than 12 years of hospitality background,
-                 <span> I’ve decided to blend my passion for software engineering, my
-                problem-solving skills and my creativity to join the developer
-                community</span> to pursue a career change and become part of the
-                solution for today’s world challenges.
+                <span>
+                  {" "}
+                  I’ve decided to blend my passion for software engineering, my
+                  problem-solving skills and my creativity to join the developer
+                  community
+                </span>{" "}
+                to pursue a career change and become part of the solution for
+                today’s world challenges.
               </motion.p>
             </StyledHide>
           </motion.div>
