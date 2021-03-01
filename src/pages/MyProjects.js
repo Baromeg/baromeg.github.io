@@ -919,8 +919,26 @@ const Card = styled(motion.div)`
   }
   #portfoliolink {
     font-size: 40px;
+    box-shadow: -3px -3px 6px #504f4f, 3px 3px 6px black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     svg {
       color: white;
+    }
+    &:hover {
+      box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+      background-color: transparent;
+      scale: 1;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+      -webkit-tap-highlight-color: transparent;
     }
   }
   :hover {
@@ -929,7 +947,7 @@ const Card = styled(motion.div)`
       scale: 1.2;
     }
     svg {
-      opacity: 0.6;
+      /* opacity: 0.6; */
       scale: 0.8;
     }
   }

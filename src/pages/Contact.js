@@ -14,7 +14,7 @@ import { FaGithub, FaAt } from "react-icons/fa"
 import { RiMessage2Fill } from "react-icons/ri"
 import { FaSignature } from "react-icons/fa"
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <StyledContact
       variants={pageAnimation}
@@ -60,13 +60,14 @@ const Contact = () => {
                 <FaSignature /> <span className='placeholder'>Your Name</span>
               </i>{" "}
             </label>
-
+            <label>
             <input
               className='input-field'
               type='text'
               placeholder=''
               name='name'
-            />
+              />
+              </label>
           </Social>
         </StyledHide>
 
@@ -77,13 +78,15 @@ const Contact = () => {
                 <FaAt /> <span className='placeholder'>Your email</span>
               </i>{" "}
             </label>
-
-            <input
+            <label>
+              <input
               className='input-field '
               type='email'
               placeholder=''
               name='_replyto'
             />
+            </label>
+            
           </Social>
         </StyledHide>
 
@@ -95,19 +98,20 @@ const Contact = () => {
                 <span className='placeholder'>Your message</span>
               </i>{" "}
             </label>
-
+            <label>
             <textarea
               className='input-field'
               placeholder=''
-              name='text'
+              name='message'
               rows='8'
-            ></textarea>
+              ></textarea>
+            </label>
           </Social>
         </StyledHide>
 
         <StyledButton
           variants={fade}
-          type='button'
+          type='submit'
           // className='button is-large is-info has-text-weight-semibold has-text-link	'
           value='Send'
         >
@@ -171,6 +175,7 @@ const Cards = styled.div`
   justify-content: space-evenly;
   font-size: 6rem;
   width: 29rem;
+  padding-top: 3rem;
   @media (max-width: 1366px) {
     padding-top: 3rem;
   }
@@ -226,7 +231,10 @@ const Card = styled(motion.div)`
     &:hover {
       box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
       background-color: transparent;
-      color: #fc8621;
+      svg{
+        color: #fc8621; 
+      }
+     
     }
     &:focus {
       outline: none;
@@ -372,7 +380,9 @@ const StyledContact = styled(motion.div)`
       font-size: 1.2rem;
  
     }
-    
+    @media (max-width: 414px) {
+      padding-left:3rem;
+    }
   }
 
   input,
@@ -462,6 +472,12 @@ const StyledTitle = styled.div`
       /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
+    
+    padding-left:3rem;
+    h2 {
+      width: 32rem;
+      /* padding-bottom:2rem; */
+    }
   }
   @media (max-width: 375px) {
     h2 {

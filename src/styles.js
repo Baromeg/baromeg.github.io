@@ -17,7 +17,7 @@ export const StyledDescription = styled.div`
     font-weight: lighter;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   /* @media (max-width: 1024px) {
     padding-top: 4rem;
