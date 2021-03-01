@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { NavLink, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
 import { fade } from "../Animation"
-import Wave2 from "./Wave2"
 
 const Navbar = () => {
   const { pathname } = useLocation()

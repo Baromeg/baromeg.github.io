@@ -40,6 +40,9 @@ module.exports = (env) => {
     plugins: [
       new DotEnv(),
       new webpack.HotModuleReplacementPlugin(),
+      new webpack.ProvidePlugin({
+        React: "react",
+      }),
       new HtmlWebpackPlugin({
         template: "public/index.html",
         filename: "index.html",

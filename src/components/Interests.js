@@ -6,43 +6,11 @@ import mindfulness from "../img/mindfulnessorange.png"
 import running from "../img/Runningorange.svg.png"
 import roller from "../img/roller_bladingorange.png"
 
-import baltasar from "../img/Baltasar.jpeg"
-import {
-  DiJsBadge,
-  DiHtml5,
-  DiCss3,
-  DiSass,
-  DiReact,
-  DiNodejsSmall,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiGithubBadge,
-  DiTerminal,
-  DiNpm,
-  DiVisualstudio,
-} from "react-icons/di"
-import {
-  SiJsonwebtokens,
-  SiFlask,
-  SiPostgresql,
-  SiHeroku,
-  SiSlack,
-  SiZoom,
-  SiBabel,
-  SiBulma,
-  SiAuth0,
-  SiWebpack,
-} from "react-icons/si"
+
 import { FaRecycle } from "react-icons/fa"
 import { GiWorld } from "react-icons/gi"
 import styled from "styled-components"
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide,
-} from "../styles"
+import { StyledGlobal, StyledDescription } from "../styles"
 
 // Animation
 import { motion } from "framer-motion"

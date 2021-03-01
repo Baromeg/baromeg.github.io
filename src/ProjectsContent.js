@@ -1,7 +1,6 @@
 // Images
 import kyh from "./img/kyhfrontpage.png"
 import heroes from "./img/heroes.png"
-import frogger from "./img/frogger.png"
 import greenworld from "./img/greenworld.png"
 import webpack from "./img/webpack.png"
 import heroku from "./img/heroku.png"
@@ -79,8 +78,6 @@ export const ProjectsContent = () => {
     },
     {
       name: "The Frogger",
-      mainImg: frogger,
-      secondaryImg: frogger,
       url: "/myprojects/frogger",
       website: "https://baromeg.github.io/project-1",
       github: "https://github.com/Baromeg/project-1",

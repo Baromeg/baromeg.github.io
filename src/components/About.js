@@ -3,8 +3,7 @@ import baltasar from "../img/Baltasar.jpeg"
 
 // Framer Motion
 import { motion } from "framer-motion"
-import { titleAnimation, fade, photoAnimation } from "../Animation"
-import Wave from "./Wave"
+import { fade, photoAnimation } from "../Animation"
 
 // Style
 import styled from "styled-components"

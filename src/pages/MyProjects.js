@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "react-router-dom"
 
 // Images
 import kyh from "../img/kyhfrontpage.png"
@@ -13,33 +12,19 @@ import {
   DiJsBadge,
   DiHtml5,
   DiCss3,
-  DiSass,
   DiReact,
-  DiNodejsSmall,
-  DiResponsive,
   DiMongodb,
   DiPython,
-  DiGit,
-  DiGithubBadge,
-  DiTerminal,
-  DiNpm,
-  DiVisualstudio,
 } from "react-icons/di"
 import {
   SiJsonwebtokens,
   SiFlask,
   SiPostgresql,
   SiNodeDotJs,
-  SiReact,
   SiHeroku,
-  SiSlack,
-  SiZoom,
   SiBabel,
-  SiBulma,
-  SiAuth0,
   SiWebpack,
 } from "react-icons/si"
-import { GiMarshmallows } from "react-icons/gi"
 import { BiDevices } from "react-icons/bi"
 import { BsGrid1X2Fill } from "react-icons/bs"
 import { FaChrome, FaGithub, FaCloudDownloadAlt } from "react-icons/fa"
@@ -55,12 +40,8 @@ import { motion } from "framer-motion"
 import {
   pageAnimation,
   fade,
-  photoAnimation,
   lineAnimation,
   titleAnimation,
-  slider,
-  newSlider,
-  sliderContainer,
   scrollReveal,
 } from "../Animation"
 import { UseScroll } from "../components/UseScroll"

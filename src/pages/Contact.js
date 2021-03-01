@@ -6,34 +6,13 @@ import macbook from "../img/macbook.jpg"
 import { motion } from "framer-motion"
 import { pageAnimation, titleAnimation, fade } from "../Animation"
 import ScrollTop from "../components/ScrollTop"
-import me from "../img/Baltasar.jpeg"
 
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide,
-} from "../styles"
+import { StyledHide } from "../styles"
 import { GiPaperPlane } from "react-icons/gi"
-import {
-  SiJsonwebtokens,
-  SiFlask,
-  SiPostgresql,
-  SiHeroku,
-  SiSlack,
-  SiZoom,
-  SiBabel,
-  SiBulma,
-  SiAuth0,
-  SiWebpack,
-  SiGithub,
-  SiLinkedin,
-} from "react-icons/si"
+import { SiLinkedin } from "react-icons/si"
 import { FaGithub, FaAt } from "react-icons/fa"
 import { RiMessage2Fill } from "react-icons/ri"
-import { FaSignature, FaEnvelope } from "react-icons/fa"
-import { GiMarshmallows } from "react-icons/gi"
-import { BiDevices } from "react-icons/bi"
+import { FaSignature } from "react-icons/fa"
 
 const Contact = () => {
   return (

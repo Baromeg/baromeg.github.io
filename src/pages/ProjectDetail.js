@@ -6,11 +6,10 @@ import Mockup from "../components/Mockup"
 
 // Images
 import kyh from "../img/kyhfrontpage.png"
-import heroes from "../img/heroes.png"
-import frogger from "../img/frogger.png"
-import greenworld from "../img/greenworld.png"
-import webpack from "../img/webpack.png"
-import heroku from "../img/heroku.png"
+// import heroes from "../img/heroes.png"
+// import greenworld from "../img/greenworld.png"
+// import webpack from "../img/webpack.png"
+// import heroku from "../img/heroku.png"
 
 // Animations
 import { motion } from "framer-motion"

@@ -1,17 +1,30 @@
 import React from "react"
-import innovation from "../img/innovation.png"
-import baltasar from "../img/Baltasar.jpeg"
-import { DiJsBadge, DiHtml5, DiCss3, DiSass, DiReact, DiNodejsSmall, DiMongodb, DiPython, DiGit, DiGithubBadge, DiTerminal, DiNpm, DiVisualstudio } from "react-icons/di"
-import { SiJsonwebtokens, SiFlask, SiPostgresql, SiHeroku, SiSlack, SiZoom, SiBabel, SiBulma, SiAuth0,SiWebpack } from "react-icons/si"
+import {
+  DiJsBadge,
+  DiHtml5,
+  DiCss3,
+  DiSass,
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiGithubBadge,
+  DiNpm,
+  DiVisualstudio,
+} from "react-icons/di"
+import {
+  SiJsonwebtokens,
+  SiFlask,
+  SiPostgresql,
+  SiHeroku,
+  SiBabel,
+  SiWebpack,
+} from "react-icons/si"
 import { GiMarshmallows } from "react-icons/gi"
 import {BiDevices } from "react-icons/bi"
 import styled from "styled-components"
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide,
-} from "../styles"
+import { StyledGlobal, StyledDescription } from "../styles"
 
 // Animation
 import { motion } from "framer-motion"

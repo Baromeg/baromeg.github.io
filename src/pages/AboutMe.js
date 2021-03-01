@@ -6,7 +6,6 @@ import About from "../components/About"
 import Skills from "../components/Skills"
 import Learning from "../components/Learning"
 import Interests from "../components/Interests"
-import Navbar from "../components/Navbar"
 
 // Animations
 import { motion } from "framer-motion"

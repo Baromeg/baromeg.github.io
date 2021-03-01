@@ -1,22 +1,13 @@
 import React from "react"
-import baltasar from "../img/Baltasar.jpeg"
 import macbook from "../img/macbook.jpg"
 import { Link } from "react-router-dom";
 // Framer Motion
 import { motion } from "framer-motion"
-import { titleAnimation, fade, photoAnimation,sliderContainer,
-  slider, } from "../Animation"
-import Wave from "./Wave"
+import { titleAnimation, fade } from "../Animation"
 
 // Style
 import styled from "styled-components"
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide
-  
-} from "../styles"
+import { StyledGlobal, StyledDescription, StyledHide } from "../styles"
 
 const Home = () => {
   return (

@@ -1,6 +1,4 @@
 import React from "react"
-import innovation from "../img/innovation.png"
-import baltasar from "../img/Baltasar.jpeg"
 import Toggle from "./Toggle"
 
 // Animation
@@ -9,12 +7,7 @@ import { UseScroll } from "./UseScroll"
 import { scrollReveal } from "../Animation"
 
 import styled from "styled-components"
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide,
-} from "../styles"
+import { StyledGlobal } from "../styles"
 
 const FAQ = () => {
   const [element, controls] = UseScroll()

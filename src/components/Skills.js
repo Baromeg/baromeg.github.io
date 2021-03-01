@@ -1,5 +1,4 @@
 import React from "react"
-import innovation from "../img/innovation.png"
 import marshmallow from "../img/marshmalloworange.png"
 import {
   DiJsBadge,
@@ -12,7 +11,6 @@ import {
   DiPython,
   DiGit,
   DiGithubBadge,
-  DiTerminal,
   DiNpm,
   DiVisualstudio,
 } from "react-icons/di"
@@ -21,22 +19,12 @@ import {
   SiFlask,
   SiPostgresql,
   SiHeroku,
-  SiSlack,
-  SiZoom,
   SiBabel,
-  SiBulma,
-  SiAuth0,
   SiWebpack,
 } from "react-icons/si"
-import { GiMarshmallows } from "react-icons/gi"
 import { BiDevices } from "react-icons/bi"
 import styled from "styled-components"
-import {
-  StyledGlobal,
-  StyledDescription,
-  StyledImg,
-  StyledHide,
-} from "../styles"
+import { StyledGlobal, StyledDescription } from "../styles"
 
 // Animation
 import { motion } from "framer-motion"
