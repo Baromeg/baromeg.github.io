@@ -207,12 +207,18 @@ const Card = styled(motion.div)`
       scale: 0.8;
     }
   }
+  @media (max-width: 1515px) {
+    flex-basis: 17rem;
+  }
   @media (max-width: 1300px) {
     .icon {
       padding: 1rem 0;
       /* width: 1rem; */
     }
     flex-basis: 15rem;
+  }
+  @media (max-width: 1024px) {
+    flex-basis: 12rem;
   }
   @media (max-width: 768px) {
     .icon {
