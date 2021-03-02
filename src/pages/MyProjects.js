@@ -770,6 +770,9 @@ const Project = styled(motion.div)`
 `
 const ProjectFirstPage = styled(Project)`
   padding-top: 8vh;
+  @media (max-width: 1300px) {
+    padding-top: 10vh;
+  }
   @media (max-width: 1024px) {
     padding-top: 4vh;
   }
@@ -824,7 +827,7 @@ const StyledProjectDescription = styled(StyledDescription)`
       padding: 1rem 0.5rem;
     }
   }
-  @media (max-width: 1366px) {
+  @media (max-width: 1024px) {
     p {
       font-size: 2rem;
       padding: 1rem 0.5rem;
