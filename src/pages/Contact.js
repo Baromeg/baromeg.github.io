@@ -57,17 +57,17 @@ const Contact = (props) => {
           <Social variants={titleAnimation}>
             <label>
               <i className='icon'>
-                <FaSignature /> <span className='placeholder'>Your Name</span>
+                <FaSignature /> <span className='placeholder'>Your name</span>
               </i>{" "}
             </label>
             <label>
-            <input
-              className='input-field'
-              type='text'
-              placeholder=''
-              name='name'
+              <input
+                className='input-field'
+                type='text'
+                placeholder=''
+                name='name'
               />
-              </label>
+            </label>
           </Social>
         </StyledHide>
 
@@ -80,13 +80,12 @@ const Contact = (props) => {
             </label>
             <label>
               <input
-              className='input-field '
-              type='email'
-              placeholder=''
-              name='_replyto'
-            />
+                className='input-field '
+                type='email'
+                placeholder=''
+                name='_replyto'
+              />
             </label>
-            
           </Social>
         </StyledHide>
 
@@ -99,11 +98,11 @@ const Contact = (props) => {
               </i>{" "}
             </label>
             <label>
-            <textarea
-              className='input-field'
-              placeholder=''
-              name='message'
-              rows='8'
+              <textarea
+                className='input-field'
+                placeholder=''
+                name='message'
+                rows='8'
               ></textarea>
             </label>
           </Social>
