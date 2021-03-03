@@ -120,6 +120,11 @@ const Contact = (props) => {
           Send
         </StyledButton>
       </form>
+      <StyledTitle>
+        <motion.h2 variants={fade}>
+          Fancy an <span>e-coffee?</span>
+        </motion.h2>
+      </StyledTitle>
       <Cards>
         <Card
         // whileHover={{
@@ -156,11 +161,7 @@ const Contact = (props) => {
           </motion.div>
         </Card>
       </Cards>
-      <StyledTitle>
-        <motion.h2 variants={fade}>
-          Let's work <span>together!</span>{" "}
-        </motion.h2>
-      </StyledTitle>
+      
       {/* </div>
         </div>
       </section> */}

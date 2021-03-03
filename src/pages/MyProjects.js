@@ -122,9 +122,9 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Using Python I computed the data from several API’s requests
-                    (UNESCO list + Google Places & Photos) and built the
-                    componentry for the UI.
+                    Using Python and Flask, I computed the data from several API’s
+                    requests (UNESCO list + Google Places & Photos) and built
+                    the componentry for the UI with JavaScript and React.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
@@ -330,14 +330,13 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    I built the "Single location" page and enriched the UX with
-                    the map tile using MapBox, the comments and ratings using
-                    React-Ratings, the photo upload feature using Cloudinary.
+                    Using JavaScript and React, I built the "Single location" page and enriched the UX with
+                    the map tile using MapBox, the comments and ratings. It has the photo upload feature with Cloudinary.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    It handles async requests (Yelp, Mapbox) with error handling
+                    The application uses the MERM stack and handles async requests (Yelp, Mapbox) with error handling
                     triggers and geolocation for best UX.
                   </motion.p>
                 </StyledHide>
@@ -514,7 +513,7 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Pair programming throughout the project fetching several
+                    Pair programming using JavaScript and React, we fetched several
                     API’s (SuperHero & ComicVine) to link each hero with its
                     first comic appearance as well as the entire UI.
                   </motion.p>
@@ -664,14 +663,12 @@ const MyProjects = () => {
                 <StyledHide>
                   <motion.p>
                     It was my first independently made application. It is a
-                    grid-based game where I implemented the concepts learned on
-                    CSS, JavaScript, logical thinking and problem-solving.
+                    grid-based game that handles moving obstacles and tracks the player's scoring. 
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    The game handles moving obstacles and tracks the player's
-                    scoring.
+                  I implemented the concepts learned on HTML, CSS, JavaScript, logical thinking and problem-solving.
                   </motion.p>
                 </StyledHide>
               </motion.div>

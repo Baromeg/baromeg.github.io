@@ -45,14 +45,14 @@ const Home = () => {
         </motion.div>
         {/* <motion.p variants={fade}>Get in touch to know more</motion.p> */}
         <Link
-            to='/contact'
+            to='/myprojects'
             // activeClassName="selected"
             // activeStyle={{
             //   fontWeight: "bold",
             //   color: "red"
             // }}
           >
-        <StyledButton variants={fade}>Get in touch</StyledButton>
+        <StyledButton variants={fade}>See my work</StyledButton>
         </Link>
 
       </StyledDescription>
