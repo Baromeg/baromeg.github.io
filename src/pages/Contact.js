@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import macbook from '../img/coffee3.jpg'
+import macbook from '../img/coffee3cut.jpg'
 
 // Animations
 import { motion } from 'framer-motion'
@@ -168,6 +168,193 @@ const Contact = (props) => {
     </StyledContact>
   )
 }
+
+const StyledContact = styled(motion.div)`
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(${macbook});
+
+  padding: 10rem 10rem;
+  color: white;
+  min-height: 100vh;
+  h2 {
+    font-weight: lighter;
+    /* font-size: 6rem; */
+  }
+  i {
+    /* display:flex; */
+    span {
+      color: white;
+      font-weight: normal;
+      font-size: 1rem;
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 414px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  form {
+    padding: 1rem;
+    width: 29rem;
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      padding: 15px;
+      min-width: 40px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      padding-left: 30px;
+      text-align: left;
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+      padding-top: 1rem;
+      /* padding-bottom:        1rem; */
+      width: 40rem;
+      font-size: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      padding-top: 8rem;
+      /* padding-bottom:        1rem; */
+      /* width: 40rem;
+      font-size: 1.5rem; */
+    }
+    @media (max-width: 414px) {
+      padding-top: 3rem;
+      /* padding-bottom:        1rem; */
+      width: 32rem;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 414px) {
+      padding-left: 3rem;
+    }
+  }
+
+  input,
+  textarea {
+    padding: 1rem 0rem;
+    margin: 0.2rem 0rem;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: transparent;
+    /* text-shadow: 1px 1px 0 #fff; */
+  }
+  textarea {
+    @media (max-width: 1450px) {
+      height: 10rem;
+    }
+
+    @media (max-width: 1024px) {
+      height: 12rem;
+    }
+    @media (max-width: 768px) {
+      height: 15rem;
+    }
+    @media (max-width: 375px) {
+      height: 8rem;
+    }
+  }
+  label {
+    display: block;
+    /* margin-bottom: 16px; */
+    width: 100%;
+  }
+  input,
+  textarea {
+    margin-right: 16px/2;
+    box-shadow: inset 5px 5px 5px #333d3a, inset -1px -1px 3px #cacbd1;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:focus {
+      box-shadow: inset 1px 1px 2px #cacbd1, inset -1px -1px 2px #fff;
+    }
+  }
+  button {
+    font-size: 1.5rem;
+    @media (max-width: 1024px) {
+      /* padding: 2rem; */
+      font-size: 2rem;
+    }
+    @media (max-width: 375px) {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 1450px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 1300px) {
+    padding-top: 10rem;
+  }
+  @media (max-width: 1024px) {
+    padding-bottom: 2rem;
+  }
+  @media (max-width: 414px) {
+    padding-left: 4rem;
+  }
+`
+const StyledTitle = styled.div`
+  margin-top: 3rem;
+  color: white;
+  @media (max-width: 1366px) {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 4rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 4rem;
+      width: 40rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+  @media (max-width: 414px) {
+    h2 {
+      font-size: 3rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+
+    padding-left: 3rem;
+    h2 {
+      width: 32rem;
+      /* padding-bottom:2rem; */
+    }
+  }
+  @media (max-width: 375px) {
+    h2 {
+      font-size: 3rem;
+      width: 32rem;
+      /* padding-bottom:2rem; */
+    }
+    margin-top: 0rem;
+  }
+`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -177,11 +364,12 @@ const Cards = styled.div`
   width: 29rem;
   padding-top: 3rem;
   @media (max-width: 1366px) {
-    padding-top: 3rem;
+    padding-top: 0rem;
+    flex-wrap: nowrap;
   }
   @media (max-width: 1024px) {
     padding-top: 0rem;
-    width: 45rem;
+    width: 40rem;
     flex-wrap: nowrap;
   }
   @media (max-width: 414px) {
@@ -221,14 +409,14 @@ const Card = styled(motion.div)`
   }
   #portfoliolink {
     font-size: 40px;
-    box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
+    box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 3px;
     border: none;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
     &:hover {
-      box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+      box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
       background-color: transparent;
       svg {
         color: #fc8621;
@@ -290,14 +478,14 @@ const Card = styled(motion.div)`
 `
 const StyledButton = styled(motion.button)`
   margin-top: 2rem;
-  box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
+  box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   border-radius: 20px;
   border: none;
   width: 100%;
   &:hover {
-    box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+    box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
     background-color: transparent;
     color: #fc8621;
   }
@@ -309,181 +497,6 @@ const StyledButton = styled(motion.button)`
     -webkit-tap-highlight-color: transparent;
   }
 `
-const StyledContact = styled(motion.div)`
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(${macbook});
-
-  padding: 10rem 10rem;
-  color: white;
-  min-height: 100vh;
-  h2 {
-    font-weight: lighter;
-    /* font-size: 6rem; */
-  }
-  i {
-    /* display:flex; */
-    span {
-      color: white;
-      font-weight: normal;
-      font-size: 1rem;
-      @media (max-width: 1024px) {
-        font-size: 1.5rem;
-      }
-      @media (max-width: 414px) {
-        font-size: 1.2rem;
-      }
-    }
-  }
-
-  form {
-    padding: 1rem;
-    width: 29rem;
-
-    .input-icons {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    .icon {
-      padding: 15px;
-      min-width: 40px;
-    }
-
-    .input-field {
-      width: 100%;
-      padding: 10px;
-      padding-left: 30px;
-      text-align: left;
-      color: white;
-    }
-    @media (max-width: 1024px) {
-      padding-top: 1rem;
-      /* padding-bottom:        1rem; */
-      width: 40rem;
-      font-size: 1.5rem;
-    }
-    @media (max-width: 768px) {
-      padding-top: 8rem;
-      /* padding-bottom:        1rem; */
-      /* width: 40rem;
-      font-size: 1.5rem; */
-    }
-    @media (max-width: 414px) {
-      padding-top: 3rem;
-      /* padding-bottom:        1rem; */
-      width: 32rem;
-      font-size: 1.2rem;
-    }
-    @media (max-width: 414px) {
-      padding-left: 3rem;
-    }
-  }
-
-  input,
-  textarea {
-    padding: 1rem 0rem;
-    margin: 0.2rem 0rem;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
-    border-radius: 16px;
-    padding: 16px;
-    background-color: transparent;
-    /* text-shadow: 1px 1px 0 #fff; */
-  }
-  textarea {
-    @media (max-width: 1024px) {
-      height: 12rem;
-    }
-    @media (max-width: 768px) {
-      height: 15rem;
-    }
-    @media (max-width: 375px) {
-      height: 8rem;
-    }
-  }
-  label {
-    display: block;
-    /* margin-bottom: 16px; */
-    width: 100%;
-  }
-  input,
-  textarea {
-    margin-right: 16px/2;
-    box-shadow: inset 5px 5px 5px #312f2f, inset -1px -1px 3px #cacbd1;
-    width: 100%;
-    box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
-    appearance: none;
-    -webkit-appearance: none;
-
-    &:focus {
-      box-shadow: inset 1px 1px 2px #cacbd1, inset -1px -1px 2px #fff;
-    }
-  }
-  button {
-    font-size: 1.5rem;
-    @media (max-width: 1024px) {
-      /* padding: 2rem; */
-      font-size: 2rem;
-    }
-    @media (max-width: 375px) {
-      font-size: 1.5rem;
-    }
-  }
-  @media (max-width: 1024px) {
-    padding-bottom: 2rem;
-  }
-  @media (max-width: 414px) {
-    padding-left: 4rem;
-  }
-`
-const StyledTitle = styled.div`
-  margin-top: 3rem;
-  color: white;
-  @media (max-width: 1366px) {
-    h2 {
-      font-size: 6rem;
-    }
-  }
-  @media (max-width: 1024px) {
-    h2 {
-      font-size: 4rem;
-      /* padding-bottom:2rem; */
-    }
-    margin-top: 0rem;
-  }
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 5rem;
-      /* padding-bottom:2rem; */
-    }
-    margin-top: 0rem;
-  }
-  @media (max-width: 414px) {
-    h2 {
-      font-size: 3rem;
-      /* padding-bottom:2rem; */
-    }
-    margin-top: 0rem;
-
-    padding-left: 3rem;
-    h2 {
-      width: 32rem;
-      /* padding-bottom:2rem; */
-    }
-  }
-  @media (max-width: 375px) {
-    h2 {
-      font-size: 3rem;
-      width: 32rem;
-      /* padding-bottom:2rem; */
-    }
-    margin-top: 0rem;
-  }
-`
-
 const Hide = styled.div`
   overflow: hidden;
 `

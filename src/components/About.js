@@ -1,22 +1,22 @@
-import React from "react"
-import baltasar from "../img/Baltasar.jpeg"
+import React from 'react'
+import baltasar from '../img/Baltasar.jpeg'
 
 // Framer Motion
-import { motion } from "framer-motion"
-import { fade, photoAnimation } from "../Animation"
+import { motion } from 'framer-motion'
+import { fade, photoAnimation } from '../Animation'
 
 // Style
-import styled from "styled-components"
+import styled from 'styled-components'
 import {
   StyledGlobal,
   StyledDescription,
   StyledImg,
-  StyledHide,
-} from "../styles"
+  StyledHide
+} from '../styles'
 
 // Animation
-import { scrollReveal } from "../Animation"
-import { UseScroll } from "./UseScroll"
+import { scrollReveal } from '../Animation'
+import { UseScroll } from './UseScroll'
 
 const About = () => {
   const [element, controls] = UseScroll()
@@ -45,10 +45,10 @@ const About = () => {
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek a developer role to{" "}
+                I seek a developer role to{' '}
                 <span>contribute to both sides of the stack</span>, share my
                 ideas, and grow in a continued-learning and knowledge-sharing
-                environment. I am eager to collaborate on projects that{" "}
+                environment. I am eager to collaborate on projects that{' '}
                 <span>develop a better and more sustainable tomorrow</span>.
               </motion.p>
             </StyledHide>
@@ -58,11 +58,11 @@ const About = () => {
                 operational processes and ultimately creating memorable customer
                 experiences. After more than 12 years of hospitality background,
                 <span>
-                  {" "}
+                  {' '}
                   I’ve decided to blend my passion for software engineering, my
                   problem-solving skills and my creativity to join the developer
                   community
-                </span>{" "}
+                </span>{' '}
                 to pursue a career change and become part of the solution for
                 today’s world challenges.
               </motion.p>
@@ -97,7 +97,7 @@ const StyledAbout = styled(StyledGlobal)`
   }
 `
 const AboutDescription = styled(StyledDescription)`
-  @media (max-width: 1366px) {
+  @media (max-width: 1450px) {
     p {
       font-size: 1.2rem;
       padding-right: 2rem;
