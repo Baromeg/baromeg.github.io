@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react'
 
 // Page Components
-import Home from "../components/Home"
-import About from "../components/About"
-import Skills from "../components/Skills"
-import Learning from "../components/Learning"
-import Interests from "../components/Interests"
+import Home from '../components/Home'
+import About from '../components/About'
+import Skills from '../components/Skills'
+import Learning from '../components/Learning'
+import Interests from '../components/Interests'
 
 // Animations
-import { motion } from "framer-motion"
-import { pageAnimation } from "../Animation";
-import ScrollTop from "../components/ScrollTop"
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../Animation'
+import ScrollTop from '../components/ScrollTop'
 
 const AboutMe = () => {
   return (

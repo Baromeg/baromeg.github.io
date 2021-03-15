@@ -1,5 +1,5 @@
-import React from "react"
-import marshmallow from "../img/marshmalloworange.png"
+import React from 'react'
+import marshmallow from '../img/marshmalloworange.png'
 import {
   DiJsBadge,
   DiHtml5,
@@ -13,7 +13,7 @@ import {
   DiGithubBadge,
   DiNpm,
   DiVisualstudio,
-} from "react-icons/di"
+} from 'react-icons/di'
 import {
   SiJsonwebtokens,
   SiFlask,
@@ -21,15 +21,15 @@ import {
   SiHeroku,
   SiBabel,
   SiWebpack,
-} from "react-icons/si"
-import { BiDevices } from "react-icons/bi"
-import styled from "styled-components"
-import { StyledGlobal, StyledDescription } from "../styles"
+} from 'react-icons/si'
+import { BiDevices } from 'react-icons/bi'
+import styled from 'styled-components'
+import { StyledGlobal, StyledDescription } from '../styles'
 
 // Animation
-import { motion } from "framer-motion"
-import { scrollReveal } from "../Animation"
-import { UseScroll } from "./UseScroll"
+import { motion } from 'framer-motion'
+import { scrollReveal } from '../Animation'
+import { UseScroll } from './UseScroll'
 
 const Skills = () => {
   const [element, controls] = UseScroll()
@@ -161,7 +161,7 @@ const Skills = () => {
               }}
             >
               <motion.div className='icon'>
-                          <img src={marshmallow} alt='Marshmallow' />
+                <img src={marshmallow} alt='Marshmallow' />
                 <motion.h3>Marshmallow</motion.h3>
               </motion.div>
             </Card>
@@ -351,13 +351,13 @@ const Card = styled(motion.div)`
   @media (max-width: 414px) {
     .icon {
       padding: 1rem 0;
-      max-width:  100%;;
+      max-width: 100%;
       img {
-          /* max-height: 40rem; */
-          width: 5rem;
-        }
+        /* max-height: 40rem; */
+        width: 5rem;
+      }
     }
-    flex-basis:7rem;
+    flex-basis: 7rem;
   }
 `
 const Hide = styled.div`

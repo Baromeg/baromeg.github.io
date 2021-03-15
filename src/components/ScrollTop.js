@@ -1,6 +1,6 @@
-import userEvent from "@testing-library/user-event"
-import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import userEvent from '@testing-library/user-event'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const ScrollTop = () => {
   const { pathname } = useLocation()

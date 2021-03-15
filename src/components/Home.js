@@ -1,18 +1,18 @@
-import React from "react"
-import macbook from "../img/macbook.jpg"
-import { Link } from "react-router-dom";
+import React from 'react'
+import macbook from '../img/macbook.jpg'
+import { Link } from 'react-router-dom'
 // Framer Motion
-import { motion } from "framer-motion"
-import { titleAnimation, fade } from "../Animation"
+import { motion } from 'framer-motion'
+import { titleAnimation, fade } from '../Animation'
 
 // Style
-import styled from "styled-components"
-import { StyledGlobal, StyledDescription, StyledHide } from "../styles"
+import styled from 'styled-components'
+import { StyledGlobal, StyledDescription, StyledHide } from '../styles'
 
 const Home = () => {
   return (
     <StyledHome>
-       {/* <motion.div variants={sliderContainer}>
+      {/* <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
@@ -39,22 +39,21 @@ const Home = () => {
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={fade}>
-              Full-Stack <motion.span >Software Engineer</motion.span>
+              Full-Stack <motion.span>Software Engineer</motion.span>
             </motion.h2>
           </StyledHide>
         </motion.div>
         {/* <motion.p variants={fade}>Get in touch to know more</motion.p> */}
         <Link
-            to='/myprojects'
-            // activeClassName="selected"
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red"
-            // }}
-          >
-        <StyledButton variants={fade}>See my work</StyledButton>
+          to='/myprojects'
+          // activeClassName="selected"
+          // activeStyle={{
+          //   fontWeight: "bold",
+          //   color: "red"
+          // }}
+        >
+          <StyledButton variants={fade}>See my work</StyledButton>
         </Link>
-
       </StyledDescription>
       {/* <StyledImg>
         <motion.img

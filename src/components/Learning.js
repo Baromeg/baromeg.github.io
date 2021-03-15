@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   DiJsBadge,
   DiHtml5,
@@ -12,7 +12,7 @@ import {
   DiGithubBadge,
   DiNpm,
   DiVisualstudio,
-} from "react-icons/di"
+} from 'react-icons/di'
 import {
   SiJsonwebtokens,
   SiFlask,
@@ -20,23 +20,26 @@ import {
   SiHeroku,
   SiBabel,
   SiWebpack,
-} from "react-icons/si"
-import { GiMarshmallows } from "react-icons/gi"
-import {BiDevices } from "react-icons/bi"
-import styled from "styled-components"
-import { StyledGlobal, StyledDescription } from "../styles"
+} from 'react-icons/si'
+import { GiMarshmallows } from 'react-icons/gi'
+import { BiDevices } from 'react-icons/bi'
+import styled from 'styled-components'
+import { StyledGlobal, StyledDescription } from '../styles'
 
 // Animation
-import { motion } from "framer-motion"
-import { scrollReveal } from "../Animation"
-import { UseScroll } from "./UseScroll"
+import { motion } from 'framer-motion'
+import { scrollReveal } from '../Animation'
+import { UseScroll } from './UseScroll'
 
 const Learning = () => {
   const [element, controls] = UseScroll()
 
   return (
     <StyledSkills
-    variants={scrollReveal} initial="hidden" animate={controls} ref={element}
+      variants={scrollReveal}
+      initial='hidden'
+      animate={controls}
+      ref={element}
     >
       <StyledDescription>
         <h2>
@@ -49,10 +52,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiHtml5/>
-              <motion.h3>
-                HTML5
-                </motion.h3>
+              <DiHtml5 />
+              <motion.h3>HTML5</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -61,10 +62,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiCss3/>
-              <motion.h3>
-                CSS3
-                </motion.h3>
+              <DiCss3 />
+              <motion.h3>CSS3</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -73,10 +72,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiSass/>
-              <motion.h3>
-                SASS
-                </motion.h3>
+              <DiSass />
+              <motion.h3>SASS</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -85,10 +82,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <BiDevices/>
-              <motion.h3>
-                Responsive Design
-                </motion.h3>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -97,10 +92,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiJsBadge/>
-              <motion.h3>
-                JavaScript
-                </motion.h3>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -109,10 +102,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiReact/>
-              <motion.h3>
-                React.js
-                </motion.h3>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -121,10 +112,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiMongodb/>
-              <motion.h3>
-                Mongodb
-                </motion.h3>
+              <DiMongodb />
+              <motion.h3>Mongodb</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -133,10 +122,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiJsonwebtokens/>
-              <motion.h3>
-                JWT
-                </motion.h3>
+              <SiJsonwebtokens />
+              <motion.h3>JWT</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -145,10 +132,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiPython/>
-              <motion.h3>
-                Python
-                </motion.h3>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -157,10 +142,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiFlask/>
-              <motion.h3>
-                Flask
-                </motion.h3>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -169,10 +152,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiPostgresql/>
-              <motion.h3>
-                PostgreSQL
-                </motion.h3>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -181,10 +162,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <GiMarshmallows/>
-              <motion.h3>
-                Marshmallow
-                </motion.h3>
+              <GiMarshmallows />
+              <motion.h3>Marshmallow</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -193,10 +172,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiNodejsSmall/>
-              <motion.h3>
-                Node.js
-                </motion.h3>
+              <DiNodejsSmall />
+              <motion.h3>Node.js</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -205,10 +182,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiBabel/>
-              <motion.h3>
-                Babel
-                </motion.h3>
+              <SiBabel />
+              <motion.h3>Babel</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -217,10 +192,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiNpm/>
-              <motion.h3>
-                NPM
-                </motion.h3>
+              <DiNpm />
+              <motion.h3>NPM</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -229,10 +202,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiWebpack/>
-              <motion.h3>
-                Webpack
-                </motion.h3>
+              <SiWebpack />
+              <motion.h3>Webpack</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -241,10 +212,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiVisualstudio/>
-              <motion.h3>
-                VS Code
-                </motion.h3>
+              <DiVisualstudio />
+              <motion.h3>VS Code</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -253,10 +222,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiGit/>
-              <motion.h3>
-                Git
-                </motion.h3>
+              <DiGit />
+              <motion.h3>Git</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -265,10 +232,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <DiGithubBadge/>
-              <motion.h3>
-                GitHub
-                </motion.h3>
+              <DiGithubBadge />
+              <motion.h3>GitHub</motion.h3>
             </motion.div>
           </Card>
           <Card
@@ -277,10 +242,8 @@ const Learning = () => {
             }}
           >
             <motion.div className='icon'>
-              <SiHeroku/>
-              <motion.h3>
-                Heroku
-                </motion.h3>
+              <SiHeroku />
+              <motion.h3>Heroku</motion.h3>
             </motion.div>
           </Card>
         </Cards>
@@ -312,7 +275,6 @@ const Cards = styled.div`
 
   @media (max-width: 667px) {
     /* font-size: 4rem; */
-    
 
     /* justify-content: center;
     padding: 0; */
@@ -367,7 +329,6 @@ const Card = styled(motion.div)`
       /* width: 1rem; */
     }
     flex-basis: 15rem;
-
   }
   @media (max-width: 667px) {
     .icon {
@@ -375,7 +336,6 @@ const Card = styled(motion.div)`
       /* width: 1rem; */
     }
     flex-basis: 5rem;
-
   }
 `
 const Hide = styled.div`

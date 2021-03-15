@@ -1,21 +1,20 @@
-import React from "react"
-import innovation from "../img/innovationorange.png"
-import climate from "../img/climateorange.png"
-import bcorp from "../img/b-corporange.png"
-import mindfulness from "../img/mindfulnessorange.png"
-import running from "../img/Runningorange.svg.png"
-import roller from "../img/roller_bladingorange.png"
+import React from 'react'
+import innovation from '../img/innovationorange.png'
+import climate from '../img/climateorange.png'
+import bcorp from '../img/b-corporange.png'
+import mindfulness from '../img/mindfulnessorange.png'
+import running from '../img/Runningorange.svg.png'
+import roller from '../img/roller_bladingorange.png'
 
-
-import { FaRecycle } from "react-icons/fa"
-import { GiWorld } from "react-icons/gi"
-import styled from "styled-components"
-import { StyledGlobal, StyledDescription } from "../styles"
+import { FaRecycle } from 'react-icons/fa'
+import { GiWorld } from 'react-icons/gi'
+import styled from 'styled-components'
+import { StyledGlobal, StyledDescription } from '../styles'
 
 // Animation
-import { motion } from "framer-motion"
-import { scrollReveal } from "../Animation"
-import { UseScroll } from "./UseScroll"
+import { motion } from 'framer-motion'
+import { scrollReveal } from '../Animation'
+import { UseScroll } from './UseScroll'
 
 const Interests = () => {
   const [element, controls] = UseScroll()
@@ -72,7 +71,6 @@ const Interests = () => {
                 rel='noreferrer'
                 href='https://bcorporation.net/'
               >
-                
                 <motion.div className='icon'>
                   <img src={bcorp} alt='B-Corp Certification' />
                   <motion.h3>B-Corp Certification</motion.h3>

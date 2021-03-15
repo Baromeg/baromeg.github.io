@@ -1,13 +1,13 @@
-import React from "react"
-import Toggle from "./Toggle"
+import React from 'react'
+import Toggle from './Toggle'
 
 // Animation
-import { AnimateSharedLayout } from "framer-motion"
-import { UseScroll } from "./UseScroll"
-import { scrollReveal } from "../Animation"
+import { AnimateSharedLayout } from 'framer-motion'
+import { UseScroll } from './UseScroll'
+import { scrollReveal } from '../Animation'
 
-import styled from "styled-components"
-import { StyledGlobal } from "../styles"
+import styled from 'styled-components'
+import { StyledGlobal } from '../styles'
 
 const FAQ = () => {
   const [element, controls] = UseScroll()

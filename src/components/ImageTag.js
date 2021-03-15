@@ -1,13 +1,13 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 
 const ImageTag = ({ children, title }) => {
   const [toggle, setToggle] = useState(false)
   return (
     <motion.div layout className='subject' onHoverStart={() => setToggle(true)}>
       <motion.h4 layout>{title}</motion.h4>
-      {toggle ? children : ""}
+      {toggle ? children : ''}
       <div className='learning-line'></div>
     </motion.div>
   )

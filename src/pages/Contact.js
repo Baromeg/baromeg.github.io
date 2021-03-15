@@ -1,18 +1,18 @@
-import React from "react"
-import styled from "styled-components"
-import macbook from "../img/macbook.jpg"
+import React from 'react'
+import styled from 'styled-components'
+import macbook from '../img/coffee3.jpg'
 
 // Animations
-import { motion } from "framer-motion"
-import { pageAnimation, titleAnimation, fade } from "../Animation"
-import ScrollTop from "../components/ScrollTop"
+import { motion } from 'framer-motion'
+import { pageAnimation, titleAnimation, fade } from '../Animation'
+import ScrollTop from '../components/ScrollTop'
 
-import { StyledHide } from "../styles"
-import { GiPaperPlane } from "react-icons/gi"
-import { SiLinkedin } from "react-icons/si"
-import { FaGithub, FaAt } from "react-icons/fa"
-import { RiMessage2Fill } from "react-icons/ri"
-import { FaSignature } from "react-icons/fa"
+import { StyledHide } from '../styles'
+import { GiPaperPlane } from 'react-icons/gi'
+import { SiLinkedin } from 'react-icons/si'
+import { FaGithub, FaAt } from 'react-icons/fa'
+import { RiMessage2Fill } from 'react-icons/ri'
+import { FaSignature } from 'react-icons/fa'
 
 const Contact = (props) => {
   return (
@@ -58,7 +58,7 @@ const Contact = (props) => {
             <label>
               <i className='icon'>
                 <FaSignature /> <span className='placeholder'>Your name</span>
-              </i>{" "}
+              </i>{' '}
             </label>
             <label>
               <input
@@ -76,7 +76,7 @@ const Contact = (props) => {
             <label className='label'>
               <i className='icon'>
                 <FaAt /> <span className='placeholder'>Your email</span>
-              </i>{" "}
+              </i>{' '}
             </label>
             <label>
               <input
@@ -93,9 +93,9 @@ const Contact = (props) => {
           <Social variants={titleAnimation}>
             <label>
               <i className='icon'>
-                <RiMessage2Fill />{" "}
+                <RiMessage2Fill />{' '}
                 <span className='placeholder'>Your message</span>
-              </i>{" "}
+              </i>{' '}
             </label>
             <label>
               <textarea
@@ -161,7 +161,7 @@ const Contact = (props) => {
           </motion.div>
         </Card>
       </Cards>
-      
+
       {/* </div>
         </div>
       </section> */}
@@ -188,7 +188,6 @@ const Cards = styled.div`
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 32rem;
-
   }
 `
 
@@ -231,10 +230,9 @@ const Card = styled(motion.div)`
     &:hover {
       box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
       background-color: transparent;
-      svg{
-        color: #fc8621; 
+      svg {
+        color: #fc8621;
       }
-     
     }
     &:focus {
       outline: none;
@@ -469,8 +467,8 @@ const StyledTitle = styled.div`
       /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
-    
-    padding-left:3rem;
+
+    padding-left: 3rem;
     h2 {
       width: 32rem;
       /* padding-bottom:2rem; */

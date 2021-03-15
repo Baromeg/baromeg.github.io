@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
 // Import Pages
-import Navbar from "./components/Navbar"
-import AboutMe from "./pages/AboutMe"
-import Contact from "./pages/Contact"
-import MyProjects from "./pages/MyProjects"
-import ProjectDetail from "./pages/ProjectDetail"
+import Navbar from './components/Navbar'
+import AboutMe from './pages/AboutMe'
+import Contact from './pages/Contact'
+import MyProjects from './pages/MyProjects'
+import ProjectDetail from './pages/ProjectDetail'
 
 // Router
-import { Switch, Route, useLocation, HashRouter } from "react-router-dom"
+import { Switch, Route, useLocation, HashRouter } from 'react-router-dom'
 
 // Animation
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from 'framer-motion'
 
 // Global Style
-import GlobalStyle from "../src/components/GlobalStyle"
+import GlobalStyle from '../src/components/GlobalStyle'
 
 const App = () => {
   const location = useLocation()

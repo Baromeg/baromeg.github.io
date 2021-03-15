@@ -29,7 +29,7 @@ export const titleAnimation = {
     y: 0,
     transition: {
       duration: 2,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 }
@@ -42,7 +42,7 @@ export const fade = {
     opacity: 1,
     transition: {
       duration: 2,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 }
@@ -56,7 +56,7 @@ export const photoAnimation = {
     scale: 1,
     opacity: 1,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.75,
       delay: 1.5,
     },
@@ -64,25 +64,25 @@ export const photoAnimation = {
 }
 
 export const lineAnimation = {
-  hidden: { width: "0%" },
+  hidden: { width: '0%' },
   show: {
-    width: "100%",
+    width: '100%',
     transition: { duration: 1 },
   },
 }
 
 export const slider = {
-  hidden: { x: "-130%", skew: "45deg" },
+  hidden: { x: '-130%', skew: '45deg' },
   show: {
-    x: "100%",
-    skew: "0deg",
-    transition: { ease: "easeOut", duration: 1 },
+    x: '100%',
+    skew: '0deg',
+    transition: { ease: 'easeOut', duration: 1 },
   },
 }
 
 export const sliderContainer = {
   hidden: { opacity: 1 },
-  show: { opacity: 1, transition: { staggerChildren: 0.1, ease: "easeOut" } },
+  show: { opacity: 1, transition: { staggerChildren: 0.1, ease: 'easeOut' } },
 }
 
 export const scrollReveal = {
@@ -97,16 +97,16 @@ export const scrollReveal = {
     opacity: 1,
     scale: 1,
     transition: {
-      ease: "easeOut",
+      ease: 'easeOut',
       duration: 0.5,
     },
   },
 }
 
 export const newSlider = {
-  hidden: { width: "0%" },
+  hidden: { width: '0%' },
   show: {
-    width: "100%",
-    transition: { ease: "easeOut", duration: 1 },
+    width: '100%',
+    transition: { ease: 'easeOut', duration: 1 },
   },
 }

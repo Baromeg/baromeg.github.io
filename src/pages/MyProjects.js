@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 // Images
-import kyh from "../img/heritage.gif"
-import heroes from "../img/heroes.gif"
-import frogger from "../img/thefrogger.gif"
-import greenworld from "../img/greenworld.gif"
-import marshmallow from "../img/marshmalloworange.png"
-import Mockup from "../components/Mockup"
+import kyh from '../img/heritage.gif'
+import heroes from '../img/heroes.gif'
+import frogger from '../img/thefrogger.gif'
+import greenworld from '../img/greenworld.gif'
+import marshmallow from '../img/marshmalloworange.png'
+import Mockup from '../components/Mockup'
 import {
   DiJsBadge,
   DiHtml5,
@@ -15,7 +15,7 @@ import {
   DiReact,
   DiMongodb,
   DiPython,
-} from "react-icons/di"
+} from 'react-icons/di'
 import {
   SiJsonwebtokens,
   SiFlask,
@@ -24,28 +24,28 @@ import {
   SiHeroku,
   SiBabel,
   SiWebpack,
-} from "react-icons/si"
-import { BiDevices } from "react-icons/bi"
-import { BsGrid1X2Fill } from "react-icons/bs"
-import { FaChrome, FaGithub, FaCloudDownloadAlt } from "react-icons/fa"
+} from 'react-icons/si'
+import { BiDevices } from 'react-icons/bi'
+import { BsGrid1X2Fill } from 'react-icons/bs'
+import { FaChrome, FaGithub, FaCloudDownloadAlt } from 'react-icons/fa'
 // Style
 import {
   StyledHide,
   StyledDescription,
   StyledGlobal,
   StyledImg,
-} from "../styles"
+} from '../styles'
 // Animations
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 import {
   pageAnimation,
   fade,
   lineAnimation,
   titleAnimation,
   scrollReveal,
-} from "../Animation"
-import { UseScroll } from "../components/UseScroll"
-import ScrollTop from "../components/ScrollTop"
+} from '../Animation'
+import { UseScroll } from '../components/UseScroll'
+import ScrollTop from '../components/ScrollTop'
 
 const MyProjects = () => {
   const [element, controls] = UseScroll()
@@ -122,9 +122,9 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Using Python and Flask, I computed the data from several API’s
-                    requests (UNESCO list + Google Places & Photos) and built
-                    the componentry for the UI with JavaScript and React.
+                    Using Python and Flask, I computed the data from several
+                    API’s requests (UNESCO list + Google Places & Photos) and
+                    built the componentry for the UI with JavaScript and React.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
@@ -269,7 +269,7 @@ const MyProjects = () => {
         animate={controls}
         initial='hidden'
       >
-        {" "}
+        {' '}
         <StyledHide>
           <h2>Green World</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
@@ -330,14 +330,17 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Using JavaScript and React, I built the "Single location" page and enriched the UX with
-                    the map tile using MapBox, the comments and ratings. It has the photo upload feature with Cloudinary.
+                    Using JavaScript and React, I built the "Single location"
+                    page and enriched the UX with the map tile using MapBox, the
+                    comments and ratings. It has the photo upload feature with
+                    Cloudinary.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    The application uses the MERM stack and handles async requests (Yelp, Mapbox) with error handling
-                    triggers and geolocation for best UX.
+                    The application uses the MERM stack and handles async
+                    requests (Yelp, Mapbox) with error handling triggers and
+                    geolocation for best UX.
                   </motion.p>
                 </StyledHide>
               </motion.div>
@@ -455,7 +458,7 @@ const MyProjects = () => {
         animate={controls2}
         initial='hidden'
       >
-        {" "}
+        {' '}
         <StyledHide>
           <h2>Heroes</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
@@ -513,9 +516,9 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Pair programming using JavaScript and React, we fetched several
-                    API’s (SuperHero & ComicVine) to link each hero with its
-                    first comic appearance as well as the entire UI.
+                    Pair programming using JavaScript and React, we fetched
+                    several API’s (SuperHero & ComicVine) to link each hero with
+                    its first comic appearance as well as the entire UI.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
@@ -609,7 +612,7 @@ const MyProjects = () => {
         animate={controls3}
         initial='hidden'
       >
-        {" "}
+        {' '}
         <StyledHide>
           <h2>The Frogger</h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
@@ -663,19 +666,21 @@ const MyProjects = () => {
                 <StyledHide>
                   <motion.p>
                     It was my first independently made application. It is a
-                    grid-based game that handles moving obstacles and tracks the player's scoring. 
+                    grid-based game that handles moving obstacles and tracks the
+                    player's scoring.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                  I implemented the concepts learned on HTML, CSS, JavaScript, logical thinking and problem-solving.
+                    I implemented the concepts learned on HTML, CSS, JavaScript,
+                    logical thinking and problem-solving.
                   </motion.p>
                 </StyledHide>
               </motion.div>
               {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
               <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
-          </StyledProjects>{" "}
+          </StyledProjects>{' '}
         </StyledHide>
         <Cards>
           <Card

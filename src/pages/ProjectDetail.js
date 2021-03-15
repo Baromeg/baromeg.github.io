@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react"
-import styled from "styled-components"
-import { useHistory } from "react-router-dom"
-import { ProjectsContent } from "../ProjectsContent"
-import Mockup from "../components/Mockup"
+import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
+import { useHistory } from 'react-router-dom'
+import { ProjectsContent } from '../ProjectsContent'
+import Mockup from '../components/Mockup'
 
 // Images
-import kyh from "../img/kyhfrontpage.png"
+import kyh from '../img/kyhfrontpage.png'
 // import heroes from "../img/heroes.png"
 // import greenworld from "../img/greenworld.png"
 // import webpack from "../img/webpack.png"
 // import heroku from "../img/heroku.png"
 
 // Animations
-import { motion } from "framer-motion"
-import { pageAnimation } from "../Animation"
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../Animation'
 
 const ProjectDetail = () => {
   const history = useHistory()
