@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import macbook from '../img/coffee3.jpg'
+import macbook from '../img/coffee3cut1.jpg'
 
 // Animations
 import { motion } from 'framer-motion'
@@ -484,16 +484,137 @@ const StyledTitle = styled.div`
   }
 `
 
+const Card = styled(motion.div)`
+  flex-basis: 5rem;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 1rem; */
+    font-size: 3rem;
+    svg {
+      color: #fc8621;
+    }
+  }
+  h3 {
+    opacity: 0;
+    position: absolute;
+    /* margin-left: 1rem; */
+    background: white;
+    color: black;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    position: absolute;
+    /* font-weight: 400;
+        font-size: 20px;
+        opacity: 0; */
+    /* margin: 0 5px; */
+    max-width: 100%;
+    text-align: center;
+  }
+  #portfoliolink {
+    font-size: 40px;
+    box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    &:hover {
+      box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
+      background-color: transparent;
+      svg {
+        color: #fc8621;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    svg {
+      color: white;
+    }
+    @media (max-width: 375px) {
+      font-size: 30px;
+    }
+  }
+  :hover {
+    h3 {
+      opacity: 0.6;
+      scale: 1.2;
+    }
+    svg {
+      /* opacity: 0.6; */
+      scale: 0.8;
+    }
+  }
+  @media (max-width: 1300px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
+    }
+    flex-basis: 15rem;
+  }
+  @media (max-width: 1024px) {
+    .icon {
+      padding: 2rem 0rem;
+      /* width: 1rem; */
+    }
+    /* flex-basis: 15rem; */
+  }
+  @media (max-width: 768px) {
+    .icon {
+      padding: 5rem 0rem;
+      /* width: 1rem; */
+    }
+    /* flex-basis: 5rem; */
+  }
+  @media (max-width: 667px) {
+    .icon {
+      padding: 1rem 0;
+      /* width: 1rem; */
+    }
+    flex-basis: 5rem;
+  }
+`
+const StyledButton = styled(motion.button)`
+  margin-top: 2rem;
+  box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  &:hover {
+    box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
+    background-color: transparent;
+    color: #fc8621;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+    -webkit-tap-highlight-color: transparent;
+  }
+`
+// const Hide = styled.div`
+//   overflow: hidden;
+// `
 const Hide = styled.div`
   overflow: hidden;
 `
 
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: white;
-`
+// const Circle = styled.div`
+//   border-radius: 50%;
+//   width: 3rem;
+//   height: 3rem;
+//   background: white;
+// `
 const Social = styled(motion.div)`
   /* display: flex;
   flex-direction: row;
