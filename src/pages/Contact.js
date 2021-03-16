@@ -31,10 +31,8 @@ const Contact = (props) => {
 
           <h2>Send me a message</h2>
         </Social>
-
         <Social variants={titleAnimation}>
           <Circle> </Circle>
-
           <h2>Send me a message</h2>
         </Social>
       </div> */}
@@ -111,7 +109,6 @@ const Contact = (props) => {
         <StyledButton
           variants={fade}
           type='submit'
-          // className='button is-large is-info has-text-weight-semibold has-text-link	'
           value='Send'
         >
           <i className='icon'>
