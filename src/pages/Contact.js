@@ -168,147 +168,7 @@ const Contact = (props) => {
     </StyledContact>
   )
 }
-const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 6rem;
-  width: 29rem;
-  padding-top: 3rem;
-  @media (max-width: 1366px) {
-    padding-top: 3rem;
-  }
-  @media (max-width: 1024px) {
-    padding-top: 0rem;
-    width: 45rem;
-    flex-wrap: nowrap;
-  }
-  @media (max-width: 414px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    width: 32rem;
-  }
-`
 
-const Card = styled(motion.div)`
-  flex-basis: 5rem;
-
-  .icon {
-    display: flex;
-    justify-content: center;
-    /* padding-top: 1rem; */
-    font-size: 3rem;
-    svg {
-      color: #fc8621;
-    }
-  }
-  h3 {
-    opacity: 0;
-    position: absolute;
-    /* margin-left: 1rem; */
-    background: white;
-    color: black;
-    font-size: 0.5rem;
-    padding: 0.2rem;
-    position: absolute;
-    /* font-weight: 400;
-        font-size: 20px;
-        opacity: 0; */
-    /* margin: 0 5px; */
-    max-width: 100%;
-    text-align: center;
-  }
-  #portfoliolink {
-    font-size: 40px;
-    box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    border-radius: 3px;
-    border: none;
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
-    &:hover {
-      box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
-      background-color: transparent;
-      svg {
-        color: #fc8621;
-      }
-    }
-    &:focus {
-      outline: none;
-    }
-    &:active {
-      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    svg {
-      color: white;
-    }
-    @media (max-width: 375px) {
-      font-size: 30px;
-    }
-  }
-  :hover {
-    h3 {
-      opacity: 0.6;
-      scale: 1.2;
-    }
-    svg {
-      /* opacity: 0.6; */
-      scale: 0.8;
-    }
-  }
-  @media (max-width: 1300px) {
-    .icon {
-      padding: 1rem 0;
-      /* width: 1rem; */
-    }
-    flex-basis: 15rem;
-  }
-  @media (max-width: 1024px) {
-    .icon {
-      padding: 2rem 0rem;
-      /* width: 1rem; */
-    }
-    /* flex-basis: 15rem; */
-  }
-  @media (max-width: 768px) {
-    .icon {
-      padding: 5rem 0rem;
-      /* width: 1rem; */
-    }
-    /* flex-basis: 5rem; */
-  }
-  @media (max-width: 667px) {
-    .icon {
-      padding: 1rem 0;
-      /* width: 1rem; */
-    }
-    flex-basis: 5rem;
-  }
-`
-const StyledButton = styled(motion.button)`
-  margin-top: 2rem;
-  box-shadow: -2px -2px 5px #3b3b3b, 2px 2px 5px black;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  border-radius: 20px;
-  border: none;
-  width: 100%;
-  &:hover {
-    box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
-    background-color: transparent;
-    color: #fc8621;
-  }
-  &:focus {
-    outline: none;
-  }
-  &:active {
-    box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
-    -webkit-tap-highlight-color: transparent;
-  }
-`
 const StyledContact = styled(motion.div)`
   background-size: cover;
   background-repeat: no-repeat;
@@ -357,6 +217,7 @@ const StyledContact = styled(motion.div)`
       text-align: left;
       color: white;
     }
+
     @media (max-width: 1024px) {
       padding-top: 1rem;
       /* padding-bottom:        1rem; */
@@ -393,6 +254,10 @@ const StyledContact = styled(motion.div)`
     /* text-shadow: 1px 1px 0 #fff; */
   }
   textarea {
+    @media (max-width: 1450px) {
+      height: 10rem;
+    }
+
     @media (max-width: 1024px) {
       height: 12rem;
     }
@@ -411,7 +276,7 @@ const StyledContact = styled(motion.div)`
   input,
   textarea {
     margin-right: 16px/2;
-    box-shadow: inset 5px 5px 5px #312f2f, inset -1px -1px 3px #cacbd1;
+    box-shadow: inset 5px 5px 5px #333d3a, inset -1px -1px 3px #cacbd1;
     width: 100%;
     box-sizing: border-box;
     transition: all 0.2s ease-in-out;
@@ -432,6 +297,12 @@ const StyledContact = styled(motion.div)`
       font-size: 1.5rem;
     }
   }
+  @media (max-width: 1450px) {
+    padding-top: 6rem;
+  }
+  @media (max-width: 1300px) {
+    padding-top: 10rem;
+  }
   @media (max-width: 1024px) {
     padding-bottom: 2rem;
   }
@@ -444,7 +315,7 @@ const StyledTitle = styled.div`
   color: white;
   @media (max-width: 1366px) {
     h2 {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
   @media (max-width: 1024px) {
@@ -456,7 +327,8 @@ const StyledTitle = styled.div`
   }
   @media (max-width: 768px) {
     h2 {
-      font-size: 5rem;
+      font-size: 4rem;
+      width: 40rem;
       /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
@@ -481,6 +353,29 @@ const StyledTitle = styled.div`
       /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
+  }
+`
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 6rem;
+  width: 29rem;
+  padding-top: 3rem;
+  @media (max-width: 1366px) {
+    padding-top: 0rem;
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 0rem;
+    width: 40rem;
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 414px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 32rem;
   }
 `
 
@@ -602,9 +497,6 @@ const StyledButton = styled(motion.button)`
     -webkit-tap-highlight-color: transparent;
   }
 `
-// const Hide = styled.div`
-//   overflow: hidden;
-// `
 const Hide = styled.div`
   overflow: hidden;
 `

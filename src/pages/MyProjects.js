@@ -14,7 +14,7 @@ import {
   DiCss3,
   DiReact,
   DiMongodb,
-  DiPython,
+  DiPython
 } from 'react-icons/di'
 import {
   SiJsonwebtokens,
@@ -23,7 +23,7 @@ import {
   SiNodeDotJs,
   SiHeroku,
   SiBabel,
-  SiWebpack,
+  SiWebpack
 } from 'react-icons/si'
 import { BiDevices } from 'react-icons/bi'
 import { BsGrid1X2Fill } from 'react-icons/bs'
@@ -33,7 +33,7 @@ import {
   StyledHide,
   StyledDescription,
   StyledGlobal,
-  StyledImg,
+  StyledImg
 } from '../styles'
 // Animations
 import { motion } from 'framer-motion'
@@ -42,7 +42,7 @@ import {
   fade,
   lineAnimation,
   titleAnimation,
-  scrollReveal,
+  scrollReveal
 } from '../Animation'
 import { UseScroll } from '../components/UseScroll'
 import ScrollTop from '../components/ScrollTop'
@@ -63,227 +63,19 @@ const MyProjects = () => {
     >
       <ScrollTop />
       <ProjectFirstPage>
-        <motion.h2 variants={fade}>Know your Heritage</motion.h2>
+        <motion.h2 variants={fade}>Green World</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
 
         <StyledHide>
           <StyledProjects>
             <StyledMockup>
-              <Mockup src={kyh}></Mockup>
-            </StyledMockup>
-            <StyledProjectDescription>
-              <CardsLinks>
-                <Card
-                  whileHover={{
-                    scale: 1.2,
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://knowyourheritage.herokuapp.com/'
-                    >
-                      <FaChrome />
-                    </a>
-                    {/* <motion.h3>weblink</motion.h3> */}
-                  </motion.div>
-                </Card>
-                <Card
-                  whileHover={{
-                    scale: 1.2,
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://github.com/Baromeg/project-4'
-                    >
-                      <FaGithub />
-                    </a>
-                    {/* <motion.h3>githubpage</motion.h3> */}
-                  </motion.div>
-                </Card>
-              </CardsLinks>
-              <motion.div
-                variants={titleAnimation}
-                initial='hidden'
-                animate='show'
-                className='title'
-              >
-                <StyledHide>
-                  <motion.p>
-                    The application showcases the wonders of the UNESCO’s World
-                    Heritage List to promote its awareness.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    Using Python and Flask, I computed the data from several
-                    API’s requests (UNESCO list + Google Places & Photos) and
-                    built the componentry for the UI with JavaScript and React.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    The app has email verification using SendGrid, a map feature
-                    using Mapbox and an image carousel using ImageGallery.
-                  </motion.p>
-                </StyledHide>
-              </motion.div>
-              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button> */}
-            </StyledProjectDescription>
-          </StyledProjects>
-        </StyledHide>
-        <Cards>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <DiPython />
-              <motion.h3>Python</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiFlask />
-              <motion.h3>Flask</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql />
-              <motion.h3>PostgreSQL</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <img src={marshmallow} alt='Marshmallow' />
-              <motion.h3>Marshmallow</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiNodeDotJs />
-              <motion.h3>Node.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiBabel />
-              <motion.h3>Babel</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiWebpack />
-              <motion.h3>Webpack</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <SiHeroku />
-              <motion.h3>Heroku</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <motion.div className='icon'>
-              <FaCloudDownloadAlt />
-              <motion.h3>Rest API</motion.h3>
-            </motion.div>
-          </Card>
-        </Cards>
-      </ProjectFirstPage>
-
-      <Project
-        ref={element}
-        variants={scrollReveal}
-        animate={controls}
-        initial='hidden'
-      >
-        {' '}
-        <StyledHide>
-          <h2>Green World</h2>
-          <motion.div variants={lineAnimation} className='line'></motion.div>
-
-          <StyledProjects>
-            <StyledMockup>
               <Mockup src={greenworld}></Mockup>
             </StyledMockup>
-
             <StyledProjectDescription>
               <CardsLinks>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -300,7 +92,7 @@ const MyProjects = () => {
                 </Card>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -352,7 +144,7 @@ const MyProjects = () => {
         <Cards>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -362,7 +154,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -372,7 +164,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -382,7 +174,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -392,7 +184,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -402,7 +194,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -412,7 +204,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -422,7 +214,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -432,7 +224,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -442,7 +234,214 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <FaCloudDownloadAlt />
+              <motion.h3>Rest API</motion.h3>
+            </motion.div>
+          </Card>
+        </Cards>
+      </ProjectFirstPage>
+
+      <Project
+        ref={element}
+        variants={scrollReveal}
+        animate={controls}
+        initial='hidden'
+      >
+        {' '}
+        <StyledHide>
+          <h2>Know your Heritage</h2>
+          <motion.div variants={lineAnimation} className='line'></motion.div>
+
+          <StyledProjects>
+            <StyledMockup>
+              <Mockup src={kyh}></Mockup>
+            </StyledMockup>
+            <StyledProjectDescription>
+              <CardsLinks>
+                <Card
+                  whileHover={{
+                    scale: 1.2
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://knowyourheritage.herokuapp.com/'
+                    >
+                      <FaChrome />
+                    </a>
+                    {/* <motion.h3>weblink</motion.h3> */}
+                  </motion.div>
+                </Card>
+                <Card
+                  whileHover={{
+                    scale: 1.2
+                  }}
+                >
+                  <motion.div className='icon'>
+                    <a
+                      id='portfoliolink'
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://github.com/Baromeg/project-4'
+                    >
+                      <FaGithub />
+                    </a>
+                    {/* <motion.h3>githubpage</motion.h3> */}
+                  </motion.div>
+                </Card>
+              </CardsLinks>
+              <motion.div
+                variants={titleAnimation}
+                initial='hidden'
+                animate='show'
+                className='title'
+              >
+                <StyledHide>
+                  <motion.p>
+                    The application showcases the wonders of the UNESCO’s World
+                    Heritage List to promote its awareness.
+                  </motion.p>
+                </StyledHide>
+                <StyledHide>
+                  <motion.p>
+                    Using Python and Flask, I computed the data from several
+                    API’s requests (UNESCO list + Google Places & Photos) and
+                    built the componentry for the UI with JavaScript and React.
+                  </motion.p>
+                </StyledHide>
+                <StyledHide>
+                  <motion.p>
+                    The app has email verification using SendGrid, a map feature
+                    using Mapbox and an image carousel using ImageGallery.
+                  </motion.p>
+                </StyledHide>
+              </motion.div>
+              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
+              <motion.button variants={fade}>Get in touch</motion.button> */}
+            </StyledProjectDescription>
+          </StyledProjects>
+        </StyledHide>
+        <Cards>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <BiDevices />
+              <motion.h3>Responsive Design</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <DiJsBadge />
+              <motion.h3>JavaScript</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <DiReact />
+              <motion.h3>React.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <DiPython />
+              <motion.h3>Python</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiFlask />
+              <motion.h3>Flask</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiPostgresql />
+              <motion.h3>PostgreSQL</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <img src={marshmallow} alt='Marshmallow' />
+              <motion.h3>Marshmallow</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiNodeDotJs />
+              <motion.h3>Node.js</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiBabel />
+              <motion.h3>Babel</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiWebpack />
+              <motion.h3>Webpack</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
+            }}
+          >
+            <motion.div className='icon'>
+              <SiHeroku />
+              <motion.h3>Heroku</motion.h3>
+            </motion.div>
+          </Card>
+          <Card
+            whileHover={{
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -470,7 +469,7 @@ const MyProjects = () => {
               <CardsLinks>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -487,7 +486,7 @@ const MyProjects = () => {
                 </Card>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -536,7 +535,7 @@ const MyProjects = () => {
         <Cards>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -546,7 +545,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -556,7 +555,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -566,7 +565,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -576,7 +575,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -586,7 +585,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -596,7 +595,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -624,7 +623,7 @@ const MyProjects = () => {
               <CardsLinks>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -641,7 +640,7 @@ const MyProjects = () => {
                 </Card>
                 <Card
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.2
                   }}
                 >
                   <motion.div className='icon'>
@@ -685,7 +684,7 @@ const MyProjects = () => {
         <Cards>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -695,7 +694,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -705,7 +704,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -715,7 +714,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -725,7 +724,7 @@ const MyProjects = () => {
           </Card>
           <Card
             whileHover={{
-              scale: 1.2,
+              scale: 1.2
             }}
           >
             <motion.div className='icon'>
@@ -823,9 +822,9 @@ const StyledMockup = styled(StyledImg)`
 const StyledProjectDescription = styled(StyledDescription)`
   flex: 1;
   padding: 0rem 1rem;
-  @media (max-width: 1366px) {
+  @media (max-width: 1450px) {
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 1rem 0.5rem;
     }
   }
@@ -845,26 +844,26 @@ const StyledProjectDescription = styled(StyledDescription)`
 //   overflow: hidden;
 // `
 
-// Frame Animation
-const Frame1 = styled(motion.div)`
-  position: fixed;
-  left: 0;
-  top: 10%;
-  width: 100%;
-  height: 100vh;
-  background: #fffebf;
-  z-index: 2;
-`
+// // Frame Animation
+// const Frame1 = styled(motion.div)`
+//   position: fixed;
+//   left: 0;
+//   top: 10%;
+//   width: 100%;
+//   height: 100vh;
+//   background: #fffebf;
+//   z-index: 2;
+// `
 
-const Frame2 = styled(Frame1)`
-  background: #ff8efb;
-`
-const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
-`
-const Frame4 = styled(Frame1)`
-  background: #8effa0;
-`
+// const Frame2 = styled(Frame1)`
+//   background: #ff8efb;
+// `
+// const Frame3 = styled(Frame1)`
+//   background: #8ed2ff;
+// `
+// const Frame4 = styled(Frame1)`
+//   background: #8effa0;
+// `
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
