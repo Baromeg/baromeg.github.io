@@ -45,7 +45,7 @@ const About = () => {
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek a <span>React</span>, <span>JavaScript</span> or <span>Python</span> junior developer role to contribute to both sides of the stack, demonstrate my <span>dedication</span>, <span>adaptability</span> and <span>problem-solving</span> skills and make an impact in the product's life-cycle. Check out my full-stack applications in "My Projects" section.
+                I seek a <span>React</span>, <span>JavaScript</span> or <span>Python</span> junior developer role to contribute to both sides of the stack, demonstrate my <span>dedication</span>, <span>adaptability</span> and <span>problem-solving</span> skills and make an <span>impact in the product's life-cycle</span>.
               </motion.p>
             </StyledHide>
             <StyledHide>
