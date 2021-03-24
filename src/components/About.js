@@ -55,12 +55,13 @@ const About = () => {
             </StyledHide>
             <StyledHide>
               <motion.p>
-              I've thrived on leading & motivating people, communicating, improving operational processes and ultimately creating memorable customer's experiences. <span>Now it is time to thrive again and build great apps!</span>
+              I've thrived on leading & motivating people, communicating, improving operational processes and ultimately creating memorable customer's experiences. 
               </motion.p>
+              {/* <motion.p></motion.p> */}
             </StyledHide>
           </motion.div>
           
-          <motion.p variants={fade}> Can you imagine what else I can achieve if I am given a chance?</motion.p>
+          <motion.p variants={fade}><span>I'm ready to thrive again and build great apps!</span> Can you imagine what else I can achieve if I am given a chance?</motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
