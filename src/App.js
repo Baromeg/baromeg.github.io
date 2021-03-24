@@ -49,5 +49,7 @@ const App = () => {
     </div>
   )
 }
-
+if (module.hot){
+  module.hot.accept()
+}
 export default App

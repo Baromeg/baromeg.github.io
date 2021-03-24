@@ -12,7 +12,7 @@ import {
   DiGit,
   DiGithubBadge,
   DiNpm,
-  DiVisualstudio,
+  DiVisualstudio
 } from 'react-icons/di'
 import {
   SiJsonwebtokens,
@@ -20,7 +20,7 @@ import {
   SiPostgresql,
   SiHeroku,
   SiBabel,
-  SiWebpack,
+  SiWebpack
 } from 'react-icons/si'
 import { BiDevices } from 'react-icons/bi'
 import styled from 'styled-components'
@@ -47,47 +47,7 @@ const Skills = () => {
           <Cards>
             <Card
               whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <DiHtml5 />
-                <motion.h3>HTML5</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <DiCss3 />
-                <motion.h3>CSS3</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <DiSass />
-                <motion.h3>SASS</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <BiDevices />
-                <motion.h3>Responsive Design</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -97,7 +57,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -107,27 +67,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <DiMongodb />
-                <motion.h3>Mongodb</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <SiJsonwebtokens />
-                <motion.h3>JWT</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -137,37 +77,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <SiFlask />
-                <motion.h3>Flask</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <SiPostgresql />
-                <motion.h3>PostgreSQL</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
-              }}
-            >
-              <motion.div className='icon'>
-                <img src={marshmallow} alt='Marshmallow' />
-                <motion.h3>Marshmallow</motion.h3>
-              </motion.div>
-            </Card>
-            <Card
-              whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -177,17 +87,100 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
-                <SiBabel />
-                <motion.h3>Babel</motion.h3>
+                <DiHtml5 />
+                <motion.h3>HTML5</motion.h3>
               </motion.div>
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiCss3 />
+                <motion.h3>CSS3</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <BiDevices />
+                <motion.h3>Responsive Design</motion.h3>
+              </motion.div>
+            </Card>
+
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiMongodb />
+                <motion.h3>Mongodb</motion.h3>
+              </motion.div>
+            </Card>
+
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiFlask />
+                <motion.h3>Flask</motion.h3>
+              </motion.div>
+            </Card>
+
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiPostgresql />
+                <motion.h3>PostgreSQL</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={marshmallow} alt='Marshmallow' />
+                <motion.h3>Marshmallow</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiJsonwebtokens />
+                <motion.h3>JWT</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiSass />
+                <motion.h3>SASS</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -197,7 +190,18 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiBabel />
+                <motion.h3>Babel</motion.h3>
+              </motion.div>
+            </Card>
+            
+            <Card
+              whileHover={{
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -207,7 +211,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -217,7 +221,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -227,7 +231,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -237,7 +241,7 @@ const Skills = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>

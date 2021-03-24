@@ -40,35 +40,21 @@ const About = () => {
             <StyledHide>
               <motion.p>
                 Hi!<span> I am Baltasar</span>, self-taught and graduated
-                software engineer at General Assembly.
+                <span> full-stack software engineer</span> at General Assembly.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek a developer role to{' '}
-                <span>contribute to both sides of the stack</span>, share my
-                ideas, and grow in a continued-learning and knowledge-sharing
-                environment. I am eager to collaborate on projects that{' '}
-                <span>develop a better and more sustainable tomorrow</span>.
+                I seek a <span>React</span>, <span>JavaScript</span> or <span>Python</span> junior developer role to contribute to both sides of the stack, demonstrate my <span>dedication</span>, <span>adaptability</span> and <span>problem-solving</span> skills and make an impact in the product's life-cycle. Check out my full-stack applications in "My Projects" section.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I’ve thrived on leading and motivating people, improving
-                operational processes and ultimately creating memorable customer
-                experiences. After more than 12 years of hospitality background,
-                <span>
-                  {' '}
-                  I’ve decided to blend my passion for software engineering, my
-                  problem-solving skills and my creativity to join the developer
-                  community
-                </span>{' '}
-                to pursue a career change and become part of the solution for
-                today’s world challenges.
+              After more than 12 years of hospitality background, I've taken the risk of a career shift, <span>confident</span> that the combination of my <span>professional trajectory</span>, passion for <span>continuous learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>. 
               </motion.p>
             </StyledHide>
           </motion.div>
-          <motion.p variants={fade}>Are you curious for more?</motion.p>
+          <motion.p variants={fade}>Can you imagine what else I can achieve if I am given a chance?</motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
