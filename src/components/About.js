@@ -53,8 +53,14 @@ const About = () => {
               After more than 12 years of hospitality background, I've taken the risk of a career shift, <span>confident</span> that the combination of my <span>professional trajectory</span>, passion for <span>continuous learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>. 
               </motion.p>
             </StyledHide>
+            <StyledHide>
+              <motion.p>
+              I've thrived on leading & motivating people, improving operational processes and ultimately creating memorable customer's experiences. <span>Now it is time to thrive again and build great apps!</span>
+              </motion.p>
+            </StyledHide>
           </motion.div>
-          <motion.p variants={fade}>Can you imagine what else I can achieve if I am given a chance?</motion.p>
+          
+          <motion.p variants={fade}> Can you imagine what else I can achieve if I am given a chance?</motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
