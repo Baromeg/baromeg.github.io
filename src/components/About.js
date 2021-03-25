@@ -39,29 +39,23 @@ const About = () => {
           >
             <StyledHide>
               <motion.p>
-                Hi!<span> I am Baltasar</span>, self-taught and graduated
-                <span> full-stack software engineer</span> at General Assembly.
+                Hi!<span> I'm Baltasar</span>, self-taught and graduated
+                <span> full-stack software engineer</span>. I'm seeking my first <span>React</span>, <span>JavaScript</span> or <span>Python</span>  developer role to contribute to both sides of the stack.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek a <span>React</span>, <span>JavaScript</span> or <span>Python</span> junior developer role to contribute to both sides of the stack, demonstrate my <span>dedication</span>, <span>adaptability</span>, <span>problem-solving</span> & <span>communication</span> skills, impacting the product's life-cycle.
+                 <span>I've built multiple projects backing my worth</span>, and I can't wait to manifest my <span>adaptability</span>, <span>dedication</span>, <span>communication</span> & <span>problem-solving</span> skills, impacting real-world product's life-cycle.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-              After more than 12 years of hospitality background, I've taken the risk of a career shift, <span>confident</span> that the combination of my <span>professional trajectory</span>, passion for <span>continuous learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>. 
+              After more than 12 years of hospitality background, I've taken the risk of a career shift, <span>confident</span> that the combination of my <span>professional trajectory</span>, passion for <span>continuous learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>. I've thrived on leading & motivating people, communicating, improving operational processes and ultimately creating memorable customer's experiences. 
               </motion.p>
-            </StyledHide>
-            <StyledHide>
-              <motion.p>
-              I've thrived on leading & motivating people, communicating, improving operational processes and ultimately creating memorable customer's experiences. 
-              </motion.p>
-              {/* <motion.p></motion.p> */}
             </StyledHide>
           </motion.div>
           
-          <motion.p variants={fade}><span>I'm ready to thrive again and build great apps!</span> Can you imagine what else I can achieve if I am given a chance?</motion.p>
+          <motion.p variants={fade}><span>I'm ready to thrive again and build great apps!</span> Can you imagine what else I can achieve if I get a chance?</motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
