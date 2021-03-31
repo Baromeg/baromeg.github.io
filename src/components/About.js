@@ -40,22 +40,22 @@ const About = () => {
             <StyledHide>
               <motion.p>
                 Hi!<span> I'm Baltasar</span>, self-taught and graduated
-                <span> full-stack software engineer</span>. I'm seeking my first <span>React</span>, <span>JavaScript</span> or <span>Python</span>  developer role to contribute to both sides of the stack.
+                <span> full-stack software engineer</span> with an ever-evolving portfolio backing my worth and potential.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                 <span>I've built multiple projects backing my worth</span>, and I can't wait to manifest my <span>adaptability</span>, <span>dedication</span>, <span>communication</span> & <span>problem-solving</span> skills, impacting real-world product's life-cycle.
+              I seek my first <span>React</span>, <span>JavaScript</span> or <span>Python</span>  developer role to demonstrate my <span> adaptability</span> & <span>dedication</span>, <span>communication</span> & <span>problem-solving</span> skills, impacting real-world applications on both sides of the stack.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-              After more than 12 years of hospitality background, I've taken the risk of a career shift, <span>confident</span> that the combination of my <span>professional trajectory</span>, passion for <span>continuous learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>. I've thrived on leading & motivating people, communicating, improving operational processes and ultimately creating memorable customer's experiences. 
+              After more than 12 years of hospitality background,<span> I've taken the risk</span> of a career shift, <span>confident</span> that the blend of my <span>professional trajectory</span>, geeky mindset, passion for <span>constant learning</span> & <span>self-improvement</span>, and <span>resilience</span> confronting a challenge is a <span>strong endorsement of my capabilities</span>.
               </motion.p>
             </StyledHide>
           </motion.div>
           
-          <motion.p variants={fade}><span>I'm ready to thrive again and build great apps!</span> Can you imagine what else I can achieve if I get a chance?</motion.p>
+          <motion.p variants={fade}><u>As a hotelier</u>, I've thrived on leading & motivating people, communicating & improving operational processes, ultimately creating memorable customer's experiences. <br/> <u>As a developer</u>, I'm ready to thrive again as build great apps! <br/> <span>Can you imagine what else I can achieve if I get a chance?</span> </motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
