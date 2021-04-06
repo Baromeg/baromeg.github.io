@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import macbook from '../img/coffee3cut1.jpg'
 
 // Animations
 import { motion } from 'framer-motion'
@@ -110,6 +109,9 @@ const Contact = (props) => {
           variants={fade}
           type='submit'
           value='Send'
+          whileHover={{
+            scale: 1.1
+          }}
         >
           <i className='icon'>
             <GiPaperPlane />
@@ -124,9 +126,9 @@ const Contact = (props) => {
       </StyledTitle>
       <Cards>
         <Card
-        // whileHover={{
-        //   scale: 1.2,
-        // }}
+          whileHover={{
+            scale: 1.2
+          }}
         >
           <motion.div className='icon'>
             <a
@@ -141,9 +143,9 @@ const Contact = (props) => {
           </motion.div>
         </Card>
         <Card
-        // whileHover={{
-        //   scale: 1.2,
-        // }}
+          whileHover={{
+            scale: 1.2
+          }}
         >
           <motion.div className='icon'>
             <a
@@ -167,21 +169,27 @@ const Contact = (props) => {
 }
 
 const StyledContact = styled(motion.div)`
-  background-size: cover;
+  background-size: contain, cover;
+  background-position: right, center;
   background-repeat: no-repeat;
-  background-image: url(${macbook});
+  background-image: ${({ theme }) => theme.contactBackground};
 
   padding: 10rem 10rem;
-  color: white;
+  color: ${({ theme }) => theme.text};
   min-height: 100vh;
+  @media (max-width: 800px) {
+    background-size: 50%, cover;
+    background-position: bottom 30% right, center;
+  }
   h2 {
     font-weight: lighter;
+    color: ${({ theme }) => theme.text};
     /* font-size: 6rem; */
   }
   i {
     /* display:flex; */
     span {
-      color: white;
+      color: ${({ theme }) => theme.text};
       font-weight: normal;
       font-size: 1rem;
       @media (max-width: 1024px) {
@@ -212,7 +220,7 @@ const StyledContact = styled(motion.div)`
       padding: 10px;
       padding-left: 30px;
       text-align: left;
-      color: white;
+      color: ${({ theme }) => theme.text};
     }
 
     @media (max-width: 1024px) {
@@ -232,8 +240,6 @@ const StyledContact = styled(motion.div)`
       /* padding-bottom:        1rem; */
       width: 32rem;
       font-size: 1.2rem;
-    }
-    @media (max-width: 414px) {
       padding-left: 3rem;
     }
   }
@@ -273,7 +279,7 @@ const StyledContact = styled(motion.div)`
   input,
   textarea {
     margin-right: 16px/2;
-    box-shadow: inset 5px 5px 5px #333d3a, inset -1px -1px 3px #cacbd1;
+    box-shadow: ${({ theme }) => theme.shadowInput};
     width: 100%;
     box-sizing: border-box;
     transition: all 0.2s ease-in-out;
@@ -281,7 +287,7 @@ const StyledContact = styled(motion.div)`
     -webkit-appearance: none;
 
     &:focus {
-      box-shadow: inset 1px 1px 2px #cacbd1, inset -1px -1px 2px #fff;
+      box-shadow: ${({ theme }) => theme.shadowFocus};
     }
   }
   button {
@@ -309,7 +315,7 @@ const StyledContact = styled(motion.div)`
 `
 const StyledTitle = styled.div`
   margin-top: 3rem;
-  color: white;
+  color: ${({ theme }) => theme.text};
   @media (max-width: 1366px) {
     h2 {
       font-size: 4rem;
@@ -406,15 +412,16 @@ const Card = styled(motion.div)`
   }
   #portfoliolink {
     font-size: 40px;
-    box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
+    box-shadow: ${({ theme }) => theme.shadowButton};
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 3px;
     border: none;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
     &:hover {
-      box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
+      box-shadow: ${({ theme }) => theme.shadowHover};
       background-color: transparent;
+      scale: 1;
       svg {
         color: #fc8621;
       }
@@ -423,12 +430,12 @@ const Card = styled(motion.div)`
       outline: none;
     }
     &:active {
-      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+      box-shadow: ${({ theme }) => theme.shadowActive};
       -webkit-tap-highlight-color: transparent;
     }
 
     svg {
-      color: white;
+      color: ${({ theme }) => theme.text};
     }
     @media (max-width: 375px) {
       font-size: 30px;
@@ -475,14 +482,15 @@ const Card = styled(motion.div)`
 `
 const StyledButton = styled(motion.button)`
   margin-top: 2rem;
-  box-shadow: -3px -3px 5px #555454, 3px 3px 5px black;
+  box-shadow: ${({ theme }) => theme.shadowButton};
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  color: ${({ theme }) => theme.text};
   border-radius: 20px;
   border: none;
   width: 100%;
   &:hover {
-    box-shadow: -2px -2px 6px #3b3b3b, 2px 2px 3px black;
+    box-shadow: ${({ theme }) => theme.shadowHover};
     background-color: transparent;
     color: #fc8621;
   }
@@ -490,7 +498,7 @@ const StyledButton = styled(motion.button)`
     outline: none;
   }
   &:active {
-    box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+    box-shadow: ${({ theme }) => theme.shadowActive};
     -webkit-tap-highlight-color: transparent;
   }
 `

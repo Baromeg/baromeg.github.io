@@ -1,5 +1,5 @@
 import React from 'react'
-import macbook from '../img/macbook.jpg'
+
 import { Link } from 'react-router-dom'
 // Framer Motion
 import { motion } from 'framer-motion'
@@ -69,7 +69,10 @@ const Home = () => {
 const StyledHome = styled(StyledGlobal)`
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(${macbook});
+  background-image: ${({ theme }) => theme.homeBackground};
+  /* h2 {
+    color: #fafafa;
+  } */
   @media (max-width: 1300px) {
     padding-top: 13vh;
     padding-left: 5rem;
@@ -79,6 +82,7 @@ const StyledHome = styled(StyledGlobal)`
 
 const StyledButton = styled(motion.button)`
   margin-top: 4rem;
+  color: ${({ theme }) => theme.text};
 `
 
 // Frame Animation

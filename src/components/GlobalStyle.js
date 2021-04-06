@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   padding:0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+
 }
 
 html{
@@ -31,9 +32,13 @@ html{
 }
 
 body {
-  background: #1b1b1b;
+  background: ${({ theme }) => theme.body};
+  /* #1b1b1b; */
+  color: ${({ theme }) => theme.text};
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  transition: all 0.50s linear;
+
 }
 
 button {
@@ -43,7 +48,7 @@ button {
   padding: 1rem 2rem;
   border: 3px solid #fc8621;
   background: transparent;
-  color: white;
+  color: ${({ theme }) => theme.text};
   transition: all 0.5s ease;
   font-family: 'Inter', sans-serif;
   margin-top: 1.5rem;
@@ -55,6 +60,9 @@ button {
 h1 {
   font-weight: lighter;
   font-size:6rem;
+  color: ${({ theme }) => theme.text};
+  transition: all 0.5s ease;
+
   /* font-family: "Lobster", cursive; */
     /* font-family: "Audiowide", cursive; */
     /* font-family: "Barrio", cursive; */
@@ -76,6 +84,9 @@ h1 {
 h2 {
   font-weight: lighter;
   font-size:4rem;
+  color: ${({ theme }) => theme.text};
+  transition: all 0.5s ease;
+
   @media (max-width: 414px) {
     font-size: 2.5rem;
   }
@@ -85,16 +96,22 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: ${({ theme }) => theme.text};
+  transition: all 0.5s ease;
+
 }
 
 h4{
   font-weight:bold;
   font-size: 2rem;
+  transition: all 0.5s ease;
+
 }
 
 a{
   font-size: 1.7rem;
+  transition: all 0.5s ease;
+
 }
 
 span {
@@ -104,9 +121,11 @@ span {
 
 p {
   padding: 1.5rem 0rem;
-  color: white;
+  color: ${({ theme }) => theme.text};
   font-size: 1.4rem;
   line-height: 150%;
+  transition: all 0.5s ease;
+
 }
 `
 export default GlobalStyle

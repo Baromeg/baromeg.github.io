@@ -750,7 +750,7 @@ const Projects = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0rem;
-    color: white;
+    color: ${({ theme }) => theme.text};
   }
 `
 const Project = styled(motion.div)`
@@ -923,17 +923,17 @@ const Card = styled(motion.div)`
   }
   #portfoliolink {
     font-size: 40px;
-    box-shadow: -3px -3px 6px #504f4f, 3px 3px 6px black;
+    box-shadow: ${({ theme }) => theme.shadowButton};
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 3px;
     border: none;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
     svg {
-      color: white;
+      color: ${({ theme }) => theme.text};
     }
     &:hover {
-      box-shadow: -1px -1px 3px #3b3b3b, 1px 1px 3px black;
+      box-shadow: ${({ theme }) => theme.shadowHover};
       background-color: transparent;
       scale: 1;
     }
@@ -941,7 +941,7 @@ const Card = styled(motion.div)`
       outline: none;
     }
     &:active {
-      box-shadow: inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black;
+      box-shadow: ${({ theme }) => theme.shadowActive};
       -webkit-tap-highlight-color: transparent;
     }
   }
