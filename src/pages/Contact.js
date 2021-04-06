@@ -49,6 +49,11 @@ const Contact = (props) => {
             </div> */}
 
       {/* </div> */}
+      <StyledTitle>
+        <motion.h2 variants={fade}>
+          Fancy an <span>e-coffee?</span>
+        </motion.h2>
+      </StyledTitle>
       <form action='https://formspree.io/f/mvovdgkl' method='POST'>
         <StyledHide>
           <Social variants={titleAnimation}>
@@ -119,11 +124,7 @@ const Contact = (props) => {
           Send
         </StyledButton>
       </form>
-      <StyledTitle>
-        <motion.h2 variants={fade}>
-          Fancy an <span>e-coffee?</span>
-        </motion.h2>
-      </StyledTitle>
+
       <Cards>
         <Card
           whileHover={{
