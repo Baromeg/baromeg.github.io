@@ -61,7 +61,7 @@ h1 {
   font-weight: lighter;
   font-size:6rem;
   color: ${({ theme }) => theme.text};
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 
   /* font-family: "Lobster", cursive; */
     /* font-family: "Audiowide", cursive; */
@@ -85,7 +85,7 @@ h2 {
   font-weight: lighter;
   font-size:4rem;
   color: ${({ theme }) => theme.text};
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 
   @media (max-width: 414px) {
     font-size: 2.5rem;
