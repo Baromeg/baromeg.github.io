@@ -1,8 +1,8 @@
 import React from 'react'
-import innovation from '../img/innovationorange.png'
+import innovation from '../img/innovationorangew.png'
 import climate from '../img/climateorange.png'
-import bcorp from '../img/b-corporange.png'
-import mindfulness from '../img/mindfulnessorange.png'
+import bcorp from '../img/bcorp.png'
+import mindfulness from '../img/mindfulness.png'
 import running from '../img/Runningorange.svg.png'
 import roller from '../img/roller_bladingorange.png'
 
@@ -32,7 +32,7 @@ const Interests = () => {
           <Cards>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -42,7 +42,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -52,7 +52,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -62,7 +62,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <a
@@ -79,7 +79,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -89,7 +89,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -99,7 +99,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>
@@ -109,7 +109,7 @@ const Interests = () => {
             </Card>
             <Card
               whileHover={{
-                scale: 1.2,
+                scale: 1.2
               }}
             >
               <motion.div className='icon'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import baltasar from '../img/Baltasar.jpeg'
+import baltasar from '../img/Baltasar.jpg'
 
 // Framer Motion
 import { motion } from 'framer-motion'
