@@ -16,8 +16,22 @@ const Button = styled(motion.button)`
   padding: 0.6rem;
 `
 const Toggle = styled(motion.div)`
-  @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+  /* @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); */
 
+  @font-face {
+    font-family: 'Ionicons';
+    src: url('https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1');
+    src: url('https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix')
+        format('embedded-opentype'),
+      url('https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1')
+        format('truetype'),
+      url('https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1')
+        format('woff'),
+      url('https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons')
+        format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
   .switch {
     position: relative;
     display: inline-block;
