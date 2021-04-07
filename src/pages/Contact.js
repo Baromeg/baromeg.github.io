@@ -187,7 +187,7 @@ const StyledContact = styled(motion.div)`
     color: ${({ theme }) => theme.text};
     /* font-size: 6rem; */
     @media (max-width: 1024px) {
-      padding-top: 1rem;
+      padding-top: 2rem;
     }
     @media (max-width: 768px) {
       padding-top: 8rem;
@@ -272,7 +272,7 @@ const StyledContact = styled(motion.div)`
     }
 
     @media (max-width: 1024px) {
-      height: 12rem;
+      height: 10rem;
     }
     @media (max-width: 768px) {
       height: 15rem;
@@ -383,6 +383,7 @@ const Cards = styled.div`
   @media (max-width: 1024px) {
     padding-top: 0rem;
     width: 40rem;
+    justify-content: center;
     flex-wrap: nowrap;
   }
   @media (max-width: 414px) {
