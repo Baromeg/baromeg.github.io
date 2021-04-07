@@ -90,11 +90,10 @@ const Navbar = ({ theme, themeToggler }) => {
             animate={{ width: pathname === '/contact' ? '100%' : '0%' }}
           />
         </li>
-        <li>
-          {/* <button onClick={themeToggler}>Switch Theme</button> */}
-          <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-        </li>
       </ul>
+      <div id='toggle'>
+        <ThemeToggle theme={theme} toggleTheme={themeToggler} />
+      </div>
     </StyledNavbar>
   )
 }
@@ -150,9 +149,10 @@ const StyledNavbar = styled.nav`
     /* border: 3px solid #fc8621; */
   }
   li {
-    padding-left: 10rem;
+    padding-left: 8rem;
     position: relative;
     font-family: 'Megrim', cursive;
+    align-content: center;
     a {
       font-size: 2rem;
     }
@@ -168,6 +168,9 @@ const StyledNavbar = styled.nav`
     #logo {
       font-size: 2.5rem;
       padding: 0rem 2rem;
+    }
+    #toggle {
+      padding-bottom: 0.5rem;
     }
     ul {
       padding: 1rem;

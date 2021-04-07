@@ -186,6 +186,15 @@ const StyledContact = styled(motion.div)`
     font-weight: lighter;
     color: ${({ theme }) => theme.text};
     /* font-size: 6rem; */
+    @media (max-width: 1024px) {
+      padding-top: 1rem;
+    }
+    @media (max-width: 768px) {
+      padding-top: 8rem;
+    }
+    @media (max-width: 414px) {
+      padding-top: 6rem;
+    }
   }
   i {
     /* display:flex; */
