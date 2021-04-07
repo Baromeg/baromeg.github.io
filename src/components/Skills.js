@@ -20,7 +20,8 @@ import {
   SiPostgresql,
   SiHeroku,
   SiBabel,
-  SiWebpack
+  SiWebpack,
+  SiRedux
 } from 'react-icons/si'
 import { BiDevices } from 'react-icons/bi'
 import styled from 'styled-components'
@@ -73,6 +74,16 @@ const Skills = () => {
               <motion.div className='icon'>
                 <DiPython />
                 <motion.h3>Python</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiRedux />
+                <motion.h3>Redux</motion.h3>
               </motion.div>
             </Card>
             <Card
@@ -198,7 +209,7 @@ const Skills = () => {
                 <motion.h3>Babel</motion.h3>
               </motion.div>
             </Card>
-            
+
             <Card
               whileHover={{
                 scale: 1.2
