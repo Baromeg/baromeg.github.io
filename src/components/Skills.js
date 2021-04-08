@@ -262,9 +262,6 @@ const Skills = () => {
             </Card>
           </Cards>
         </StyledDescription>
-        {/* <StyledImg>
-        <img src={baltasar} alt='baltasar' />
-        </StyledImg> */}
       </StyledSkills>
     </Hide>
   )
@@ -294,16 +291,6 @@ const Cards = styled.div`
   align-items: center;
   justify-content: space-evenly;
   font-size: 6rem;
-
-  @media (max-width: 667px) {
-    /* font-size: 4rem; */
-
-    /* justify-content: center;
-    padding: 0; */
-    /* button {
-      margin: 2rem 0rem 5rem 0rem;
-    } */
-  }
 `
 
 const Card = styled(motion.div)`
@@ -326,16 +313,11 @@ const Card = styled(motion.div)`
   h3 {
     opacity: 0;
     position: absolute;
-    /* margin-left: 1rem; */
     background: white;
     color: black;
     font-size: 1rem;
     padding: 0.2rem;
     position: absolute;
-    /* font-weight: 400;
-        font-size: 20px;
-        opacity: 0; */
-    /* margin: 0 5px; */
     max-width: 100%;
     text-align: center;
   }
@@ -352,14 +334,12 @@ const Card = styled(motion.div)`
   @media (max-width: 1300px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 15rem;
   }
   @media (max-width: 667px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 5rem;
   }
@@ -368,7 +348,6 @@ const Card = styled(motion.div)`
       padding: 1rem 0;
       max-width: 100%;
       img {
-        /* max-height: 40rem; */
         width: 5rem;
       }
     }

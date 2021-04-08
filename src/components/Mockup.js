@@ -19,41 +19,7 @@ const Mockup = (props) => {
                   <div className='item active'>
                     <img src={props.src} alt='...' />
                   </div>
-                  {/* <div className="item">
-                    <img src="../styles/greenworld.png" alt="..." />
-                  </div>
-                  <div className="item">
-                    <img src="http://rukshan.me/andy/3.png" alt="..." />
-                  </div>
-                  <div className="item">
-                    <img src="http://rukshan.me/andy/4.png" alt="..." />
-                  </div> */}
                 </div>
-                {/* <!-- Controls --> */}
-                {/* <a
-                  className='left carousel-control'
-                  href='#carousel-ninja'
-                  role='button'
-                  data-slide='prev'
-                >
-                  <span
-                    className='glyphicon glyphicon-chevron-left'
-                    aria-hidden='true'
-                  ></span>
-                  <span className='sr-only'>Previous</span>
-                </a> */}
-                {/* <a
-                  className='right carousel-control'
-                  href='#carousel-ninja'
-                  role='button'
-                  data-slide='next'
-                >
-                  <span
-                    className='glyphicon glyphicon-chevron-right'
-                    aria-hidden='true'
-                  ></span>
-                  <span className='sr-only'>Next</span>
-                </a> */}
               </div>
             </section>
           </div>

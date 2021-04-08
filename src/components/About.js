@@ -31,12 +31,7 @@ const About = () => {
       >
         <AboutDescription>
           <h2>About me</h2>
-          <motion.div
-          // variants={titleAnimation}
-          // initial="hidden"
-          // animate="show"
-          // className='title'
-          >
+          <motion.div>
             <StyledHide>
               <motion.p>
                 Hi!<span> I'm Baltasar</span>, self-taught and graduated
@@ -79,13 +74,7 @@ const About = () => {
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
-          <motion.img
-            variants={photoAnimation}
-            // initial="hidden"
-            // animate="show"
-            src={baltasar}
-            alt=''
-          />
+          <motion.img variants={photoAnimation} src={baltasar} alt='' />
         </StyledImg>
       </StyledAbout>
     </StyledHide>
@@ -94,7 +83,6 @@ const About = () => {
 const StyledAbout = styled(StyledGlobal)`
   @media (max-width: 1300px) {
     display: block;
-    /* padding: 5rem 4rem; */
     text-align: center;
     width: 100%;
     h2 {
@@ -102,7 +90,6 @@ const StyledAbout = styled(StyledGlobal)`
     }
   }
   @media (max-width: 414px) {
-    /* padding: 5rem 4rem; */
     padding: 2rem 3rem;
   }
 `

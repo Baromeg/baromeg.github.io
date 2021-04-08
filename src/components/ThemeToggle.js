@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { func, string } from 'prop-types'
 import styled from 'styled-components'
-// import { AppContext } from './AppProvider'
 import { IoMdMoon as Moon, IoMdSunny as Sun } from 'react-icons/io'
 import Switch from 'react-switch'
 

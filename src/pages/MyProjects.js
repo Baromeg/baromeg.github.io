@@ -59,7 +59,6 @@ const MyProjects = () => {
       initial='hidden'
       animate='show'
       exit='exit'
-      // style={{ background: "#fff" }}
     >
       <ScrollTop />
       <ProjectFirstPage>
@@ -87,7 +86,6 @@ const MyProjects = () => {
                     >
                       <FaChrome />
                     </a>
-                    {/* <motion.h3>weblink</motion.h3> */}
                   </motion.div>
                 </Card>
                 <Card
@@ -104,7 +102,6 @@ const MyProjects = () => {
                     >
                       <FaGithub />
                     </a>
-                    {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
               </CardsLinks>
@@ -136,8 +133,6 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </StyledHide>
@@ -276,7 +271,6 @@ const MyProjects = () => {
                     >
                       <FaChrome />
                     </a>
-                    {/* <motion.h3>weblink</motion.h3> */}
                   </motion.div>
                 </Card>
                 <Card
@@ -293,7 +287,6 @@ const MyProjects = () => {
                     >
                       <FaGithub />
                     </a>
-                    {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
               </CardsLinks>
@@ -323,8 +316,6 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </StyledHide>
@@ -481,7 +472,6 @@ const MyProjects = () => {
                     >
                       <FaChrome />
                     </a>
-                    {/* <motion.h3>weblink</motion.h3> */}
                   </motion.div>
                 </Card>
                 <Card
@@ -498,7 +488,6 @@ const MyProjects = () => {
                     >
                       <FaGithub />
                     </a>
-                    {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
               </CardsLinks>
@@ -527,8 +516,6 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>
         </StyledHide>
@@ -635,7 +622,6 @@ const MyProjects = () => {
                     >
                       <FaChrome />
                     </a>
-                    {/* <motion.h3>weblink</motion.h3> */}
                   </motion.div>
                 </Card>
                 <Card
@@ -652,7 +638,6 @@ const MyProjects = () => {
                     >
                       <FaGithub />
                     </a>
-                    {/* <motion.h3>githubpage</motion.h3> */}
                   </motion.div>
                 </Card>
               </CardsLinks>
@@ -676,8 +661,6 @@ const MyProjects = () => {
                   </motion.p>
                 </StyledHide>
               </motion.div>
-              {/* <motion.p variants={fade}>Are you curious for more?</motion.p>
-              <motion.button variants={fade}>Get in touch</motion.button> */}
             </StyledProjectDescription>
           </StyledProjects>{' '}
         </StyledHide>
@@ -735,8 +718,6 @@ const MyProjects = () => {
         </Cards>
       </Project>
     </Projects>
-    // {/* </StyledGlobal> */}
-    // {/* // </StyledHide> */}
   )
 }
 
@@ -744,7 +725,6 @@ const Projects = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 1rem 10rem;
-  /* background: white; */
   @media (max-width: 1024px) {
     padding: 6rem 2rem 2rem 2rem;
   }
@@ -765,8 +745,6 @@ const Project = styled(motion.div)`
   }
   img {
     width: 100%;
-    /* height: 70vh; */
-    /* object-fit: cover; */
   }
 `
 const ProjectFirstPage = styled(Project)`
@@ -786,14 +764,8 @@ const StyledProjects = styled(StyledGlobal)`
   min-height: 50vh;
   @media (max-width: 1300px) {
     display: block;
-    /* padding: 5rem 4rem; */
     text-align: center;
     width: 100%;
-  }
-
-  @media (max-width: 414px) {
-    /* padding: 5rem 4rem; */
-    /* padding: 2rem 3rem; */
   }
 `
 const StyledMockup = styled(StyledImg)`
@@ -803,7 +775,6 @@ const StyledMockup = styled(StyledImg)`
 
   img {
     width: 100%;
-    /* height: none; */
     object-fit: contain;
   }
   @media (max-width: 1024px) {
@@ -840,30 +811,7 @@ const StyledProjectDescription = styled(StyledDescription)`
     }
   }
 `
-// const Hide = styled.div`
-//   overflow: hidden;
-// `
 
-// // Frame Animation
-// const Frame1 = styled(motion.div)`
-//   position: fixed;
-//   left: 0;
-//   top: 10%;
-//   width: 100%;
-//   height: 100vh;
-//   background: #fffebf;
-//   z-index: 2;
-// `
-
-// const Frame2 = styled(Frame1)`
-//   background: #ff8efb;
-// `
-// const Frame3 = styled(Frame1)`
-//   background: #8ed2ff;
-// `
-// const Frame4 = styled(Frame1)`
-//   background: #8effa0;
-// `
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -871,15 +819,6 @@ const Cards = styled.div`
   justify-content: space-evenly;
   font-size: 6rem;
   margin-top: 2rem;
-  @media (max-width: 667px) {
-    /* font-size: 4rem; */
-
-    /* justify-content: center;
-    padding: 0; */
-    /* button {
-      margin: 2rem 0rem 5rem 0rem;
-    } */
-  }
 `
 const CardsLinks = styled(Cards)`
   @media (max-width: 1024px) {
@@ -895,7 +834,6 @@ const Card = styled(motion.div)`
     justify-content: center;
     align-items: center;
     position: relative;
-    /* padding: 1rem; */
     font-size: 3rem;
     svg {
       color: #fc8621;
@@ -908,16 +846,11 @@ const Card = styled(motion.div)`
   h3 {
     opacity: 0;
     position: absolute;
-    /* margin-left: 1rem; */
     background: white;
     color: black;
     font-size: 0.5rem;
     padding: 0.2rem;
     position: absolute;
-    /* font-weight: 400;
-        font-size: 20px;
-        opacity: 0; */
-    /* margin: 0 5px; */
     max-width: 100%;
     text-align: center;
   }
@@ -951,21 +884,18 @@ const Card = styled(motion.div)`
       scale: 1.2;
     }
     svg {
-      /* opacity: 0.6; */
       scale: 0.8;
     }
   }
   @media (max-width: 1024px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 15rem;
   }
   @media (max-width: 667px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 5rem;
   }

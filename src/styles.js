@@ -19,9 +19,6 @@ export const StyledDescription = styled.div`
   p {
     font-size: 1.3rem;
   }
-  /* @media (max-width: 1024px) {
-    padding-top: 4rem;
-  } */
   @media (max-width: 1300px) {
     padding: 4rem 0rem 0rem 0rem;
     button {
@@ -40,7 +37,6 @@ export const StyledImg = styled(motion.div)`
 
   img {
     width: 100%;
-    /* height: 80vh; */
     object-fit: cover;
   }
 `

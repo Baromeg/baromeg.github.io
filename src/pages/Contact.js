@@ -20,35 +20,8 @@ const Contact = (props) => {
       initial='hidden'
       animate='show'
       exit='exit'
-      // style={{ background: "#fff" }}
     >
       <ScrollTop />
-
-      {/* <div>
-        <Social variants={titleAnimation}>
-          <Circle> </Circle>
-
-          <h2>Send me a message</h2>
-        </Social>
-        <Social variants={titleAnimation}>
-          <Circle> </Circle>
-          <h2>Send me a message</h2>
-        </Social>
-      </div> */}
-      {/* <section className='hero is-fullheight-with-navbar is-link'>
-        <div className='hero-body'>
-          <div className='container is-fullhd'>
-            <div className='section title has-text-primary is-family-code'>
-              Let's work together!
-            </div>
-            <div className='columns'> */}
-      {/* <div className='column is-5 is-mobile'>
-              <figure className='image is-4by4  is-centered'>
-                <img src={me} className='is-rounded' />
-              </figure>
-            </div> */}
-
-      {/* </div> */}
       <StyledTitle>
         <motion.h2 variants={fade}>
           Fancy an <span>e-coffee?</span>
@@ -56,7 +29,7 @@ const Contact = (props) => {
       </StyledTitle>
       <form action='https://formspree.io/f/mvovdgkl' method='POST'>
         <StyledHide>
-          <Social variants={titleAnimation}>
+          <motion.div variants={titleAnimation}>
             <label>
               <i className='icon'>
                 <FaSignature /> <span className='placeholder'>Your name</span>
@@ -70,11 +43,11 @@ const Contact = (props) => {
                 name='name'
               />
             </label>
-          </Social>
+          </motion.div>
         </StyledHide>
 
         <StyledHide>
-          <Social variants={titleAnimation}>
+          <motion.div variants={titleAnimation}>
             <label className='label'>
               <i className='icon'>
                 <FaAt /> <span className='placeholder'>Your email</span>
@@ -88,11 +61,11 @@ const Contact = (props) => {
                 name='_replyto'
               />
             </label>
-          </Social>
+          </motion.div>
         </StyledHide>
 
         <StyledHide>
-          <Social variants={titleAnimation}>
+          <motion.div variants={titleAnimation}>
             <label>
               <i className='icon'>
                 <RiMessage2Fill />{' '}
@@ -107,7 +80,7 @@ const Contact = (props) => {
                 rows='8'
               ></textarea>
             </label>
-          </Social>
+          </motion.div>
         </StyledHide>
 
         <StyledButton
@@ -140,7 +113,6 @@ const Contact = (props) => {
             >
               <SiLinkedin />
             </a>
-            {/* <motion.h3>weblink</motion.h3> */}
           </motion.div>
         </Card>
         <Card
@@ -157,14 +129,9 @@ const Contact = (props) => {
             >
               <FaGithub />
             </a>
-            {/* <motion.h3>githubpage</motion.h3> */}
           </motion.div>
         </Card>
       </Cards>
-
-      {/* </div>
-        </div>
-      </section> */}
     </StyledContact>
   )
 }
@@ -185,7 +152,6 @@ const StyledContact = styled(motion.div)`
   h2 {
     font-weight: lighter;
     color: ${({ theme }) => theme.text};
-    /* font-size: 6rem; */
     @media (max-width: 1024px) {
       padding-top: 2rem;
     }
@@ -197,7 +163,6 @@ const StyledContact = styled(motion.div)`
     }
   }
   i {
-    /* display:flex; */
     span {
       color: ${({ theme }) => theme.text};
       font-weight: normal;
@@ -235,19 +200,14 @@ const StyledContact = styled(motion.div)`
 
     @media (max-width: 1024px) {
       padding-top: 1rem;
-      /* padding-bottom:        1rem; */
       width: 40rem;
       font-size: 1.5rem;
     }
     @media (max-width: 768px) {
       padding-top: 8rem;
-      /* padding-bottom:        1rem; */
-      /* width: 40rem;
-      font-size: 1.5rem; */
     }
     @media (max-width: 414px) {
       padding-top: 3rem;
-      /* padding-bottom:        1rem; */
       width: 32rem;
       font-size: 1.2rem;
       padding-left: 3rem;
@@ -264,7 +224,6 @@ const StyledContact = styled(motion.div)`
     border-radius: 16px;
     padding: 16px;
     background-color: transparent;
-    /* text-shadow: 1px 1px 0 #fff; */
   }
   textarea {
     @media (max-width: 1450px) {
@@ -283,7 +242,6 @@ const StyledContact = styled(motion.div)`
   }
   label {
     display: block;
-    /* margin-bottom: 16px; */
     width: 100%;
   }
   input,
@@ -303,7 +261,6 @@ const StyledContact = styled(motion.div)`
   button {
     font-size: 1.5rem;
     @media (max-width: 1024px) {
-      /* padding: 2rem; */
       font-size: 2rem;
     }
     @media (max-width: 375px) {
@@ -334,7 +291,6 @@ const StyledTitle = styled.div`
   @media (max-width: 1024px) {
     h2 {
       font-size: 4rem;
-      /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
   }
@@ -342,28 +298,24 @@ const StyledTitle = styled.div`
     h2 {
       font-size: 4rem;
       width: 40rem;
-      /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
   }
   @media (max-width: 414px) {
     h2 {
       font-size: 3rem;
-      /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
 
     padding-left: 3rem;
     h2 {
       width: 32rem;
-      /* padding-bottom:2rem; */
     }
   }
   @media (max-width: 375px) {
     h2 {
       font-size: 3rem;
       width: 32rem;
-      /* padding-bottom:2rem; */
     }
     margin-top: 0rem;
   }
@@ -399,7 +351,6 @@ const Card = styled(motion.div)`
   .icon {
     display: flex;
     justify-content: center;
-    /* padding-top: 1rem; */
     font-size: 3rem;
     svg {
       color: #fc8621;
@@ -408,16 +359,11 @@ const Card = styled(motion.div)`
   h3 {
     opacity: 0;
     position: absolute;
-    /* margin-left: 1rem; */
     background: white;
     color: black;
     font-size: 0.5rem;
     padding: 0.2rem;
     position: absolute;
-    /* font-weight: 400;
-        font-size: 20px;
-        opacity: 0; */
-    /* margin: 0 5px; */
     max-width: 100%;
     text-align: center;
   }
@@ -458,35 +404,28 @@ const Card = styled(motion.div)`
       scale: 1.2;
     }
     svg {
-      /* opacity: 0.6; */
       scale: 0.8;
     }
   }
   @media (max-width: 1300px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 15rem;
   }
   @media (max-width: 1024px) {
     .icon {
       padding: 2rem 0rem;
-      /* width: 1rem; */
     }
-    /* flex-basis: 15rem; */
   }
   @media (max-width: 768px) {
     .icon {
       padding: 5rem 0rem;
-      /* width: 1rem; */
     }
-    /* flex-basis: 5rem; */
   }
   @media (max-width: 667px) {
     .icon {
       padding: 1rem 0;
-      /* width: 1rem; */
     }
     flex-basis: 5rem;
   }
@@ -512,23 +451,6 @@ const StyledButton = styled(motion.button)`
     box-shadow: ${({ theme }) => theme.shadowActive};
     -webkit-tap-highlight-color: transparent;
   }
-`
-const Hide = styled.div`
-  overflow: hidden;
-`
-
-// const Circle = styled.div`
-//   border-radius: 50%;
-//   width: 3rem;
-//   height: 3rem;
-//   background: white;
-// `
-const Social = styled(motion.div)`
-  /* display: flex;
-  flex-direction: row;
-  h2 {
-    display: flex;
-  } */
 `
 
 export default Contact
