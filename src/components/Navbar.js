@@ -11,17 +11,7 @@ const Navbar = ({ theme, themeToggler }) => {
   return (
     <StyledNavbar>
       <motion.div variants={fade}>
-        {/* <Wave2 /> */}
-        {/* <h1> */}
-        <Link
-          id='logo'
-          to='/'
-          // activeClassName="selected"
-          // activeStyle={{
-          //   fontWeight: "bold",
-          //   color: "red"
-          // }}
-        >
+        <Link id='logo' to='/'>
           <svg
             width='50'
             height='50'
@@ -40,16 +30,7 @@ const Navbar = ({ theme, themeToggler }) => {
 
       <ul>
         <li>
-          <Link
-            to='/'
-            // activeClassName="selected"
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red"
-            // }}
-          >
-            About Me
-          </Link>
+          <Link to='/'>About Me</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -57,16 +38,7 @@ const Navbar = ({ theme, themeToggler }) => {
           />
         </li>
         <li>
-          <Link
-            to='/myprojects'
-            // activeClassName="selected"
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red"
-            // }}
-          >
-            My Projects
-          </Link>
+          <Link to='/myprojects'>My Projects</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -74,16 +46,7 @@ const Navbar = ({ theme, themeToggler }) => {
           />
         </li>
         <li>
-          <Link
-            to='/contact'
-            // activeClassName="selected"
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red"
-            // }}
-          >
-            Get in Touch
-          </Link>
+          <Link to='/contact'>Get in Touch</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
