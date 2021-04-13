@@ -66,7 +66,7 @@ const About = () => {
             <u>As a hotelier</u>, I've thrived on leading & motivating people,
             communicating & improving operational processes, ultimately creating
             memorable customer's experiences. <br /> <u>As a developer</u>, I'm
-            ready to thrive again as build great apps! <br />{' '}
+            ready to thrive again and build great apps! <br />{' '}
             <span>
               Can you imagine what else I can achieve if I get a chance?
             </span>{' '}
