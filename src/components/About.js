@@ -35,42 +35,20 @@ const About = () => {
             <StyledHide>
               <motion.p>
                 Hi!<span> I'm Baltasar</span>, self-taught and graduated
-                <span> full-stack software engineer</span> with an ever-evolving
-                portfolio backing my worth and potential.
+                <span> software engineer</span> seeking to develop and nurture
+                my experience and knowledge, enhancing user experiences within
+                an ethical and forward-thinking company.
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I seek my first <span>React</span>, <span>JavaScript</span> or{' '}
-                <span>Python</span> developer role to demonstrate my{' '}
-                <span> adaptability</span> & <span>dedication</span>,{' '}
-                <span>communication</span> & <span>problem-solving</span>{' '}
-                skills, impacting real-world applications on both sides of the
-                stack.
-              </motion.p>
-            </StyledHide>
-            <StyledHide>
-              <motion.p>
-                After more than 12 years of hospitality background,
-                <span> I've taken the risk</span> of a career shift,{' '}
-                <span>confident</span> that the blend of my{' '}
-                <span>professional trajectory</span>, geeky mindset, passion for{' '}
-                <span>constant learning</span> & <span>self-improvement</span>,
-                and <span>resilience</span> confronting a challenge is a{' '}
-                <span>strong endorsement of my capabilities</span>.
+                I've coached and grown diverse teams within hospitality by being
+                adaptable and empathetic, with open-minded communication & a
+                passion for solving everyday challenges,
+                <span> handy skills to bring to my journey in tech</span>.
               </motion.p>
             </StyledHide>
           </motion.div>
-
-          <motion.p variants={fade}>
-            <u>As a hotelier</u>, I've thrived on leading & motivating people,
-            communicating & improving operational processes, ultimately creating
-            memorable customer's experiences. <br /> <u>As a developer</u>, I'm
-            ready to thrive again and build great apps! <br />{' '}
-            <span>
-              Can you imagine what else I can achieve if I get a chance?
-            </span>{' '}
-          </motion.p>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
         <StyledImg>
@@ -81,6 +59,10 @@ const About = () => {
   )
 }
 const StyledAbout = styled(StyledGlobal)`
+  h2 {
+    font-family: 'Megrim', cursive;
+    font-weight: lighter;
+  }
   @media (max-width: 1300px) {
     display: block;
     text-align: center;

@@ -129,6 +129,8 @@ const StyledSkills = styled(StyledGlobal)`
   padding: 1rem 10rem;
   h2 {
     padding-bottom: 5rem;
+    font-family: 'Megrim', cursive;
+    font-weight: lighter;
   }
   p {
     width: 70%;

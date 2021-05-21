@@ -21,7 +21,11 @@ import {
   SiHeroku,
   SiBabel,
   SiWebpack,
-  SiRedux
+  SiRedux,
+  SiCodewars,
+  SiHackerrank,
+  SiFreecodecamp,
+  SiStackoverflow
 } from 'react-icons/si'
 import { BiDevices } from 'react-icons/bi'
 import styled from 'styled-components'
@@ -45,6 +49,77 @@ const Skills = () => {
       >
         <StyledDescription>
           <h2>What I'm skilled at</h2>
+          <CardsLinks>
+            <CardLink
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <a
+                  id='portfoliolink'
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://www.codewars.com/users/Baromeg'
+                >
+                  <SiCodewars />
+                  <motion.h3>CodeWars</motion.h3>
+                </a>
+              </motion.div>
+            </CardLink>
+            <CardLink
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <a
+                  id='portfoliolink'
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://www.hackerrank.com/baromeg'
+                >
+                  <SiHackerrank />
+                  <motion.h3>HackerRank</motion.h3>
+                </a>
+              </motion.div>
+            </CardLink>
+            <CardLink
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <a
+                  id='portfoliolink'
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://www.freecodecamp.org/baromeg'
+                >
+                  <SiFreecodecamp />
+                  <motion.h3>FreeCodeCamp</motion.h3>
+                </a>
+              </motion.div>
+            </CardLink>
+            <CardLink
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <a
+                  id='portfoliolink'
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://stackoverflow.com/users/14208806/baromeg?tab=profile'
+                >
+                  <SiStackoverflow />
+                  <motion.h3>StackOverFlow</motion.h3>
+                </a>
+              </motion.div>
+            </CardLink>
+          </CardsLinks>
+
           <Cards>
             <Card
               whileHover={{
@@ -273,6 +348,8 @@ const StyledSkills = styled(StyledGlobal)`
 
   h2 {
     padding-bottom: 5rem;
+    font-family: 'Megrim', cursive;
+    font-weight: lighter;
   }
   p {
     width: 70%;
@@ -292,7 +369,11 @@ const Cards = styled.div`
   justify-content: space-evenly;
   font-size: 6rem;
 `
-
+const CardsLinks = styled(Cards)`
+  @media (max-width: 1024px) {
+    flex-wrap: nowrap;
+  }
+`
 const Card = styled(motion.div)`
   flex-basis: 13rem;
 
@@ -352,6 +433,52 @@ const Card = styled(motion.div)`
       }
     }
     flex-basis: 7rem;
+  }
+`
+const CardLink = styled(Card)`
+  flex-basis: 5rem;
+
+  #portfoliolink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: ${({ theme }) => theme.shadowButton};
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 1rem 3rem;
+    svg {
+      color: ${({ theme }) => theme.text};
+    }
+    &:hover {
+      box-shadow: ${({ theme }) => theme.shadowHover};
+      background-color: transparent;
+      scale: 1;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      box-shadow: ${({ theme }) => theme.shadowActive};
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .icon {
+      padding: 1rem 0;
+    }
+    flex-basis: 15rem;
+  }
+  @media (max-width: 667px) {
+    .icon {
+      padding: 1rem 0;
+    }
+    flex-basis: 5rem;
   }
 `
 const Hide = styled.div`

@@ -36,8 +36,14 @@ export const StyledImg = styled(motion.div)`
   z-index: 2;
 
   img {
-    width: 100%;
+    width: 75%;
     object-fit: cover;
+    @media (max-width: 1300px) {
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      width: 75%;
+    }
   }
 `
 

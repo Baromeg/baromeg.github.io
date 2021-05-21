@@ -114,22 +114,21 @@ const MyProjects = () => {
                 <StyledHide>
                   <motion.p>
                     The application helps the user make greener decisions by
-                    discovering sustainable business and communities locally.
+                    discovering sustainable businesses and communities locally.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Using JavaScript and React, I built the "Single location"
-                    page and enriched the UX with the map tile using MapBox, the
-                    comments and ratings. It has the photo upload feature with
+                    Using JavaScript & React in the frontend, I built the
+                    "Single location" page and enriched the UX with the map tile
+                    using MapBox. The comments and ratings can be consulted
+                    publicly. I also implemented the photo upload feature with
                     Cloudinary.
                   </motion.p>
-                </StyledHide>
-                <StyledHide>
                   <motion.p>
-                    The application uses the MERM stack and handles async
-                    requests (Yelp, Mapbox) with error handling triggers and
-                    geolocation for best UX.
+                    The backend uses the MERM stack, enhancing each location
+                    information ensuring coordinates are stored during the
+                    seeding process (Yelp, Mapbox). Deployed in Heroku.
                   </motion.p>
                 </StyledHide>
               </motion.div>
@@ -304,15 +303,17 @@ const MyProjects = () => {
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    Using Python and Flask, I computed the data from several
-                    API’s requests (UNESCO list + Google Places & Photos) and
-                    built the componentry for the UI with JavaScript and React.
+                    Using Python, PostgreSQL & Flask, I computed the data from
+                    several API’s requests (UNESCO list + Google Places &
+                    Photos) and built the componentry for the UI with JavaScript
+                    and React.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    The app has email verification using SendGrid, a map feature
-                    using Mapbox and an image carousel using ImageGallery.
+                    The app was built with a relational database, allowing users
+                    to save their favourites sites and has email verification
+                    using SendGrid. Deployed in Heroku.
                   </motion.p>
                 </StyledHide>
               </motion.div>
@@ -512,7 +513,7 @@ const MyProjects = () => {
                 <StyledHide>
                   <motion.p>
                     I enhanced the UX by implementing the image carousel on the
-                    home page using react-carousel library.
+                    home page using react-carousel library. Deployed in Github.
                   </motion.p>
                 </StyledHide>
               </motion.div>
@@ -649,15 +650,16 @@ const MyProjects = () => {
               >
                 <StyledHide>
                   <motion.p>
-                    It was my first independently made application. It is a
-                    grid-based game that handles moving obstacles and tracks the
-                    player's scoring.
+                    It was my first independently made application. I
+                    implemented the classic game frogger using vanilla
+                    JavaScript.
                   </motion.p>
                 </StyledHide>
                 <StyledHide>
                   <motion.p>
-                    I implemented the concepts learned on HTML, CSS, JavaScript,
-                    logical thinking and problem-solving.
+                    I applied logical thinking to resolve challenges like moving
+                    obstacles and crash detection, it also tracks the player's
+                    scoring. Deployed in Github.
                   </motion.p>
                 </StyledHide>
               </motion.div>
@@ -729,6 +731,8 @@ const Projects = styled(motion.div)`
     padding: 6rem 2rem 2rem 2rem;
   }
   h2 {
+    font-family: 'Megrim', cursive;
+    font-weight: lighter;
     padding: 1rem 0rem;
     color: ${({ theme }) => theme.text};
   }
@@ -750,13 +754,13 @@ const Project = styled(motion.div)`
 const ProjectFirstPage = styled(Project)`
   padding-top: 8vh;
   @media (max-width: 1300px) {
-    padding-top: 10vh;
+    padding-top: 15vh;
   }
   @media (max-width: 1024px) {
-    padding-top: 4vh;
+    padding-top: 8vh;
   }
   @media (max-width: 414px) {
-    padding-top: 8vh;
+    padding-top: 12vh;
   }
 `
 const StyledProjects = styled(StyledGlobal)`
