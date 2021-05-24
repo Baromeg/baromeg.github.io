@@ -48,12 +48,11 @@ const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-  height: 5rem;
+  height: 7rem;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0rem 10rem; */
   background-color: ${({ theme }) => theme.navbarBackground};
   position: relative;
   width: 100%;
@@ -67,24 +66,9 @@ const Cards = styled.div`
   justify-content: space-between;
   align-items: center;
   justify-content: space-evenly;
-  /* font-size: 4rem; */
-  /* margin-bottom: 2rem; */
-  /* width: 29rem; */
-  /* padding-top: 3rem; */
 `
 
 const Card = styled(motion.div)`
-  /* flex-basis: 5rem; */
-
-  /* .icon {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    svg {
-      color: #fc8621;
-    }
-  } */
-
   #portfoliolink {
     font-size: 30px;
     box-shadow: ${({ theme }) => theme.shadowButton};
@@ -113,9 +97,6 @@ const Card = styled(motion.div)`
     svg {
       color: ${({ theme }) => theme.text};
     }
-    /* @media (max-width: 375px) {
-      font-size: 30px;
-    } */
   }
   :hover {
     h3 {
