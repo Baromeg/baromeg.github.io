@@ -367,7 +367,7 @@ const Cards = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 6rem;
+  font-size: 4rem;
 `
 const CardsLinks = styled(Cards)`
   @media (max-width: 1024px) {

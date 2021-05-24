@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe'
 import Contact from './pages/Contact'
 import MyProjects from './pages/MyProjects'
 import ProjectDetail from './pages/ProjectDetail'
+import Footer from './components/Footer'
 
 // Router
 import { Switch, Route, useLocation, HashRouter } from 'react-router-dom'

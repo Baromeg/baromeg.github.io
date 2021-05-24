@@ -39,9 +39,10 @@ const StyledHome = styled(StyledGlobal)`
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(${macbookEdited});
-  @media (max-width: 1300px) {
+  @media (max-width: 768px) {
     padding-top: 13vh;
     padding-left: 5rem;
+    background-image: ${({ theme }) => theme.mobileBackground};
   }
 `
 

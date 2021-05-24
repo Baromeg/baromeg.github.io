@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from '../components/Footer'
 
 // Images
 import kyh from '../img/heritage.gif'
@@ -54,672 +55,677 @@ const MyProjects = () => {
   // const [element1, controls1] = UseScroll()
 
   return (
-    <Projects
-      variants={pageAnimation}
-      initial='hidden'
-      animate='show'
-      exit='exit'
-    >
-      <ScrollTop />
-      <ProjectFirstPage>
-        <motion.h2 variants={fade}>Green World</motion.h2>
-        <motion.div variants={lineAnimation} className='line'></motion.div>
-
-        <StyledHide>
-          <StyledProjects>
-            <StyledMockup>
-              <Mockup src={greenworld}></Mockup>
-            </StyledMockup>
-            <StyledProjectDescription>
-              <CardsLinks>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://greenworld-p3.herokuapp.com/'
-                    >
-                      <FaChrome />
-                    </a>
-                  </motion.div>
-                </Card>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://github.com/Baromeg/project-3'
-                    >
-                      <FaGithub />
-                    </a>
-                  </motion.div>
-                </Card>
-              </CardsLinks>
-              <motion.div
-                variants={titleAnimation}
-                initial='hidden'
-                animate='show'
-                className='title'
-              >
-                <StyledHide>
-                  <motion.p>
-                    The application helps the user make greener decisions by
-                    discovering sustainable businesses and communities locally.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    Using JavaScript & React in the frontend, I built the
-                    "Single location" page and enriched the UX with the map tile
-                    using MapBox. The comments and ratings can be consulted
-                    publicly. I also implemented the photo upload feature with
-                    Cloudinary.
-                  </motion.p>
-                  <motion.p>
-                    The backend uses the MERM stack, enhancing each location
-                    information ensuring coordinates are stored during the
-                    seeding process (Yelp, Mapbox). Deployed in Heroku.
-                  </motion.p>
-                </StyledHide>
-              </motion.div>
-            </StyledProjectDescription>
-          </StyledProjects>
-        </StyledHide>
-        <Cards>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiMongodb />
-              <motion.h3>MongoDB</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiNodeDotJs />
-              <motion.h3>Node.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiBabel />
-              <motion.h3>Babel</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiWebpack />
-              <motion.h3>Webpack</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiJsonwebtokens />
-              <motion.h3>JWT</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiHeroku />
-              <motion.h3>Heroku</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <FaCloudDownloadAlt />
-              <motion.h3>Rest API</motion.h3>
-            </motion.div>
-          </Card>
-        </Cards>
-      </ProjectFirstPage>
-
-      <Project
-        ref={element}
-        variants={scrollReveal}
-        animate={controls}
+    <div>
+      <Projects
+        variants={pageAnimation}
         initial='hidden'
+        animate='show'
+        exit='exit'
       >
-        {' '}
-        <StyledHide>
-          <h2>Know your Heritage</h2>
+        <ScrollTop />
+        <ProjectFirstPage>
+          <motion.h2 variants={fade}>Green World</motion.h2>
           <motion.div variants={lineAnimation} className='line'></motion.div>
 
-          <StyledProjects>
-            <StyledMockup>
-              <Mockup src={kyh}></Mockup>
-            </StyledMockup>
-            <StyledProjectDescription>
-              <CardsLinks>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
+          <StyledHide>
+            <StyledProjects>
+              <StyledMockup>
+                <Mockup src={greenworld}></Mockup>
+              </StyledMockup>
+              <StyledProjectDescription>
+                <CardsLinks>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://greenworld-p3.herokuapp.com/'
+                      >
+                        <FaChrome />
+                      </a>
+                    </motion.div>
+                  </Card>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://github.com/Baromeg/project-3'
+                      >
+                        <FaGithub />
+                      </a>
+                    </motion.div>
+                  </Card>
+                </CardsLinks>
+                <motion.div
+                  variants={titleAnimation}
+                  initial='hidden'
+                  animate='show'
+                  className='title'
                 >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://knowyourheritage.herokuapp.com/'
-                    >
-                      <FaChrome />
-                    </a>
-                  </motion.div>
-                </Card>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://github.com/Baromeg/project-4'
-                    >
-                      <FaGithub />
-                    </a>
-                  </motion.div>
-                </Card>
-              </CardsLinks>
-              <motion.div
-                variants={titleAnimation}
-                initial='hidden'
-                animate='show'
-                className='title'
-              >
-                <StyledHide>
-                  <motion.p>
-                    The application showcases the wonders of the UNESCO’s World
-                    Heritage List to promote its awareness.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    Using Python, PostgreSQL & Flask, I computed the data from
-                    several API’s requests (UNESCO list + Google Places &
-                    Photos) and built the componentry for the UI with JavaScript
-                    and React.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    The app was built with a relational database, allowing users
-                    to save their favourites sites and has email verification
-                    using SendGrid. Deployed in Heroku.
-                  </motion.p>
-                </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      The application helps the user make greener decisions by
+                      discovering sustainable businesses and communities
+                      locally.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      Using JavaScript & React in the frontend, I built the
+                      "Single location" page and enriched the UX with the map
+                      tile using MapBox. The comments and ratings can be
+                      consulted publicly. I also implemented the photo upload
+                      feature with Cloudinary.
+                    </motion.p>
+                    <motion.p>
+                      The backend uses the MERM stack, enhancing each location
+                      information ensuring coordinates are stored during the
+                      seeding process (Yelp, Mapbox). Deployed in Heroku.
+                    </motion.p>
+                  </StyledHide>
+                </motion.div>
+              </StyledProjectDescription>
+            </StyledProjects>
+          </StyledHide>
+          <Cards>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <BiDevices />
+                <motion.h3>Responsive Design</motion.h3>
               </motion.div>
-            </StyledProjectDescription>
-          </StyledProjects>
-        </StyledHide>
-        <Cards>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiPython />
-              <motion.h3>Python</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiFlask />
-              <motion.h3>Flask</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiPostgresql />
-              <motion.h3>PostgreSQL</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <img src={marshmallow} alt='Marshmallow' />
-              <motion.h3>Marshmallow</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiNodeDotJs />
-              <motion.h3>Node.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiBabel />
-              <motion.h3>Babel</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiWebpack />
-              <motion.h3>Webpack</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiHeroku />
-              <motion.h3>Heroku</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <FaCloudDownloadAlt />
-              <motion.h3>Rest API</motion.h3>
-            </motion.div>
-          </Card>
-        </Cards>
-      </Project>
-      <Project
-        ref={element2}
-        variants={scrollReveal}
-        animate={controls2}
-        initial='hidden'
-      >
-        {' '}
-        <StyledHide>
-          <h2>Heroes</h2>
-          <motion.div variants={lineAnimation} className='line'></motion.div>
-          <StyledProjects>
-            <StyledMockup>
-              <Mockup src={heroes}></Mockup>
-            </StyledMockup>
-            <StyledProjectDescription>
-              <CardsLinks>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://baromeg.github.io/project-2'
-                    >
-                      <FaChrome />
-                    </a>
-                  </motion.div>
-                </Card>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://github.com/Baromeg/project-2'
-                    >
-                      <FaGithub />
-                    </a>
-                  </motion.div>
-                </Card>
-              </CardsLinks>
-              <motion.div
-                variants={titleAnimation}
-                initial='hidden'
-                animate='show'
-                className='title'
-              >
-                <StyledHide>
-                  <motion.p>
-                    The application features all-time comic heroes.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    Pair programming using JavaScript and React, we fetched
-                    several API’s (SuperHero & ComicVine) to link each hero with
-                    its first comic appearance as well as the entire UI.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    I enhanced the UX by implementing the image carousel on the
-                    home page using react-carousel library. Deployed in Github.
-                  </motion.p>
-                </StyledHide>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiJsBadge />
+                <motion.h3>JavaScript</motion.h3>
               </motion.div>
-            </StyledProjectDescription>
-          </StyledProjects>
-        </StyledHide>
-        <Cards>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <BiDevices />
-              <motion.h3>Responsive Design</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiReact />
-              <motion.h3>React.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiNodeDotJs />
-              <motion.h3>Node.js</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiBabel />
-              <motion.h3>Babel</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiWebpack />
-              <motion.h3>Webpack</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <FaCloudDownloadAlt />
-              <motion.h3>Rest API</motion.h3>
-            </motion.div>
-          </Card>
-        </Cards>
-      </Project>
-      <Project
-        ref={element3}
-        variants={scrollReveal}
-        animate={controls3}
-        initial='hidden'
-      >
-        {' '}
-        <StyledHide>
-          <h2>The Frogger</h2>
-          <motion.div variants={lineAnimation} className='line'></motion.div>
-          <StyledProjects>
-            <StyledMockup>
-              <Mockup src={frogger}></Mockup>
-            </StyledMockup>
-            <StyledProjectDescription>
-              <CardsLinks>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://baromeg.github.io/project-1'
-                    >
-                      <FaChrome />
-                    </a>
-                  </motion.div>
-                </Card>
-                <Card
-                  whileHover={{
-                    scale: 1.2
-                  }}
-                >
-                  <motion.div className='icon'>
-                    <a
-                      id='portfoliolink'
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://github.com/Baromeg/project-1'
-                    >
-                      <FaGithub />
-                    </a>
-                  </motion.div>
-                </Card>
-              </CardsLinks>
-              <motion.div
-                variants={titleAnimation}
-                initial='hidden'
-                animate='show'
-                className='title'
-              >
-                <StyledHide>
-                  <motion.p>
-                    It was my first independently made application. I
-                    implemented the classic game frogger using vanilla
-                    JavaScript.
-                  </motion.p>
-                </StyledHide>
-                <StyledHide>
-                  <motion.p>
-                    I applied logical thinking to resolve challenges like moving
-                    obstacles and crash detection, it also tracks the player's
-                    scoring. Deployed in Github.
-                  </motion.p>
-                </StyledHide>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiReact />
+                <motion.h3>React.js</motion.h3>
               </motion.div>
-            </StyledProjectDescription>
-          </StyledProjects>{' '}
-        </StyledHide>
-        <Cards>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiJsBadge />
-              <motion.h3>JavaScript</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiHtml5 />
-              <motion.h3>HTML5</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <DiCss3 />
-              <motion.h3>CSS3</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <BsGrid1X2Fill />
-              <motion.h3>Flexbox</motion.h3>
-            </motion.div>
-          </Card>
-          <Card
-            whileHover={{
-              scale: 1.2
-            }}
-          >
-            <motion.div className='icon'>
-              <SiNodeDotJs />
-              <motion.h3>Node.js</motion.h3>
-            </motion.div>
-          </Card>
-        </Cards>
-      </Project>
-    </Projects>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiMongodb />
+                <motion.h3>MongoDB</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiNodeDotJs />
+                <motion.h3>Node.js</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiBabel />
+                <motion.h3>Babel</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiWebpack />
+                <motion.h3>Webpack</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiJsonwebtokens />
+                <motion.h3>JWT</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiHeroku />
+                <motion.h3>Heroku</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <FaCloudDownloadAlt />
+                <motion.h3>Rest API</motion.h3>
+              </motion.div>
+            </Card>
+          </Cards>
+        </ProjectFirstPage>
+
+        <Project
+          ref={element}
+          variants={scrollReveal}
+          animate={controls}
+          initial='hidden'
+        >
+          {' '}
+          <StyledHide>
+            <h2>Know your Heritage</h2>
+            <motion.div variants={lineAnimation} className='line'></motion.div>
+
+            <StyledProjects>
+              <StyledMockup>
+                <Mockup src={kyh}></Mockup>
+              </StyledMockup>
+              <StyledProjectDescription>
+                <CardsLinks>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://knowyourheritage.herokuapp.com/'
+                      >
+                        <FaChrome />
+                      </a>
+                    </motion.div>
+                  </Card>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://github.com/Baromeg/project-4'
+                      >
+                        <FaGithub />
+                      </a>
+                    </motion.div>
+                  </Card>
+                </CardsLinks>
+                <motion.div
+                  variants={titleAnimation}
+                  initial='hidden'
+                  animate='show'
+                  className='title'
+                >
+                  <StyledHide>
+                    <motion.p>
+                      The application showcases the wonders of the UNESCO’s
+                      World Heritage List to promote its awareness.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      Using Python, PostgreSQL & Flask, I computed the data from
+                      several API’s requests (UNESCO list + Google Places &
+                      Photos) and built the componentry for the UI with
+                      JavaScript and React.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      The app was built with a relational database, allowing
+                      users to save their favourites sites and has email
+                      verification using SendGrid. Deployed in Heroku.
+                    </motion.p>
+                  </StyledHide>
+                </motion.div>
+              </StyledProjectDescription>
+            </StyledProjects>
+          </StyledHide>
+          <Cards>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <BiDevices />
+                <motion.h3>Responsive Design</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiJsBadge />
+                <motion.h3>JavaScript</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiReact />
+                <motion.h3>React.js</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiPython />
+                <motion.h3>Python</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiFlask />
+                <motion.h3>Flask</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiPostgresql />
+                <motion.h3>PostgreSQL</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <img src={marshmallow} alt='Marshmallow' />
+                <motion.h3>Marshmallow</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiNodeDotJs />
+                <motion.h3>Node.js</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiBabel />
+                <motion.h3>Babel</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiWebpack />
+                <motion.h3>Webpack</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiHeroku />
+                <motion.h3>Heroku</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <FaCloudDownloadAlt />
+                <motion.h3>Rest API</motion.h3>
+              </motion.div>
+            </Card>
+          </Cards>
+        </Project>
+        <Project
+          ref={element2}
+          variants={scrollReveal}
+          animate={controls2}
+          initial='hidden'
+        >
+          {' '}
+          <StyledHide>
+            <h2>Heroes</h2>
+            <motion.div variants={lineAnimation} className='line'></motion.div>
+            <StyledProjects>
+              <StyledMockup>
+                <Mockup src={heroes}></Mockup>
+              </StyledMockup>
+              <StyledProjectDescription>
+                <CardsLinks>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://baromeg.github.io/project-2'
+                      >
+                        <FaChrome />
+                      </a>
+                    </motion.div>
+                  </Card>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://github.com/Baromeg/project-2'
+                      >
+                        <FaGithub />
+                      </a>
+                    </motion.div>
+                  </Card>
+                </CardsLinks>
+                <motion.div
+                  variants={titleAnimation}
+                  initial='hidden'
+                  animate='show'
+                  className='title'
+                >
+                  <StyledHide>
+                    <motion.p>
+                      The application features all-time comic heroes.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      Pair programming using JavaScript and React, we fetched
+                      several API’s (SuperHero & ComicVine) to link each hero
+                      with its first comic appearance as well as the entire UI.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      I enhanced the UX by implementing the image carousel on
+                      the home page using react-carousel library. Deployed in
+                      Github.
+                    </motion.p>
+                  </StyledHide>
+                </motion.div>
+              </StyledProjectDescription>
+            </StyledProjects>
+          </StyledHide>
+          <Cards>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <BiDevices />
+                <motion.h3>Responsive Design</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiJsBadge />
+                <motion.h3>JavaScript</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiReact />
+                <motion.h3>React.js</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiNodeDotJs />
+                <motion.h3>Node.js</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiBabel />
+                <motion.h3>Babel</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiWebpack />
+                <motion.h3>Webpack</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <FaCloudDownloadAlt />
+                <motion.h3>Rest API</motion.h3>
+              </motion.div>
+            </Card>
+          </Cards>
+        </Project>
+        <Project
+          ref={element3}
+          variants={scrollReveal}
+          animate={controls3}
+          initial='hidden'
+        >
+          {' '}
+          <StyledHide>
+            <h2>The Frogger</h2>
+            <motion.div variants={lineAnimation} className='line'></motion.div>
+            <StyledProjects>
+              <StyledMockup>
+                <Mockup src={frogger}></Mockup>
+              </StyledMockup>
+              <StyledProjectDescription>
+                <CardsLinks>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://baromeg.github.io/project-1'
+                      >
+                        <FaChrome />
+                      </a>
+                    </motion.div>
+                  </Card>
+                  <Card
+                    whileHover={{
+                      scale: 1.2
+                    }}
+                  >
+                    <motion.div className='icon'>
+                      <a
+                        id='portfoliolink'
+                        target='_blank'
+                        rel='noreferrer'
+                        href='https://github.com/Baromeg/project-1'
+                      >
+                        <FaGithub />
+                      </a>
+                    </motion.div>
+                  </Card>
+                </CardsLinks>
+                <motion.div
+                  variants={titleAnimation}
+                  initial='hidden'
+                  animate='show'
+                  className='title'
+                >
+                  <StyledHide>
+                    <motion.p>
+                      It was my first independently made application. I
+                      implemented the classic game frogger using vanilla
+                      JavaScript.
+                    </motion.p>
+                  </StyledHide>
+                  <StyledHide>
+                    <motion.p>
+                      I applied logical thinking to resolve challenges like
+                      moving obstacles and crash detection, it also tracks the
+                      player's scoring. Deployed in Github.
+                    </motion.p>
+                  </StyledHide>
+                </motion.div>
+              </StyledProjectDescription>
+            </StyledProjects>{' '}
+          </StyledHide>
+          <Cards>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiJsBadge />
+                <motion.h3>JavaScript</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiHtml5 />
+                <motion.h3>HTML5</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <DiCss3 />
+                <motion.h3>CSS3</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <BsGrid1X2Fill />
+                <motion.h3>Flexbox</motion.h3>
+              </motion.div>
+            </Card>
+            <Card
+              whileHover={{
+                scale: 1.2
+              }}
+            >
+              <motion.div className='icon'>
+                <SiNodeDotJs />
+                <motion.h3>Node.js</motion.h3>
+              </motion.div>
+            </Card>
+          </Cards>
+        </Project>
+      </Projects>
+      <Footer />
+    </div>
   )
 }
 

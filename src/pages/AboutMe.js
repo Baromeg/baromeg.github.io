@@ -6,6 +6,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Learning from '../components/Learning'
 import Interests from '../components/Interests'
+import Footer from '../components/Footer'
 
 // Animations
 import { motion } from 'framer-motion'
@@ -26,6 +27,7 @@ const AboutMe = () => {
       <Skills />
       {/* <Learning /> */}
       <Interests />
+      <Footer />
     </motion.div>
   )
 }

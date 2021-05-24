@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   -webkit-tap-highlight-color: transparent;
 
 }
-
 html{
   @media (max-width: 1700px) {
     font-size: 90%
@@ -42,6 +41,9 @@ body {
   background-repeat: no-repeat;
   background-image: ${({ theme }) => theme.homeBackground};
   background-attachment: fixed;
+  @media (max-width: 768px) {
+  background: ${({ theme }) => theme.body}
+  }
 }
 
 button {

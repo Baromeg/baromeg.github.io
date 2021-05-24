@@ -16,6 +16,7 @@ export const lightTheme = {
   toggle: '#5c5c5c',
   toggle1: '#dfdfdf',
   homeBackground: `url(${macbookTable})`,
+  mobileBackground: `url(${macbookEdited}),url(${macbookTable})`,
   contactBackground: `url(${coffee}),url(${macbookTable})`,
   navbarBackground: 'rgba(241, 241, 241, 0.596)'
 }
@@ -33,6 +34,7 @@ export const darkTheme = {
   toggle: '#ffffff',
   toggle1: '#aaaaaa',
   homeBackground: `url(${macbook})`,
+  mobileBackground: `url(${macbookEdited}),url(${macbook})`,
   contactBackground: `url(${coffee}),url(${macbook})`,
   navbarBackground: 'rgba(0, 0, 0, 0.5)'
 }
