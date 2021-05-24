@@ -107,13 +107,16 @@ const StyledNavbar = styled.nav`
     flex-direction: column;
     #logo {
       font-size: 2.5rem;
-      padding: 0rem 2rem;
+      padding: 0.5rem 0rem;
+      order: 0;
     }
     #toggle {
-      padding-bottom: 0.5rem;
+      padding: 0.5rem 0rem;
+      order: 1;
     }
     ul {
-      padding: 1rem;
+      order: 2;
+      padding: 0.5rem 0rem 1rem 0rem;
       justify-content: space-around;
       width: 100%;
       li {

@@ -8,6 +8,7 @@ import { titleAnimation, fade } from '../Animation'
 // Style
 import styled from 'styled-components'
 import { StyledGlobal, StyledDescription, StyledHide } from '../styles'
+import macbookEdited from '../img/macbookEdited1.png'
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
 const StyledHome = styled(StyledGlobal)`
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: ${({ theme }) => theme.homeBackground};
+  background-image: url(${macbookEdited});
   @media (max-width: 1300px) {
     padding-top: 13vh;
     padding-left: 5rem;

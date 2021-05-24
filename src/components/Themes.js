@@ -15,7 +15,7 @@ export const lightTheme = {
   shadowActive: 'inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff',
   toggle: '#5c5c5c',
   toggle1: '#dfdfdf',
-  homeBackground: `url(${macbookEdited}),url(${macbookTable})`,
+  homeBackground: `url(${macbookTable})`,
   contactBackground: `url(${coffee}),url(${macbookTable})`,
   navbarBackground: 'rgba(241, 241, 241, 0.596)'
 }
@@ -32,7 +32,7 @@ export const darkTheme = {
   shadowActive: 'inset 1px 1px 2px #3b3b3b, inset -1px -1px 2px black',
   toggle: '#ffffff',
   toggle1: '#aaaaaa',
-  homeBackground: `url(${macbookEdited}),url(${macbook})`,
+  homeBackground: `url(${macbook})`,
   contactBackground: `url(${coffee}),url(${macbook})`,
   navbarBackground: 'rgba(0, 0, 0, 0.5)'
 }

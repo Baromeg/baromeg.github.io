@@ -38,7 +38,10 @@ body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   transition: all 0.50s linear;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ theme }) => theme.homeBackground};
+  background-attachment: fixed;
 }
 
 button {
