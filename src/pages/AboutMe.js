@@ -4,7 +4,6 @@ import React from 'react'
 import Home from '../components/Home'
 import About from '../components/About'
 import Skills from '../components/Skills'
-import Learning from '../components/Learning'
 import Interests from '../components/Interests'
 import Footer from '../components/Footer'
 

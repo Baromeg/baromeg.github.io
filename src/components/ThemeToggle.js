@@ -6,6 +6,24 @@ import Switch from 'react-switch'
 
 import { motion } from 'framer-motion'
 
+const ThemeToggle = ({ theme, toggleTheme }) => {
+  return (
+    <>
+      <Toggle>
+        <label className='switch'>
+          <input type='checkbox' onClick={toggleTheme} />
+          <span className='slider' />
+        </label>
+      </Toggle>
+    </>
+  )
+}
+
+ThemeToggle.propTypes = {
+  theme: string.isRequired,
+  toggleTheme: func.isRequired
+}
+
 const Toggle = styled(motion.div)`
   @font-face {
     font-family: 'Ionicons';
@@ -77,22 +95,5 @@ const Toggle = styled(motion.div)`
     background-color: ${({ theme }) => theme.toggle};
   }
 `
-const ThemeToggle = ({ theme, toggleTheme }) => {
-  return (
-    <>
-      <Toggle>
-        <label className='switch'>
-          <input type='checkbox' onClick={toggleTheme} />
-          <span className='slider' />
-        </label>
-      </Toggle>
-    </>
-  )
-}
-
-ThemeToggle.propTypes = {
-  theme: string.isRequired,
-  toggleTheme: func.isRequired
-}
 
 export default ThemeToggle

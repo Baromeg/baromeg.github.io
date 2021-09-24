@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 // Import Pages
 import React, { useState, useEffect } from 'react'
 
@@ -18,7 +17,6 @@ import { AnimatePresence } from 'framer-motion'
 // Global Style
 import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../src/components/useDarkMode'
-import ThemeToggle from '../src/components/ThemeToggle'
 import GlobalStyle from '../src/components/GlobalStyle'
 import { lightTheme, darkTheme } from '../src/components/Themes'
 
