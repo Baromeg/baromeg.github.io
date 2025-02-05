@@ -1,53 +1,53 @@
-const path = require("path")
-const webpack = require("webpack")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const DotEnv = require("dotenv-webpack")
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const DotEnv = require('dotenv-webpack')
 
 module.exports = (env) => {
   const publicPath =
-    env.NODE_ENV === "local"
+    env.NODE_ENV === 'local'
       ? {
-          publicPath: "/",
+          publicPath: '/'
         }
       : {}
   return {
-    entry: "./src/index.js",
+    entry: './src/index.js',
     output: {
-      filename: "bundle.js",
-      path: path.resolve("."),
-      ...publicPath,
+      filename: 'bundle.js',
+      path: path.resolve('./dist'),
+      ...publicPath
     },
     module: {
       rules: [
-        { test: /\.js$/, use: "babel-loader", exclude: /node_modules/ },
-        { test: /\.css$/, use: ["style-loader", "css-loader"] },
+        { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
+        { test: /\.css$/, use: ['style-loader', 'css-loader'] },
         {
           test: /\.s(a|c)ss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          use: ['style-loader', 'css-loader', 'sass-loader']
         },
-        { test: /\.(png|jpe?g|gif)$/i, use: "file-loader" },
-      ],
+        { test: /\.(png|jpe?g|gif)$/i, use: 'file-loader' }
+      ]
     },
     devServer: {
-      publicPath: "/",
-      contentBase: path.resolve("src"),
+      publicPath: '/',
+      contentBase: path.resolve('src'),
       hot: true,
       open: true,
       port: 8000,
       watchContentBase: true,
-      historyApiFallback: true,
+      historyApiFallback: true
     },
     plugins: [
       new DotEnv(),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.ProvidePlugin({
-        React: "react",
+        React: 'react'
       }),
       new HtmlWebpackPlugin({
-        template: "public/index.html",
-        filename: "index.html",
-        inject: "body",
-      }),
-    ],
+        template: 'public/index.html',
+        filename: 'index.html',
+        inject: 'body'
+      })
+    ]
   }
 }

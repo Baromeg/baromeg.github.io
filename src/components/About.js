@@ -34,23 +34,45 @@ const About = () => {
           <motion.div>
             <StyledHide>
               <motion.p>
-                Hi!<span> I'm Baltasar</span>, self-taught and graduated
-                <span> software engineer</span> seeking to develop and nurture
-                my experience and knowledge, enhancing user experiences within
-                an ethical and forward-thinking company.
+                I’m passionate about building
+                <span> intuitive, impactful technology</span> that enhances user
+                experiences. I’m open to opportunities in any field that
+                <span>
+                  {' '}
+                  makes life easier or has a positive impact on the world
+                </span>
+                .
               </motion.p>
             </StyledHide>
             <StyledHide>
               <motion.p>
-                I've coached and grown diverse teams within hospitality by being
-                adaptable and empathetic, with open-minded communication & a
-                passion for solving everyday challenges,
-                <span> handy skills to bring to my journey in tech</span>.
+                With experience across industries, I've developed a keen ability
+                to
+                <span> solve complex problems</span>, drive
+                <span> technical excellence</span>, and collaborate in
+                <span> autonomous, cross-functional teams</span>. Previously, I
+                led and coached diverse teams in hospitality, honing
+                adaptability, empathetic leadership, and open
+                communication—qualities that now define my approach to software
+                engineering.
+              </motion.p>
+            </StyledHide>
+            <StyledHide>
+              <motion.p>
+                I’m passionate about building
+                <span> intuitive, impactful technology</span> that enhances user
+                experiences. I’m open to opportunities in any field that
+                <span>
+                  {' '}
+                  makes life easier or has a positive impact on the world
+                </span>
+                .
               </motion.p>
             </StyledHide>
           </motion.div>
           <motion.button variants={fade}>Get in touch</motion.button>
         </AboutDescription>
+
         <StyledImg>
           <motion.img variants={photoAnimation} src={baltasar} alt='' />
         </StyledImg>
