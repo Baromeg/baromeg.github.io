@@ -21,7 +21,7 @@ import {
   SiJsonwebtokens,
   SiFlask,
   SiPostgresql,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiHeroku,
   SiBabel,
   SiWebpack
@@ -185,7 +185,7 @@ const MyProjects = () => {
               }}
             >
               <motion.div className='icon'>
-                <SiNodeDotJs />
+                <SiNodedotjs />
                 <motion.h3>Node.js</motion.h3>
               </motion.div>
             </Card>
@@ -400,7 +400,7 @@ const MyProjects = () => {
               }}
             >
               <motion.div className='icon'>
-                <SiNodeDotJs />
+                <SiNodedotjs />
                 <motion.h3>Node.js</motion.h3>
               </motion.div>
             </Card>
@@ -561,7 +561,7 @@ const MyProjects = () => {
               }}
             >
               <motion.div className='icon'>
-                <SiNodeDotJs />
+                <SiNodedotjs />
                 <motion.h3>Node.js</motion.h3>
               </motion.div>
             </Card>
@@ -717,7 +717,7 @@ const MyProjects = () => {
               }}
             >
               <motion.div className='icon'>
-                <SiNodeDotJs />
+                <SiNodedotjs />
                 <motion.h3>Node.js</motion.h3>
               </motion.div>
             </Card>
