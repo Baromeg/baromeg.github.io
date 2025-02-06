@@ -14,7 +14,7 @@ module.exports = (env) => {
     entry: './src/index.js',
     output: {
       filename: 'bundle.js',
-      path: path.resolve('./dist'),
+      path: path.resolve('.'),
       ...publicPath
     },
     module: {
